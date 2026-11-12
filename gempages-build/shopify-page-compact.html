@@ -1,0 +1,125 @@
+<div class="ac-root"><style>
+.ac-root{margin:0;background:#f4f1ea;color:#2a2621;font-family:Georgia,Times,serif;font-size:1.1rem;line-height:1.55}
+.ac-root *{box-sizing:border-box}
+.ac-root a{color:inherit}
+.ac-root img,.ac-root video{max-width:100%;display:block}
+.wrap{width:min(1120px,calc(100% - 40px));margin:0 auto}
+.skyline{background:#111;color:#f4f1ea;font-family:Helvetica,Arial,sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:10px 16px;text-align:center}
+.skyline-inner{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 12px}
+.pulse{width:7px;height:7px;border-radius:50%;background:#f4f1ea;animation:p 1.1s ease-in-out infinite}
+@keyframes p{50%{opacity:.35;transform:scale(.75)}}
+.skyline.closed{background:#3a3530}.skyline.closed .pulse{display:none}
+.mast{padding:18px 0 0;text-align:center;border-bottom:1px solid rgba(26,23,20,.16)}
+.ears,.mast-meta{display:flex;justify-content:space-between;gap:12px;font-family:Helvetica,Arial,sans-serif;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#5c564c}
+.mast h1{font-family:Times New Roman,Times,serif;font-weight:700;font-size:clamp(2.4rem,7vw,4.4rem);letter-spacing:-.02em;line-height:.92;margin:0 0 4px;color:#1a1714}
+.mast-tag{font-family:Helvetica,Arial,sans-serif;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:#5c564c;margin:0 0 10px}
+.mast-meta{border-top:3px double #1a1714;border-bottom:1px solid #1a1714;padding:7px 0;letter-spacing:.04em}
+.story{padding:22px 0 96px}
+.folio{font-family:Helvetica,Arial,sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9f1c1c;margin:0 0 10px}
+.hed{font-family:Times New Roman,Times,serif;font-weight:700;font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.05;letter-spacing:-.02em;color:#1a1714;margin:0 0 12px}
+.standfirst{font-size:1.25rem;line-height:1.35;color:#1a1714;margin:0 0 14px}
+.byline{font-family:Helvetica,Arial,sans-serif;font-size:.78rem;color:#5c564c;border-top:1px solid rgba(26,23,20,.16);border-bottom:1px solid rgba(26,23,20,.16);padding:8px 0;margin-bottom:16px}
+.byline strong{color:#1a1714}
+figure{margin:0 0 18px}figcaption{font-family:Helvetica,Arial,sans-serif;font-size:.75rem;color:#5c564c;margin-top:8px}
+.hero-media{position:relative;background:#111;overflow:hidden}
+.hero-media video{width:100%;aspect-ratio:16/9;object-fit:cover}
+.hero-stamp{position:absolute;left:14px;bottom:14px;background:rgba(26,23,20,.9);color:#f4f1ea;font-family:Helvetica,Arial,sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:8px 10px}
+.layout{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(260px,.85fr);gap:36px;align-items:start}
+.drop::first-letter{float:left;font-family:Times New Roman,Times,serif;font-size:3.4rem;line-height:.8;padding:8px 8px 0 0;font-weight:700;color:#1a1714}
+p{margin:0 0 1em}
+.pull{border-top:3px solid #1a1714;border-bottom:1px solid #1a1714;margin:1.35em 0;padding:14px 0;font-style:italic;font-size:1.55rem;line-height:1.2;color:#1a1714}
+.crosshead{font-family:Times New Roman,Times,serif;font-weight:700;font-size:1.5rem;line-height:1.15;color:#1a1714;margin:1.45em 0 .45em}
+.rail{position:sticky;top:16px;background:#faf7f1;border:1px solid #1a1714;padding:16px}
+.rail-kicker{font-family:Helvetica,Arial,sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9f1c1c}
+.rail h2{font-family:Times New Roman,Times,serif;font-size:1.4rem;font-weight:700;margin:6px 0 8px;line-height:1.15;color:#1a1714}
+.clock{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:12px 0 10px}
+.unit{border-top:1px solid #1a1714;padding-top:6px}
+.unit strong{display:block;font-family:Helvetica,Arial,sans-serif;font-variant-numeric:tabular-nums;font-size:1.3rem;font-weight:700;color:#1a1714}
+.unit span{font-family:Helvetica,Arial,sans-serif;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:#5c564c}
+.facts{list-style:none;margin:0 0 14px;padding:0}
+.facts li{display:flex;justify-content:space-between;gap:12px;border-top:1px solid rgba(26,23,20,.16);padding:7px 0;font-family:Helvetica,Arial,sans-serif;font-size:.78rem}
+.facts span{color:#5c564c}
+.btn{display:block;text-align:center;background:#1a1714;color:#f4f1ea;text-decoration:none;font-family:Helvetica,Arial,sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:13px 12px}
+.btn:hover{background:#9f1c1c}
+.btn-ghost{margin-top:8px;background:transparent;color:#1a1714;border:1px solid #1a1714}
+.fine{font-family:Helvetica,Arial,sans-serif;font-size:.68rem;color:#5c564c;line-height:1.4;margin:8px 0 0}
+.sheet{width:100%;border-collapse:collapse;margin:8px 0 18px}
+.sheet th{font-family:Helvetica,Arial,sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:left;color:#5c564c;border-bottom:2px solid #1a1714;padding:0 8px 6px 0}
+.sheet td{border-bottom:1px solid rgba(26,23,20,.16);padding:10px 10px 10px 0;vertical-align:middle}
+.sheet a{text-decoration:none}.sheet a:hover{text-decoration:underline}
+.now{font-family:Helvetica,Arial,sans-serif;font-weight:700;font-variant-numeric:tabular-nums;color:#1a1714}
+.was{color:#8a8174;text-decoration:line-through;font-variant-numeric:tabular-nums;font-family:Helvetica,Arial,sans-serif;font-size:.85rem}
+.save{font-family:Helvetica,Arial,sans-serif;font-size:.78rem;color:#9f1c1c;font-variant-numeric:tabular-nums}
+.alert{border:1px solid #9f1c1c;background:#f8efe9;padding:14px 16px;margin:0 0 1.2em}
+.alert strong{display:block;font-family:Helvetica,Arial,sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#9f1c1c;margin-bottom:4px}
+.reviews{margin:1.2em 0 0;border-top:2px solid #1a1714;padding-top:4px}
+.review{border-bottom:1px solid rgba(26,23,20,.16);padding:14px 0}
+.stars{color:#9f1c1c;letter-spacing:.08em;margin:0 0 4px}
+.review blockquote{margin:0 0 8px;font-size:1.05rem;line-height:1.4}
+.review cite{font-family:Helvetica,Arial,sans-serif;font-size:.72rem;font-style:normal;color:#5c564c}
+.end{margin-top:28px;padding-top:16px;border-top:3px solid #1a1714}
+.end .btn{max-width:480px}
+footer{border-top:1px solid #1a1714;padding:18px 0 40px;font-family:Helvetica,Arial,sans-serif;font-size:.72rem;color:#5c564c}
+@media(max-width:800px){.layout{display:flex;flex-direction:column}.rail{position:static;order:-1}.ears,.mast-meta{flex-direction:column;gap:4px;text-align:center;align-items:center}.wrap{width:min(1120px,calc(100% - 28px))}}
+</style>
+<div class="skyline" id="skyline" role="status"><div class="skyline-inner"><span class="pulse" aria-hidden="true"></span><span id="skyline-text">Live · Closes in 18 days · 30 Nov, 11.59pm London</span></div></div>
+<header class="mast"><div class="wrap"><div class="ears"><span>London edition</span><span>No. 12,486</span><span>Thursday 12 November 2026</span></div>
+<h1>The Atlantic Courier</h1><p class="mast-tag">Style · Consumer · City</p>
+<div class="mast-meta"><span>Thursday 12 November 2026</span><span>Fashion &amp; retail</span><span>Closing edition</span></div></div></header>
+<main class="story"><article class="wrap">
+<p class="folio">News · Timed clearance · Dress shoes above £280</p>
+<h2 class="hed">Eighteen nights left. After 11.59pm in London on 30 November, the £306 shoe stops costing £122.</h2>
+<p class="standfirst">Noble Meridian has printed a closing time on its end-of-season collection: 11.59pm London time, Monday 30 November 2026. Full-grain Oxfords, loafers and Chelsea boots — list prices between £285 and £402 — sit at 60% off on the models that matter.</p>
+<p class="byline"><strong>By James Hartley</strong>, Fashion &amp; Retail Correspondent · London · Prices checked 12 November 2026</p>
+<figure><div class="hero-media"><video autoplay muted loop playsinline poster="https://raw.githubusercontent.com/tx337768/trexx/cursor/advertorial-final-sale-5914/assets/deadline-watch.jpg" aria-label="Deadline montage"><source src="https://raw.githubusercontent.com/tx337768/trexx/cursor/advertorial-final-sale-5914/assets/deadline.mp4" type="video/mp4"></video><div class="hero-stamp" id="hero-stamp">Clock running · 30 Nov</div></div>
+<figcaption>The published cut-off. At 11.59pm London time on 30 November, the sale price comes down.</figcaption></figure>
+<div class="layout"><div>
+<div class="alert"><strong>Calendar note</strong>Black Friday falls on 27 November. This clearance ends the following Monday at 11.59pm.</div>
+<p class="drop">This is not a ten-per-cent voucher. It is a city shoe listed at three hundred pounds, cut by more than half — with the hour written out. Eighteen nights remain.</p>
+<p>The Bolton Chelsea falls from £306.23 to £122.49. The Yates Oxford, from £323.46 to £129.38. The Leonard monk strap, from £401.93 to £160.77. On each pair the discount is sixty per cent.</p>
+<p class="pull">“30 November, 11.59pm, London time.” One date. No extension announced. The cost of waiting is the list price.</p>
+<h3 class="crosshead">The six pairs that still pay the difference</h3>
+<table class="sheet"><thead><tr><th>Model</th><th>Now</th><th>List</th><th>Saved</th></tr></thead><tbody>
+<tr><td><a href="https://noblemeridian.com/products/bolton-chelsea-boots">Bolton Chelsea</a></td><td class="now">£122.49</td><td class="was">£306.23</td><td class="save">−£183.74</td></tr>
+<tr><td><a href="https://noblemeridian.com/products/yates-oxford">Yates Oxford</a></td><td class="now">£129.38</td><td class="was">£323.46</td><td class="save">−£194.08</td></tr>
+<tr><td><a href="https://noblemeridian.com/products/bernard-tassel-loafers">Bernard tassel loafer</a></td><td class="now">£137.81</td><td class="was">£344.51</td><td class="save">−£206.70</td></tr>
+<tr><td><a href="https://noblemeridian.com/products/leonard-single-monkstraps">Leonard monk strap</a></td><td class="now">£160.77</td><td class="was">£401.93</td><td class="save">−£241.16</td></tr>
+<tr><td><a href="https://noblemeridian.com/products/valencia-wholecuts">Valencia wholecut</a></td><td class="now">£141.63</td><td class="was">£354.08</td><td class="save">−£212.45</td></tr>
+<tr><td><a href="https://noblemeridian.com/products/ellis-chukka-boots">Ellis chukka</a></td><td class="now">£114.07</td><td class="was">£285.18</td><td class="save">−£171.11</td></tr>
+</tbody></table>
+<p><a class="btn" href="https://noblemeridian.com/collections/final-sale" style="max-width:440px">Secure a pair while 60% is still live</a></p>
+<h3 class="crosshead">What buyers have written</h3>
+<div class="reviews">
+<div class="review"><div class="stars">★★★★★</div><blockquote>“Ordered the Bolton in a 9. Firm leather without that plastic feel. Paid £122. The site still showed £306.”</blockquote><cite>Richard M. · London · Bolton Chelsea</cite></div>
+<div class="review"><div class="stars">★★★★★</div><blockquote>“Swapped a high-street Oxford for the Yates. Rubber sole was the right call for wet London mornings.”</blockquote><cite>Tom S. · Manchester · Yates Oxford</cite></div>
+<div class="review"><div class="stars">★★★★★</div><blockquote>“Bought the Leonard for a wedding and have already worn it into the office. The 30 November notice made me check out the same evening.”</blockquote><cite>Michael R. · Bristol · Leonard monk</cite></div>
+</div>
+<h3 class="crosshead">Why waiting costs money</h3>
+<p>Black Friday is the 27th. The close is the 30th, at 11.59pm London time. After it, the list price returns.</p>
+<div class="end"><p><strong>The right pair, in the right size, has the clock against it.</strong></p>
+<a class="btn" href="https://noblemeridian.com/collections/final-sale">Open the clearance before 11.59pm London</a>
+<p class="fine">Shipping and returns follow the brand’s own rules.</p></div>
+</div>
+<aside class="rail" aria-label="Sale deadline facts">
+<p class="rail-kicker">Sidebar · Live clock</p>
+<h2>London midnight, 30 November.</h2>
+<div class="clock" id="clock" aria-hidden="true">
+<div class="unit"><strong id="d">18</strong><span>Days</span></div>
+<div class="unit"><strong id="h">00</strong><span>Hrs</span></div>
+<div class="unit"><strong id="m">00</strong><span>Min</span></div>
+<div class="unit"><strong id="s">00</strong><span>Sec</span></div>
+</div>
+<ul class="facts">
+<li><span>Closes</span><b>30 Nov 2026</b></li>
+<li><span>Time</span><b>11.59pm London</b></li>
+<li><span>Left</span><b id="nights">18 nights</b></li>
+<li><span>Core discount</span><b>60%</b></li>
+<li><span>Sale band</span><b>£114–£168</b></li>
+</ul>
+<a class="btn" href="https://noblemeridian.com/collections/final-sale">Buy now</a>
+<a class="btn btn-ghost" href="https://noblemeridian.com/products/bolton-chelsea-boots">Straight to the Bolton</a>
+<p class="fine">Countdown to 30 November 2026, 11.59pm London.</p>
+</aside></div></article></main>
+<footer><div class="wrap">The Atlantic Courier · Style &amp; Consumer. Prices in pounds sterling on noblemeridian.com.</div></footer>
+<script>(function(){var end=Date.parse("2026-11-30T23:59:00Z");var d=document.getElementById("d"),h=document.getElementById("h"),m=document.getElementById("m"),s=document.getElementById("s"),nights=document.getElementById("nights"),skyline=document.getElementById("skyline"),skylineText=document.getElementById("skyline-text"),stamp=document.getElementById("hero-stamp"),timer=null;function pad(n){return String(n).padStart(2,"0");}function setClosed(){d.textContent="0";h.textContent=m.textContent=s.textContent="00";nights.textContent="0 nights";stamp.textContent="Sale closed";skyline.classList.add("closed");skylineText.textContent="Closed · Sale ended 30 Nov, 11.59pm London";if(timer){clearInterval(timer);timer=null;}}function tick(){var left=end-Date.now();if(left<=0){setClosed();return;}var days=Math.floor(left/86400000),hours=Math.floor((left%86400000)/3600000),mins=Math.floor((left%3600000)/60000),secs=Math.floor((left%60000)/1000);d.textContent=String(days);h.textContent=pad(hours);m.textContent=pad(mins);s.textContent=pad(secs);nights.textContent=days+(days===1?" night":" nights");skyline.classList.remove("closed");skylineText.textContent="Live · Closes in "+days+"d "+pad(hours)+"h "+pad(mins)+"m · 30 Nov, 11.59pm London";stamp.textContent=days+"d "+pad(hours)+"h "+pad(mins)+"m · 30 Nov";}tick();timer=setInterval(tick,1000);})();</script>
+</div>
