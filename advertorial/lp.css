@@ -398,7 +398,7 @@
   bottom: 0;
   z-index: 40;
   display: none;
-  padding: .65rem 1rem;
+  padding: .65rem 1rem calc(.65rem + env(safe-area-inset-bottom));
   background: #1a2016f2;
   border-top: 1px solid var(--line);
   backdrop-filter: blur(8px);
@@ -427,7 +427,7 @@
 
   .lp-hero { min-height: min(88vh, 720px); }
   .lp-sticky-cta { display: block; }
-  body.lp { padding-bottom: 4.5rem; }
+  body.lp { padding-bottom: calc(4.5rem + env(safe-area-inset-bottom)); }
 }
 
 @media (prefers-reduced-motion: reduce) {
