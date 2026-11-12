@@ -67,21 +67,22 @@
 
 ---
 
-### PHASE 2: Paid Scale (Weeks 3-8) — $3,100 Investment
-**Goal:** 3-4/day → 5-6/day (+25-50%)
+### PHASE 2: Paid Scale (Weeks 3-8) — ~$4,150 Investment
+**Goal:** 3-4/day → 4–6/day (≈+1.1–1.6/day from paid)
 
-✅ Produce 5 UGC testimonial videos ($500-$1,000)  
-✅ Launch Meta ads test: $50/day, Add-to-Cart objective  
+✅ Produce 5 UGC testimonial videos ($500-$1,000 one-time)  
+✅ Launch Meta ads test: $50/day ($1,500/mo), Add-to-Cart objective  
    - 3 UGC videos + 3 product carousels  
    - Interest targeting: Thursday Boots, Allen Edmonds, GQ  
-   - Expected ROAS: 2.0-3.0×  
-✅ Launch retargeting: $20/day, 30-day website visitors  
-   - Expected ROAS: 4.0-6.0×
+   - Expected ROAS: 2.0-3.0× → ~18–26 orders/mo at $170 AOV  
+✅ Launch retargeting: $20/day ($600/mo), 30-day website visitors  
+   - Expected ROAS: 4.0-6.0× → ~14–21 orders/mo at $170 AOV  
+✅ Phase cost: $2,100/mo ads + $1,000 UGC (≈$4,150 over ~1.5 months of ads)
 
 ---
 
 ### PHASE 3: CRO (Weeks 6-12) — $1,500 Investment
-**Goal:** 5-6/day → 8-10/day (+30-60%)
+**Goal:** 4–6/day → 8–10/day
 
 ✅ A/B test email capture AOV gate (10% off $200+ vs. free gift)  
 ✅ Create "Archive Sale" section ($99-$129 entry point)  
@@ -96,12 +97,12 @@
 |-------|----------|------|----------------|--------------------------|
 | **Baseline** | Now | - | 2/day | $340/day ($10.2K/mo) |
 | **Phase 1** | Weeks 1-2 | $500 | 3-4/day | $510-$680/day |
-| **Phase 2** | Weeks 3-8 | $3,100 | 5-6/day | $850-$1,020/day |
-| **Phase 3** | Weeks 6-12 | $1,500 | 8-10/day | $1,360-$1,700/day |
-| **TOTAL** | **12 weeks** | **$5,100** | **8-10/day** | **$40.8-$51K/mo** |
+| **Phase 2** | Weeks 3-8 | ~$4,150 | 4–6/day | $680–$1,020/day |
+| **Phase 3** | Weeks 6-12 | $1,500 | 8–10/day | $1,360–$1,700/day |
+| **TOTAL** | **12 weeks** | **~$6,150** | **8–10/day** | **$40.8–$51K/mo run-rate** |
 
-**Net Revenue Increase:** +$30.6-$40.8K/month  
-**ROI:** 6-8× on $5,100 investment (first month)
+**Net revenue vs baseline (week-12 run-rate):** +$30.6–$40.8K/month  
+**Program payback:** at Phase 3 pace, incremental monthly revenue covers the ~$6,150 program cost in well under one month — this is **not** first-calendar-month ROI (Phases 1–2 ramp first)
 
 ---
 

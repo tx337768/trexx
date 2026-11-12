@@ -349,19 +349,19 @@
      - Lookalike: 1% website purchasers (if 50+ orders exist)
    - Creative: 3 UGC videos + 3 product carousels (5-6 SKUs per carousel)
    - Copy: "Handcrafted Portuguese Leather. Factory-Direct at $145. Free Shipping & Returns. 🛡️" CTA: Shop Now
-   - **Expected ROAS at scale:** 2.0-3.0× (industry standard for $145 AOV DTC footwear)
-   - **Expected sales:** 10-15/month from ads (0.3-0.5/day incremental)
+   - **Expected ROAS at scale:** 2.0-3.0× on the $1,500/mo prospecting budget → ~$3,000–$4,500 revenue
+   - **Expected sales (at $170 AOV):** ~18–26/month from prospecting (≈0.6–0.9/day incremental)
 
 8. **Retargeting Funnel**
    - Budget: $20/day ($600/month)
    - Audience: Website visitors (last 30 days) who didn't purchase
    - Creative: Carousel of products they viewed + "Still thinking? 10% off ends tonight" (evergreen daily reset)
-   - **Expected ROAS:** 4.0-6.0× (retargeting standard)
-   - **Expected sales:** 8-12/month (0.25-0.4/day incremental)
+   - **Expected ROAS:** 4.0-6.0× on the $600/mo retargeting budget → ~$2,400–$3,600 revenue
+   - **Expected sales (at $170 AOV):** ~14–21/month (≈0.5–0.7/day incremental)
 
-**Total Phase 2 cost:** $2,100/month ad spend + $1,000 UGC production  
+**Total Phase 2 cost:** $2,100/month ad spend + $1,000 one-time UGC (≈$4,150 over weeks 3–8 at ~1.5 months of ads)  
 **Timeline:** Weeks 3-8  
-**Expected sales lift:** 3-4/day → 5-6/day (25-50% increase)
+**Expected sales lift:** 3-4/day → 4–6/day (≈+1.1–1.6/day from paid; blended paid ROAS ~2.6–3.9×)
 
 ---
 
@@ -393,7 +393,7 @@
 
 **Total Phase 3 cost:** $1,500 (developer for Shopify apps, referral program setup)  
 **Timeline:** Weeks 6-12  
-**Expected sales lift:** 5-6/day → 8-10/day (30-60% increase)
+**Expected sales lift:** 4–6/day → 8–10/day (≈+40–100% from CRO on top of paid)
 
 ---
 
@@ -403,15 +403,16 @@
 |-------|----------|------------|---------------------|-----------------|
 | Baseline | Now | - | 2/day | - |
 | Phase 1 (Quick Wins) | Weeks 1-2 | $500 | 3-4/day | +50-100% |
-| Phase 2 (Paid Scale) | Weeks 3-8 | $3,100 | 5-6/day | +150-200% |
-| Phase 3 (CRO) | Weeks 6-12 | $1,500 | 8-10/day | +300-400% |
-| **Total** | **12 weeks** | **$5,100** | **8-10/day** | **4-5× growth** |
+| Phase 2 (Paid Scale) | Weeks 3-8 | ~$4,150 ($2.1K/mo ads × ~1.5 mo + $1K UGC) | 4–6/day | +100-200% |
+| Phase 3 (CRO) | Weeks 6-12 | $1,500 | 8–10/day | +300-400% |
+| **Total** | **12 weeks** | **~$6,150** | **8–10/day** | **4-5× growth** |
 
 **Key Assumptions:**
 - Current conversion rate: ~1% (industry standard for cold traffic)
 - AOV: $170 (midpoint of $145-$195 range)
-- Paid ROAS: 2.5× blended (prospecting + retargeting)
+- Paid ROAS: ~2.6–3.9× blended on $2,100/mo (prospecting 2.0–3.0× + retargeting 4.0–6.0×) — sales counts above are derived from those ROAS bands ÷ $170 AOV
 - Organic growth: +10-15% month-over-month (from referrals, UGC, improved conversion)
+- Week-12 revenue figures below are **run-rate**, not first-calendar-month results
 
 **Risk Factors:**
 - If free shipping is *not* currently offered unconditionally, adding it may compress margin by 5-8% ($8-$14 per order at $170 AOV). Offset by increasing AOV via bundle upsells or email gate ($200+ requirement).
