@@ -28,3 +28,6 @@ Paper `#f6f3ed` · ink `#111` · muted `#666` · line `#dcd6cb` · accent `#7958
 ## BLOCKER — inventory / fulfillment
 Admin shows OOS / negative inventory + unfulfilled orders on hero SKUs.
 **Do not scale Meta spend** until sellable sizes exist and backlog is under control.
+
+## Pricing note
+LP cards use **EUR Final Sale prices** from the PT/EUR storefront (e.g. Weston €165.95 → From €166), not raw USD shop cents — Meta EU traffic must match what noblemeridian.com shows in Europe.
