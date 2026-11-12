@@ -2,12 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="refresh" content="0; url=./" />
   <link rel="canonical" href="./" />
   <title>Redirecting to Home Blackout Kit…</title>
-  <script>location.replace("./");</script>
+  <script>
+    (function () {
+      var target = "./" + location.search + location.hash;
+      var meta = document.createElement("meta");
+      meta.httpEquiv = "refresh";
+      meta.content = "0; url=" + target;
+      document.head.appendChild(meta);
+      location.replace(target);
+    })();
+  </script>
 </head>
 <body>
-  <p><a href="./">Continue to the Home Blackout Kit product page</a></p>
+  <p><a id="fallback" href="./">Continue to the Home Blackout Kit product page</a></p>
+  <script>
+    document.getElementById("fallback").href = "./" + location.search + location.hash;
+  </script>
 </body>
 </html>
