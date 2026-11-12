@@ -2,12 +2,16 @@
 /**
  * Durable Admin API access for Noble Meridian.
  *
- * Required environment secrets (set in Cursor Environment Secrets, not chat):
- *   SHOPIFY_SHOP_DOMAIN   e.g. noblemeridian.myshopify.com
- *   SHOPIFY_CLIENT_ID     Dev Dashboard app client id
- *   SHOPIFY_CLIENT_SECRET Dev Dashboard app client secret
+ * Cursor Environment Secrets (do not paste into chat):
+ *   SHOPIFY_SHOP_DOMAIN   e.g. b2a3je-jb.myshopify.com
+ *   SHOPIFY_CLIENT_ID     Dev Dashboard client id
+ *   SHOPIFY_CLIENT_SECRET Dev Dashboard client secret
  *
- * Optional (legacy offline token, if you already have one):
+ * Also accepted (same values, alternate names):
+ *   Clientid / clientid
+ *   clientsecret / Clientsecret
+ *
+ * Optional legacy offline token (still requires SHOPIFY_SHOP_DOMAIN):
  *   SHOPIFY_ADMIN_TOKEN   shpat_...
  *
  * Usage:
@@ -15,29 +19,64 @@
  *   node scripts/noble-shopify.mjs gql '{ shop { name myshopifyDomain } }'
  */
 
-const shopDomain = (process.env.SHOPIFY_SHOP_DOMAIN || "")
+function firstEnv(...names) {
+  for (const name of names) {
+    const value = process.env[name];
+    if (value && String(value).trim()) return String(value).trim();
+  }
+  return "";
+}
+
+const DEFAULT_SHOP = "b2a3je-jb.myshopify.com";
+
+const shopDomain = firstEnv("SHOPIFY_SHOP_DOMAIN", "SHOP_DOMAIN")
   .replace(/^https?:\/\//, "")
-  .replace(/\/$/, "");
-const clientId = process.env.SHOPIFY_CLIENT_ID || "";
-const clientSecret = process.env.SHOPIFY_CLIENT_SECRET || "";
-const staticToken = process.env.SHOPIFY_ADMIN_TOKEN || "";
+  .replace(/\/$/, "") || DEFAULT_SHOP;
+
+const clientId = firstEnv(
+  "SHOPIFY_CLIENT_ID",
+  "Clientid",
+  "clientid",
+  "CLIENT_ID"
+);
+const clientSecret = firstEnv(
+  "SHOPIFY_CLIENT_SECRET",
+  "clientsecret",
+  "Clientsecret",
+  "CLIENT_SECRET"
+);
+const staticToken = firstEnv("SHOPIFY_ADMIN_TOKEN", "SHOP_TOKEN");
 
 function fail(msg) {
   console.error(msg);
   process.exit(1);
 }
 
-async function getToken() {
-  if (staticToken) return staticToken;
-  if (!shopDomain || !clientId || !clientSecret) {
+function requireShopDomain() {
+  if (!shopDomain) {
     fail(
       [
-        "Missing Noble Meridian credentials.",
-        "Add these Cursor Environment Secrets:",
-        "  SHOPIFY_SHOP_DOMAIN",
-        "  SHOPIFY_CLIENT_ID",
-        "  SHOPIFY_CLIENT_SECRET",
-        "Or set SHOPIFY_ADMIN_TOKEN for a legacy offline token.",
+        "Missing SHOPIFY_SHOP_DOMAIN.",
+        "Add Cursor Environment Secret SHOPIFY_SHOP_DOMAIN=b2a3je-jb.myshopify.com",
+      ].join("\n")
+    );
+  }
+}
+
+async function getToken() {
+  requireShopDomain();
+
+  if (staticToken) return staticToken;
+
+  if (!clientId || !clientSecret) {
+    fail(
+      [
+        "Missing Noble Meridian client credentials.",
+        "Add Cursor Environment Secrets:",
+        "  SHOPIFY_CLIENT_ID   (or Clientid)",
+        "  SHOPIFY_CLIENT_SECRET (or clientsecret)",
+        "  SHOPIFY_SHOP_DOMAIN   (optional; defaults to b2a3je-jb.myshopify.com)",
+        "Or set SHOPIFY_ADMIN_TOKEN plus SHOPIFY_SHOP_DOMAIN for a legacy offline token.",
       ].join("\n")
     );
   }
@@ -61,6 +100,7 @@ async function getToken() {
 }
 
 async function adminGraphql(query, variables = {}) {
+  requireShopDomain();
   const token = await getToken();
   const res = await fetch(
     `https://${shopDomain}/admin/api/2025-10/graphql.json`,
