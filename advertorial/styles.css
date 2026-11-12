@@ -21,7 +21,10 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
 body {
   margin: 0;
   background: var(--bg);
@@ -116,19 +119,28 @@ a { color: inherit; }
 }
 .hero-media video,
 .hero-media .hero-fallback {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.hero-media video { z-index: 1; }
+.hero-media .hero-fallback { z-index: 0; }
+.hero-media.is-playing .hero-fallback {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .35s ease;
 }
 .hero-media::after {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 2;
   background:
     linear-gradient(180deg, #0c110b55 0%, #0c110bcc 48%, #0c110bf2 100%),
     radial-gradient(120% 80% at 20% 20%, #2a331f55, transparent 55%);
 }
-.hero-fallback { position: absolute; inset: 0; }
 .hero-copy {
   width: min(100% - 2rem, var(--max));
   margin: 0 auto;

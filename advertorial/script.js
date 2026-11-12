@@ -57,7 +57,6 @@
   renderStock();
   setInterval(renderClock, 1000);
 
-  // Gentle scarcity drip while the page is open (never below 12).
   setInterval(() => {
     if (stock <= 12) return;
     if (Math.random() > 0.22) return;
@@ -66,12 +65,20 @@
     renderStock();
   }, 48000);
 
-  // Prefer video when it can play; keep poster image as fallback.
-  document.querySelectorAll("video").forEach((video) => {
+  // Reveal looping video once it actually plays; keep still fallback underneath.
+  document.querySelectorAll("video[data-hero-video], .pdp-main-video").forEach((video) => {
+    const shell = video.closest(".hero-media, .pdp-stage");
+    const markPlaying = () => {
+      if (shell) shell.classList.add("is-playing");
+    };
+    video.addEventListener("playing", markPlaying);
+    if (!video.paused && video.readyState >= 2) markPlaying();
+
     const play = video.play();
     if (play && typeof play.catch === "function") {
       play.catch(() => {
         video.removeAttribute("autoplay");
+        if (shell) shell.classList.remove("is-playing");
       });
     }
   });
