@@ -244,6 +244,10 @@
   object-fit: cover;
 }
 
+.lp-offer-visual video { z-index: 1; }
+.lp-offer-visual .hero-fallback { z-index: 0; }
+.lp-offer-visual.is-playing .hero-fallback { opacity: 0; pointer-events: none; }
+
 .lp-offer-visual .free-stamp {
   position: absolute;
   z-index: 2;
@@ -388,12 +392,14 @@
 }
 
 .lp-sticky-cta {
-  position: sticky;
+  position: fixed;
+  left: 0;
+  right: 0;
   bottom: 0;
   z-index: 40;
   display: none;
   padding: .65rem 1rem;
-  background: #1a2016ee;
+  background: #1a2016f2;
   border-top: 1px solid var(--line);
   backdrop-filter: blur(8px);
 }
@@ -421,6 +427,7 @@
 
   .lp-hero { min-height: min(88vh, 720px); }
   .lp-sticky-cta { display: block; }
+  body.lp { padding-bottom: 4.5rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

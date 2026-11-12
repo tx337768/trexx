@@ -120,7 +120,7 @@
   });
 
   document.querySelectorAll("video[data-hero-video], .pdp-main-video").forEach((video) => {
-    const shell = video.closest(".hero-media, .pdp-stage");
+    const shell = video.closest(".hero-media, .pdp-stage, .lp-hero-media, .lp-offer-visual");
     const markPlaying = () => {
       if (shell && !shell.classList.contains("show-still")) shell.classList.add("is-playing");
     };
