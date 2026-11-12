@@ -29,43 +29,29 @@ function firstEnv(...names) {
 
 const DEFAULT_SHOP = "b2a3je-jb.myshopify.com";
 
-const shopDomain = firstEnv("SHOPIFY_SHOP_DOMAIN", "SHOP_DOMAIN")
+const shopDomainFromEnv = firstEnv("SHOPIFY_SHOP_DOMAIN");
+const shopDomain = (shopDomainFromEnv || DEFAULT_SHOP)
   .replace(/^https?:\/\//, "")
-  .replace(/\/$/, "") || DEFAULT_SHOP;
+  .replace(/\/$/, "");
 
 const clientId = firstEnv(
   "SHOPIFY_CLIENT_ID",
   "Clientid",
-  "clientid",
-  "CLIENT_ID"
+  "clientid"
 );
 const clientSecret = firstEnv(
   "SHOPIFY_CLIENT_SECRET",
   "clientsecret",
-  "Clientsecret",
-  "CLIENT_SECRET"
+  "Clientsecret"
 );
-const staticToken = firstEnv("SHOPIFY_ADMIN_TOKEN", "SHOP_TOKEN");
+const staticToken = firstEnv("SHOPIFY_ADMIN_TOKEN");
 
 function fail(msg) {
   console.error(msg);
   process.exit(1);
 }
 
-function requireShopDomain() {
-  if (!shopDomain) {
-    fail(
-      [
-        "Missing SHOPIFY_SHOP_DOMAIN.",
-        "Add Cursor Environment Secret SHOPIFY_SHOP_DOMAIN=b2a3je-jb.myshopify.com",
-      ].join("\n")
-    );
-  }
-}
-
 async function getToken() {
-  requireShopDomain();
-
   if (staticToken) return staticToken;
 
   if (!clientId || !clientSecret) {
@@ -76,7 +62,7 @@ async function getToken() {
         "  SHOPIFY_CLIENT_ID   (or Clientid)",
         "  SHOPIFY_CLIENT_SECRET (or clientsecret)",
         "  SHOPIFY_SHOP_DOMAIN   (optional; defaults to b2a3je-jb.myshopify.com)",
-        "Or set SHOPIFY_ADMIN_TOKEN plus SHOPIFY_SHOP_DOMAIN for a legacy offline token.",
+        "Or set SHOPIFY_ADMIN_TOKEN (legacy offline token).",
       ].join("\n")
     );
   }
@@ -100,7 +86,6 @@ async function getToken() {
 }
 
 async function adminGraphql(query, variables = {}) {
-  requireShopDomain();
   const token = await getToken();
   const res = await fetch(
     `https://${shopDomain}/admin/api/2025-10/graphql.json`,
