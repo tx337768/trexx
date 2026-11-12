@@ -34,6 +34,8 @@
 .pdp-stage video { z-index: 1; }
 .pdp-stage .pdp-fallback { z-index: 0; }
 .pdp-stage.is-playing .pdp-fallback { opacity: 0; pointer-events: none; }
+.pdp-stage.show-still video { opacity: 0; pointer-events: none; }
+.pdp-stage.show-still .pdp-fallback { opacity: 1; z-index: 1; }
 
 .free-stamp {
   position: absolute;
@@ -55,22 +57,45 @@
 
 .pdp-thumbs {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: .45rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: .4rem;
   margin-top: .55rem;
+}
+
+.pdp-thumbs button {
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--line-soft);
+  background: #141910;
+  cursor: pointer;
+}
+
+.pdp-thumbs button.is-active,
+.pdp-thumbs button:focus-visible {
+  border-color: var(--tan-bright);
+  outline: 1px solid var(--tan-bright);
 }
 
 .pdp-thumbs img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  border: 1px solid var(--line-soft);
-  background: #141910;
+}
+
+.pdp-viewers {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  margin: .7rem 0 0;
+  color: #ffc2a8;
+  font: 700 .82rem/1.2 var(--heading);
+  letter-spacing: .06em;
+  text-transform: uppercase;
 }
 
 .pdp-buy h1 {
   margin: 0 0 .7rem;
-  font: 800 clamp(2.1rem, 4.6vw, 3.35rem)/.98 var(--heading);
+  font: 800 clamp(1.85rem, 4.2vw, 3rem)/.98 var(--heading);
   letter-spacing: .015em;
   text-transform: uppercase;
   text-wrap: balance;
@@ -81,6 +106,8 @@
   color: var(--sand);
   font-size: 1.08rem;
 }
+
+.kicker.danger { color: #ffb089; }
 
 .pdp-rating {
   display: flex;
@@ -95,6 +122,7 @@
 }
 
 .pdp-rating .stars { color: var(--tan-bright); letter-spacing: .08em; }
+.pdp-rating a { color: var(--tan-bright); }
 
 .pdp-offer-box {
   padding: 1rem;
@@ -109,6 +137,12 @@
   align-items: baseline;
   gap: .45rem .8rem;
   margin-bottom: .55rem;
+}
+
+.pdp-compare {
+  color: #b7ad93;
+  text-decoration: line-through;
+  font-size: .95rem;
 }
 
 .pdp-save {
@@ -158,12 +192,106 @@
 
 .pdp-trust li::before { content: "✓ "; color: var(--tan-bright); }
 
+.pdp-recent {
+  margin: .9rem 0 0;
+  color: #d8ceb4;
+  font-size: .92rem;
+}
+
+.pulse-cta { animation: cta-pulse 2.2s ease-in-out infinite; }
+@keyframes cta-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 #e2c48b55; }
+  50% { box-shadow: 0 0 0 10px #e2c48b00; }
+}
+
+.pdp-promise {
+  padding: 1.1rem 0 1.6rem;
+  background: #1a2116;
+  border-block: 1px solid var(--line-soft);
+}
+
+.promise-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .75rem;
+}
+
+.promise-grid article {
+  padding: .9rem;
+  background: #12170f;
+  border: 1px solid var(--line-soft);
+}
+
+.promise-grid strong {
+  color: var(--tan);
+  font: 800 .8rem/1 var(--heading);
+  letter-spacing: .12em;
+}
+
+.promise-grid h3 {
+  margin: .35rem 0 .35rem;
+  font: 800 1.25rem/1 var(--heading);
+  text-transform: uppercase;
+}
+
+.promise-grid p { margin: 0; color: #ddd2b6; font-size: .95rem; }
+
 .pdp-fear {
   padding: clamp(2.2rem, 5vw, 3.6rem) 0;
   background: #161b12;
 }
 
+.fear-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: center;
+}
+
+.fear-layout figure img {
+  width: 100%;
+  border: 1px solid var(--line-soft);
+}
+
+.fear-layout figcaption {
+  margin-top: .5rem;
+  color: var(--sand);
+  font-size: .9rem;
+}
+
 .pdp-includes { padding: clamp(2.2rem, 5vw, 3.6rem) 0; }
+
+.pdp-bag-banner {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  background: #1c2418;
+}
+
+.pdp-bag-banner h3 {
+  margin: 0 0 .5rem;
+  font: 800 clamp(1.5rem, 3vw, 2.1rem)/1 var(--heading);
+  text-transform: uppercase;
+}
+
+.pdp-bag-banner img {
+  width: 100%;
+  border: 1px solid var(--line-soft);
+}
+
+.check.light { color: var(--cream); }
+
+.bonus figure video {
+  width: 100%;
+  border: 2px solid #17140c33;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  background: #0e130c;
+}
 
 .pdp-proof {
   padding: clamp(2.2rem, 5vw, 3.6rem) 0;
@@ -171,7 +299,7 @@
 }
 
 .pdp-steps {
-  margin: 1rem 0;
+  margin: 1rem 0 1.2rem;
   padding: 0;
   list-style: none;
   display: grid;
@@ -182,6 +310,64 @@
   padding: .85rem .95rem;
   background: #1d2418;
   border-left: 3px solid var(--tan);
+}
+
+.pdp-who {
+  padding: clamp(2.2rem, 5vw, 3.6rem) 0;
+  background: var(--bg);
+}
+
+.who-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .75rem;
+  margin-top: 1.1rem;
+}
+
+.who-grid article {
+  padding: 1rem;
+  border: 1px solid var(--line-soft);
+  background: var(--bg-3);
+}
+
+.who-grid h3 {
+  margin: 0 0 .4rem;
+  font: 800 1.25rem/1 var(--heading);
+  text-transform: uppercase;
+  color: var(--tan-bright);
+}
+
+.who-grid p { margin: 0; color: #ddd2b6; }
+
+.pdp-specs {
+  padding: clamp(2.2rem, 5vw, 3.6rem) 0;
+  background: #171c13;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .75rem;
+  margin-top: 1.1rem;
+}
+
+.specs-grid > div {
+  padding: 1rem;
+  border: 1px solid var(--line-soft);
+  background: #12170f;
+}
+
+.specs-grid h3 {
+  margin: 0 0 .55rem;
+  font: 800 1.2rem/1 var(--heading);
+  text-transform: uppercase;
+  color: var(--tan-bright);
+}
+
+.specs-grid ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #ddd2b6;
 }
 
 .pdp-urgency-strip {
@@ -210,11 +396,28 @@
   color: #ffd7c4;
 }
 
+.pdp-upsell { padding: clamp(2.2rem, 5vw, 3.6rem) 0; }
+
+@media (max-width: 1050px) {
+  .promise-grid,
+  .who-grid,
+  .specs-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 @media (max-width: 900px) {
-  .pdp-hero-grid { grid-template-columns: 1fr; }
+  .pdp-hero-grid,
+  .fear-layout,
+  .pdp-bag-banner { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 560px) {
-  .pdp-thumbs { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .pdp-buy h1 { font-size: clamp(1.9rem, 9vw, 2.4rem); }
+  .pdp-thumbs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .pdp-buy h1 { font-size: clamp(1.7rem, 8.5vw, 2.2rem); }
+  .promise-grid,
+  .who-grid,
+  .specs-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-cta { animation: none; }
 }

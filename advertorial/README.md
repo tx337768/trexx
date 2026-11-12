@@ -1,4 +1,4 @@
-# Standby House — Advertorial + Product page
+# Standby House — Product page + Advertorial
 
 Promotional pages for [standbyhouse.com](https://standbyhouse.com/).
 
@@ -6,8 +6,11 @@ Promotional pages for [standbyhouse.com](https://standbyhouse.com/).
 
 | URL | Language | Purpose |
 | --- | --- | --- |
-| [`index.html`](./index.html) | PT | Story advertorial |
-| [`home-blackout-kit.html`](./home-blackout-kit.html) | EN | High-urgency product page (free bag + reviews) |
+| [`index.html`](./index.html) | EN | High-urgency Home Blackout Kit product page (free bag) |
+| [`advertorial-pt.html`](./advertorial-pt.html) | PT | Story advertorial |
+| [`home-blackout-kit.html`](./home-blackout-kit.html) | EN | Redirect → index |
+
+Fonts are self-hosted in `fonts/` (no Google runtime requests).
 
 ## Run locally
 
@@ -16,5 +19,4 @@ cd advertorial
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-- PT advertorial: `http://127.0.0.1:8765/`
-- EN product page: `http://127.0.0.1:8765/home-blackout-kit.html`
+Open `http://127.0.0.1:8765/`

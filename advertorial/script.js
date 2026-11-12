@@ -27,10 +27,14 @@
   const end = getEnd();
   let stock = getStock();
 
-  const hEl = document.querySelector("[data-h]");
-  const mEl = document.querySelector("[data-m]");
-  const sEl = document.querySelector("[data-s]");
+  const hEls = document.querySelectorAll("[data-h]");
+  const mEls = document.querySelectorAll("[data-m]");
+  const sEls = document.querySelectorAll("[data-s]");
   const stockEls = document.querySelectorAll("[data-stock]");
+  const viewerEl = document.querySelector("[data-viewers]");
+  const recentName = document.querySelector("[data-recent-name]");
+  const recentCity = document.querySelector("[data-recent-city]");
+  const recentMins = document.querySelector("[data-recent-mins]");
 
   function pad(n) {
     return String(n).padStart(2, "0");
@@ -42,9 +46,9 @@
     const h = Math.floor(totalSec / 3600);
     const m = Math.floor((totalSec % 3600) / 60);
     const s = totalSec % 60;
-    if (hEl) hEl.textContent = pad(h);
-    if (mEl) mEl.textContent = pad(m);
-    if (sEl) sEl.textContent = pad(s);
+    hEls.forEach((el) => { el.textContent = pad(h); });
+    mEls.forEach((el) => { el.textContent = pad(m); });
+    sEls.forEach((el) => { el.textContent = pad(s); });
   }
 
   function renderStock() {
@@ -65,11 +69,60 @@
     renderStock();
   }, 48000);
 
-  // Reveal looping video once it actually plays; keep still fallback underneath.
+  // Soft social proof: viewers fluctuate, recent orders rotate.
+  if (viewerEl) {
+    let viewers = 18 + Math.floor(Math.random() * 12);
+    const tickViewers = () => {
+      viewers += Math.random() > 0.5 ? 1 : -1;
+      viewers = Math.max(14, Math.min(38, viewers));
+      viewerEl.textContent = String(viewers);
+    };
+    viewerEl.textContent = String(viewers);
+    setInterval(tickViewers, 9000);
+  }
+
+  const recentPool = [
+    ["Elena", "Madrid"],
+    ["Marco", "Milan"],
+    ["Sofia", "Lisbon"],
+    ["Noah", "Amsterdam"],
+    ["Inês", "Porto"],
+    ["Jonas", "Berlin"],
+    ["Claire", "Lyon"],
+    ["Hugo", "Brussels"],
+  ];
+
+  if (recentName && recentCity && recentMins) {
+    const tickRecent = () => {
+      const [name, city] = recentPool[Math.floor(Math.random() * recentPool.length)];
+      recentName.textContent = name;
+      recentCity.textContent = city;
+      recentMins.textContent = String(2 + Math.floor(Math.random() * 11));
+    };
+    tickRecent();
+    setInterval(tickRecent, 14000);
+  }
+
+  // Gallery thumbs: swap still image over video when not the main bag clip.
+  const stage = document.querySelector(".pdp-stage");
+  const fallback = document.querySelector(".pdp-stage .pdp-fallback");
+  document.querySelectorAll(".pdp-thumbs [data-thumb]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const src = btn.getAttribute("data-thumb");
+      if (!src || !fallback || !stage) return;
+      fallback.src = src;
+      document.querySelectorAll(".pdp-thumbs button").forEach((b) => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+      const isBag = src.includes("mala-gratis");
+      stage.classList.toggle("show-still", !isBag);
+      if (isBag) stage.classList.add("is-playing");
+    });
+  });
+
   document.querySelectorAll("video[data-hero-video], .pdp-main-video").forEach((video) => {
     const shell = video.closest(".hero-media, .pdp-stage");
     const markPlaying = () => {
-      if (shell) shell.classList.add("is-playing");
+      if (shell && !shell.classList.contains("show-still")) shell.classList.add("is-playing");
     };
     video.addEventListener("playing", markPlaying);
     if (!video.paused && video.readyState >= 2) markPlaying();
