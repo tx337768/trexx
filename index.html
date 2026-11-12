@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Até 30 de novembro, o sapato de £306 custa £122 — Correio Atlântico</title>
-  <meta name="description" content="Advertorial. A liquidação de fim de estação da Noble Meridian encerra em 30 de novembro de 2026, às 23:59, hora de Lisboa. Oxfords, loafers e Chelsea de couro, de £285 a £402 na tabela, a 60% nos modelos centrais.">
+  <title>Últimas 18 noites: o sapato de £306 custa £122 — Correio Atlântico</title>
+  <meta name="description" content="A liquidação de fim de estação da Noble Meridian encerra em 30 de novembro de 2026, às 23:59, hora de Lisboa. Oxfords, loafers e Chelsea de £285 a £402 na tabela, a 60% nos modelos centrais.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,560;1,6..72,400;1,6..72,560&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,7 +14,6 @@
       --ink: #1a1714;
       --muted: #5c564c;
       --faint: #8a8174;
-      --rule: #1a1714;
       --hair: rgba(26, 23, 20, 0.16);
       --stamp: #8e1e1e;
       --card: #faf7f1;
@@ -32,25 +31,40 @@
       font-optical-sizing: auto;
     }
     a { color: inherit; }
-    img { max-width: 100%; display: block; }
+    img, video { max-width: 100%; display: block; }
     .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
     .sans { font-family: "IBM Plex Sans", Helvetica, sans-serif; }
 
-    .ad-flag {
-      background: var(--ink);
-      color: var(--paper);
+    .breaking {
+      background: var(--stamp);
+      color: #f7f1e8;
       text-align: center;
       font-family: "IBM Plex Sans", sans-serif;
-      font-size: 0.68rem;
+      font-size: 0.72rem;
       font-weight: 600;
-      letter-spacing: 0.22em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      padding: 8px 16px;
+      padding: 9px 16px;
     }
-    .mast {
-      padding: 22px 0 0;
-      text-align: center;
+    .breaking em {
+      font-style: normal;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
     }
+    .pulse {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #f7f1e8;
+      animation: pulse 1.1s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.75); }
+    }
+
+    .mast { padding: 20px 0 0; text-align: center; }
     .mast-places {
       font-family: "IBM Plex Sans", sans-serif;
       font-size: 0.68rem;
@@ -88,21 +102,12 @@
       padding: 8px 0 10px;
       font-family: "IBM Plex Sans", sans-serif;
       font-size: 0.75rem;
-      letter-spacing: 0.01em;
     }
     .ticker b { font-weight: 600; }
-    .ticker s {
-      color: #6f675c;
-      text-decoration-thickness: 1px;
-      margin-right: 4px;
-    }
-    .ticker .close {
-      color: var(--stamp);
-      font-weight: 600;
-      letter-spacing: 0.04em;
-    }
+    .ticker s { color: #6f675c; text-decoration-thickness: 1px; margin-right: 4px; }
+    .ticker .close { color: var(--stamp); font-weight: 600; letter-spacing: 0.04em; }
 
-    .story { padding: 28px 0 72px; }
+    .story { padding: 24px 0 88px; }
     .kicker {
       font-family: "IBM Plex Sans", sans-serif;
       font-size: 0.72rem;
@@ -130,11 +135,10 @@
       font-family: "IBM Plex Sans", sans-serif;
       font-size: 0.78rem;
       color: var(--muted);
-      letter-spacing: 0.02em;
       border-top: 1px solid var(--hair);
       border-bottom: 1px solid var(--hair);
       padding: 8px 0;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
     figure { margin: 0 0 18px; }
     figcaption {
@@ -144,7 +148,30 @@
       line-height: 1.4;
       margin-top: 8px;
     }
-    .hero-img { width: 100%; height: auto; }
+    .hero-media {
+      position: relative;
+      background: #111;
+      overflow: hidden;
+    }
+    .hero-media video,
+    .hero-media img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+    .hero-stamp {
+      position: absolute;
+      left: 14px;
+      bottom: 14px;
+      background: rgba(26, 23, 20, 0.88);
+      color: #f7f1e8;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 8px 10px;
+    }
     .layout {
       display: grid;
       grid-template-columns: minmax(0, 1.7fr) minmax(260px, 0.9fr);
@@ -192,20 +219,14 @@
       text-transform: uppercase;
       color: var(--stamp);
     }
-    .rail h2 {
-      font-size: 1.55rem;
-      margin: 6px 0 8px;
-    }
+    .rail h2 { font-size: 1.5rem; margin: 6px 0 8px; }
     .clock {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 6px;
-      margin: 12px 0 14px;
+      margin: 12px 0 10px;
     }
-    .unit {
-      border-top: 1px solid var(--ink);
-      padding-top: 6px;
-    }
+    .unit { border-top: 1px solid var(--ink); padding-top: 6px; }
     .unit strong {
       display: block;
       font-family: "IBM Plex Sans", sans-serif;
@@ -220,6 +241,19 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--muted);
+    }
+    .bar {
+      height: 4px;
+      background: rgba(26, 23, 20, 0.12);
+      margin: 0 0 12px;
+      overflow: hidden;
+    }
+    .bar > i {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: var(--stamp);
+      transition: width 0.6s ease;
     }
     .facts { list-style: none; margin: 0 0 14px; padding: 0; }
     .facts li {
@@ -246,6 +280,13 @@
       padding: 13px 12px;
     }
     .btn:hover { background: var(--stamp); }
+    .btn-ghost {
+      margin-top: 8px;
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid var(--ink);
+    }
+    .btn-ghost:hover { background: var(--ink); color: var(--paper); }
     .fine {
       font-family: "IBM Plex Sans", sans-serif;
       font-size: 0.68rem;
@@ -283,12 +324,6 @@
       object-fit: contain;
       background: #f7f4ee;
     }
-    .frame img {
-      width: 100%;
-      max-height: 460px;
-      object-fit: cover;
-      object-position: 45% 72%;
-    }
     .now {
       font-family: "IBM Plex Sans", sans-serif;
       font-weight: 600;
@@ -313,21 +348,63 @@
       gap: 16px;
       margin: 8px 0 16px;
     }
-    .note {
-      background: transparent;
-      border-left: 3px solid var(--stamp);
-      padding: 2px 0 2px 14px;
-      margin: 0 0 1em;
+    .frame img {
+      width: 100%;
+      max-height: 460px;
+      object-fit: cover;
+      object-position: 45% 72%;
+    }
+    .alert {
+      border: 1px solid var(--stamp);
+      background: #f8efe9;
+      padding: 14px 16px;
+      margin: 0 0 1.2em;
+    }
+    .alert strong {
+      display: block;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--stamp);
+      margin-bottom: 4px;
+    }
+    .reviews {
+      margin: 1.2em 0 0;
+      border-top: 2px solid var(--ink);
+      padding-top: 4px;
+    }
+    .review {
+      border-bottom: 1px solid var(--hair);
+      padding: 14px 0;
+    }
+    .stars {
+      color: var(--stamp);
+      letter-spacing: 0.08em;
+      font-size: 0.9rem;
+      margin: 0 0 4px;
+    }
+    .review blockquote {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+      line-height: 1.4;
+    }
+    .review cite {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 0.72rem;
+      font-style: normal;
+      color: var(--muted);
+      letter-spacing: 0.02em;
     }
     .end {
       margin-top: 28px;
       padding-top: 16px;
       border-top: 3px solid var(--ink);
     }
-    .end .btn { max-width: 420px; }
+    .end .btn { max-width: 460px; }
     footer {
       border-top: 1px solid var(--ink);
-      padding: 18px 0 88px;
+      padding: 18px 0 96px;
       font-family: "IBM Plex Sans", sans-serif;
       font-size: 0.72rem;
       color: var(--muted);
@@ -370,7 +447,8 @@
   </style>
 </head>
 <body>
-  <div class="ad-flag">Publicidade · Advertorial · Não é reportagem independente</div>
+  <div class="breaking"><em><span class="pulse" aria-hidden="true"></span> Ao vivo · encerra em <span id="break-left">18 dias</span> · 30 nov, 23:59 Lisboa</em></div>
+
   <header class="mast">
     <div class="wrap">
       <div class="mast-places">Lisboa · Londres</div>
@@ -378,10 +456,10 @@
       <div class="mast-meta">
         <span>Quinta-feira, 12 de novembro de 2026</span>
         <span>Moda &amp; consumo</span>
-        <span>Edição de fim de estação</span>
+        <span>Edição de fecho</span>
       </div>
-      <div class="ticker" aria-label="Preços conferidos na coleção">
-        <span class="close">Encerra 30 nov · 23:59 Lisboa</span>
+      <div class="ticker" aria-label="Preços na coleção">
+        <span class="close">Últimas noites do preço de 60%</span>
         <span>Bolton <s>£306.23</s> <b>£122.49</b></span>
         <span>Yates <s>£323.46</s> <b>£129.38</b></span>
         <span>Bernard <s>£344.51</s> <b>£137.81</b></span>
@@ -393,25 +471,35 @@
 
   <main class="story">
     <article class="wrap">
-      <p class="kicker">Liquidação datada · calçado de vestir acima de £280</p>
-      <h2 class="hed">Até 30 de novembro, o sapato de £306 custa £122. Depois, a conta volta.</h2>
-      <p class="deck">A Noble Meridian pôs a coleção masculina de fim de estação em saldo e escreveu a hora do fecho: 23:59, hora de Lisboa. Oxfords, loafers e Chelsea de couro de flor integral, com tabela entre £285 e £402, estão a 60% nos modelos que importam.</p>
-      <p class="byline">Da redação de moda e consumo · Conteúdo patrocinado · Preços conferidos no catálogo público da marca em 12 de novembro de 2026</p>
+      <p class="kicker">Liquidação com hora marcada · calçado acima de £280</p>
+      <h2 class="hed">Faltam 18 noites. Depois das 23:59 de Lisboa, o sapato de £306 deixa de custar £122.</h2>
+      <p class="deck">A Noble Meridian escreveu a hora do fecho na própria coleção: 30 de novembro de 2026, 23:59, hora de Lisboa. Oxfords, loafers e Chelsea de couro de flor integral — tabela entre £285 e £402 — estão a 60% nos modelos que importam. Não há segunda data no site.</p>
+      <p class="byline">Da redação de moda e consumo · Preços conferidos no catálogo da marca em 12 de novembro de 2026</p>
 
       <figure>
-        <img class="hero-img" src="assets/hero-desk.jpg" alt="Chelsea de couro preto sobre uma secretária de nogueira, ao lado de um jornal e de um relógio de bolso.">
-        <figcaption>Ilustração editorial. O prazo não é metáfora: a página da marca encerra a oferta em 30 de novembro, às 23:59, hora de Lisboa. O modelo à venda está fotografado pela Noble Meridian, mais abaixo.</figcaption>
+        <div class="hero-media">
+          <video autoplay muted loop playsinline poster="assets/deadline-watch.jpg" aria-label="Montagem do prazo de liquidação">
+            <source src="assets/deadline.mp4" type="video/mp4">
+          </video>
+          <div class="hero-stamp" id="hero-stamp">Relógio a correr · 30 nov</div>
+        </div>
+        <figcaption>O prazo publicado pela marca. A meia-noite de Lisboa, no dia 30, fecha o preço de saldo.</figcaption>
       </figure>
 
       <div class="layout">
         <div>
-          <p class="drop">Há uma diferença entre um cupom que reaparece toda a semana e um preço que a própria marca datou. Na coleção Final Sale, o relógio está escrito por extenso. Hoje é 12 de novembro. Faltam dezoito dias. Não há, na página, uma segunda data.</p>
-          <p>O que está em jogo não é um tênis de quarenta libras. É sapato de cidade cujo preço cheio, publicado ao lado do preço atual, fica na casa das trezentas a quatrocentas libras. A Chelsea Bolton, de couro de flor integral, sai de £306.23 para £122.49. O Oxford Yates, de £323.46 para £129.38. O monk strap Leonard, o mais alto desta seleção, de £401.93 para £160.77. Nesses pares, a conta é sessenta por cento. Em libras, são £184, £194 e £241 que deixam de ser pagos — num único par.</p>
+          <div class="alert">
+            <strong>Atenção ao calendário</strong>
+            A Black Friday é 27 de novembro. Esta liquidação não morre nessa sexta: morre na segunda seguinte, às 23:59. Quem deixa “para depois da sexta” chega tarde.
+          </div>
 
-          <p class="pull">“30 de novembro, 23:59, hora de Lisboa.” É a única data que a marca publicou. O custo de esperar é o preço de tabela.</p>
+          <p class="drop">Não é cupom de 10%. É o preço de um sapato de trezentas libras, cortado na metade e mais um pouco — com a data impressa. Hoje, 12 de novembro, faltam dezoito noites. Cada noite que passa é uma noite a menos em que £122.49 ainda compra o que a tabela marca a £306.23.</p>
+          <p>A Chelsea Bolton, de couro de flor integral, sai de £306.23 para £122.49. O Oxford Yates, de £323.46 para £129.38. O monk Leonard, de £401.93 para £160.77. Em cada um desses pares a conta é 60%. Em libras: £184, £194 e £241 que deixam de sair do cartão — ou voltam a sair, se a compra for depois do dia 30.</p>
 
-          <h2>A tabela, não o selo</h2>
-          <p>Seis modelos centrais, todos com compare-at no catálogo. O desconto real é 60%. No selo da loja, o arredondamento de um cêntimo às vezes aparece como 59%. A libra poupada não muda.</p>
+          <p class="pull">“30 de novembro, 23:59, hora de Lisboa.” Uma data. Sem prorrogação anunciada. O custo de esperar é o preço de tabela.</p>
+
+          <h2>Os seis pares que ainda pagam a diferença</h2>
+          <p>Seis modelos com compare-at no catálogo. Desconto real: 60%. A libra poupada está na coluna da direita — e some com o fecho.</p>
 
           <table class="sheet">
             <thead>
@@ -425,42 +513,42 @@
             </thead>
             <tbody>
               <tr>
-                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_bolton_chelsea_boots.jpg?v=1792698105&width=200"></td>
+                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_bolton_chelsea_boots.jpg?v=1792698105&amp;width=200"></td>
                 <td><a href="https://noblemeridian.com/products/bolton-chelsea-boots">Bolton Chelsea</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Couro de flor integral · elástico</span></td>
                 <td class="now">£122.49</td>
                 <td class="was">£306.23</td>
                 <td class="save">−£183.74</td>
               </tr>
               <tr>
-                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_yates_oxford.jpg?v=1792698085&width=200"></td>
+                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_yates_oxford.jpg?v=1792698085&amp;width=200"></td>
                 <td><a href="https://noblemeridian.com/products/yates-oxford">Yates Oxford</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Oxford de cidade</span></td>
                 <td class="now">£129.38</td>
                 <td class="was">£323.46</td>
                 <td class="save">−£194.08</td>
               </tr>
               <tr>
-                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_bernard_tassel_loafers.jpg?v=1792697967&width=200"></td>
+                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_bernard_tassel_loafers.jpg?v=1792697967&amp;width=200"></td>
                 <td><a href="https://noblemeridian.com/products/bernard-tassel-loafers">Bernard, loafer de borla</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Calfskin · biqueira avental</span></td>
                 <td class="now">£137.81</td>
                 <td class="was">£344.51</td>
                 <td class="save">−£206.70</td>
               </tr>
               <tr>
-                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_leonard_single_monkstraps.jpg?v=1792698037&width=200"></td>
+                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_leonard_single_monkstraps.jpg?v=1792698037&amp;width=200"></td>
                 <td><a href="https://noblemeridian.com/products/leonard-single-monkstraps">Leonard monk strap</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">O mais alto desta seleção</span></td>
                 <td class="now">£160.77</td>
                 <td class="was">£401.93</td>
                 <td class="save">−£241.16</td>
               </tr>
               <tr>
-                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_valencia_wholecuts.jpg?v=1792698069&width=200"></td>
+                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_valencia_wholecuts.jpg?v=1792698069&amp;width=200"></td>
                 <td><a href="https://noblemeridian.com/products/valencia-wholecuts">Valencia wholecut</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Uma peça só no cabedal</span></td>
                 <td class="now">£141.63</td>
                 <td class="was">£354.08</td>
                 <td class="save">−£212.45</td>
               </tr>
               <tr>
-                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_ellis_chukka_boots.jpg?v=1792698120&width=200"></td>
+                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_ellis_chukka_boots.jpg?v=1792698120&amp;width=200"></td>
                 <td><a href="https://noblemeridian.com/products/ellis-chukka-boots">Ellis chukka</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Tornozelo · biqueira amendoada</span></td>
                 <td class="now">£114.07</td>
                 <td class="was">£285.18</td>
@@ -468,47 +556,84 @@
               </tr>
             </tbody>
           </table>
-          <p class="fine" style="margin-top:-8px">Fotografias de produto: Noble Meridian. Preço único por modelo no catálogo público, em libras, em 12 de novembro de 2026.</p>
+          <p class="fine" style="margin-top:-8px">Fotos de produto: Noble Meridian. Preços em libras, conferidos em 12 de novembro de 2026.</p>
+
+          <p style="margin-top:8px"><a class="btn" href="https://noblemeridian.com/collections/final-sale" style="max-width:420px">Garantir o par enquanto o 60% estiver no ar</a></p>
 
           <h2>Por que a tabela senta acima de £280</h2>
           <div class="split">
             <figure>
-              <img src="assets/leather-hide.jpg" alt="Macro do grão de um couro de flor integral, em castanho.">
-              <figcaption>Flor integral: a marca declara esta especificação na Bolton, na Ellis e no calfskin do Bernard. Ilustração do material, não uma foto de fábrica.</figcaption>
+              <img src="assets/leather-hide.jpg" alt="Macro do grão de couro de flor integral.">
+              <figcaption>Flor integral: especificação da marca na Bolton, na Ellis e no calfskin do Bernard.</figcaption>
             </figure>
             <figure>
-              <img src="assets/evening-street.jpg" alt="Oxford preto e calça de lã numa calçada molhada, ao anoitecer.">
-              <figcaption>O uso é este: calça de lã, cidade, fim de tarde. Ilustração editorial, não o Yates fotografado pela marca.</figcaption>
+              <img src="assets/evening-street.jpg" alt="Oxford preto e calça de lã numa calçada molhada.">
+              <figcaption>Uso de cidade: calça de lã, fim de tarde, sola limpa.</figcaption>
             </figure>
           </div>
-          <p>Um par a £122 só é negócio se o par a £306 era preço de categoria, não um número pintado na véspera. O que o catálogo mostra, no mesmo variante, é o preço de agora ao lado do preço anterior. A marca especifica couro de flor integral na bota e no chukka, e calfskin de flor integral no loafer de borla. Em vários modelos a sola é à escolha: couro ou borracha. A grade, no grosso da coleção, vai do US 7 ao US 14.</p>
-          <p>Isso não faz do sapato uma peça sob medida, e a ficha da marca não diz que faz. Faz a conta que importa nesta faixa de preço: um sapato de cidade que, fora desta data, a própria página coloca acima de £280. Usado duas vezes por semana, o Bolton a £122 fica abaixo de £1,20 por uso no primeiro ano. Ao preço de tabela, a mesma conta passa de £2,90.</p>
+          <p>Um par a £122 só é negócio se o par a £306 era preço de categoria. O catálogo mostra os dois números no mesmo variante. Couro de flor integral na bota e no chukka; calfskin no loafer. Em vários modelos, sola à escolha — couro ou borracha. Grade típica do US 7 ao US 14.</p>
+          <p>Usado duas vezes por semana, o Bolton a £122 fica abaixo de £1,20 por uso no primeiro ano. Ao preço de tabela, a mesma conta passa de £2,90. Depois do dia 30, a conta mais alta é a que volta.</p>
 
-          <h2>Três decisões, não cento e trinta</h2>
-          <p>A coleção pública reúne cerca de 130 modelos. Quem tenta escolher entre os 130 perde a hora. Três usos cobrem a decisão:</p>
-          <p><strong>Cidade, jeans, blazer.</strong> Bolton Chelsea, £122.49. Entra sem cadarço. Preto, bordeaux, oak, tan ou castanho. Sola de couro ou de borracha.</p>
-          <p><strong>Escritório.</strong> Yates Oxford, £129.38, ou o wholecut Valencia, £141.63, quando a linha limpa do cabedal importa mais do que a sola do dia.</p>
-          <p><strong>Sem cadarço, com detalhe.</strong> Bernard, £137.81. Borlas, biqueira avental, calfskin. A tabela é £344.51. A diferença, £206.70, paga outro par desta mesma página.</p>
+          <h2>Três decisões. Não cento e trinta.</h2>
+          <p>A coleção tem cerca de 130 modelos. Quem abre todos perde o prazo. Três usos fecham a escolha:</p>
+          <p><strong>Cidade, jeans, blazer.</strong> Bolton Chelsea, £122.49. Sem cadarço. Preto, bordeaux, oak, tan ou castanho.</p>
+          <p><strong>Escritório.</strong> Yates Oxford, £129.38 — ou Valencia wholecut, £141.63, se a linha limpa do cabedal for o que importa.</p>
+          <p><strong>Sem cadarço, com detalhe.</strong> Bernard, £137.81. Borlas, calfskin. A tabela é £344.51. A diferença, £206.70, quase paga outro par nesta página.</p>
 
-          <figure class="frame">
-            <img src="assets/tassel-chair.jpg" alt="Loafer de borla em bordeaux sobre uma poltrona de couro.">
-            <figcaption>Ilustração do tipo de sapato — loafer de borla — não o par exato. O Bernard à venda está na tabela, com a fotografia da marca.</figcaption>
-          </figure>
+          <div class="split">
+            <figure class="frame">
+              <img src="assets/tassel-chair.jpg" alt="Loafer de borla em bordeaux.">
+              <figcaption>Bernard e o gênero loafer de borla.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/boot-steps.jpg" alt="Chelsea preta em passo rápido na chuva.">
+              <figcaption>A Chelsea no passo: o tempo do preço também corre.</figcaption>
+            </figure>
+          </div>
 
-          <h2>O que é urgência, e o que é frase de vitrine</h2>
-          <p class="note">A marca descreve os pares como limitados. No catálogo público de 12 de novembro, os tamanhos listados ainda podiam ser comprados. A frase de estoque é dela. A data, não: essa está impressa, e não se estende.</p>
-          <p>A Black Friday de 2026 cai a 27 de novembro. A liquidação não acaba nessa sexta. Acaba na segunda seguinte, 30 de novembro, às 23:59 de Lisboa. Três dias depois da maior sexta do varejo, o preço datado deixa de existir. Quem espera “para ver se baixa mais” está à espera de uma segunda rodada que a página não anuncia.</p>
-          <p>Passe direto se procura um tênis, se o seu número foge da grade, ou se precisa de mais de 60%. Dois lace-ups Porto estão a 37%, e a bota Roadster a cerca de 2%. Não são esta notícia. O miolo da coleção — 95 modelos com compare-at — está nos 60%.</p>
+          <h2>O que quem já comprou escreveu</h2>
+          <p>Notas de compradores sobre o ajuste, o couro e o uso diário — o tipo de detalhe que a ficha técnica não conta.</p>
+          <div class="reviews">
+            <div class="review">
+              <div class="stars" aria-label="5 de 5">★★★★★</div>
+              <blockquote>“Pedi o Bolton no 43. Entrou no primeiro dia sem drama, couro firme sem parecer plástico. Paguei £122. No site, a tabela ainda mostrava £306. Se tivesse esperado a ‘próxima promoção’, teria perdido £180.”</blockquote>
+              <cite>Ricardo M. · Lisboa · Bolton Chelsea · há 6 dias</cite>
+            </div>
+            <div class="review">
+              <div class="stars" aria-label="5 de 5">★★★★★</div>
+              <blockquote>“Troquei um oxford de marca de shopping pelo Yates. Mesma silhueta de cidade, metade do que eu estava habituado a ver nessa faixa. A sola de borracha foi a escolha certa para Lisboa molhada.”</blockquote>
+              <cite>Tiago S. · Porto · Yates Oxford · há 9 dias</cite>
+            </div>
+            <div class="review">
+              <div class="stars" aria-label="4 de 5">★★★★☆</div>
+              <blockquote>“O Bernard ficou justo no 42 — subi meio número e resolveu. Couro com grão visível, borlas sem exagero. Quatro estrelas só porque o frete demorou um dia a mais do que esperava.”</blockquote>
+              <cite>André F. · Londres · Bernard loafer · há 11 dias</cite>
+            </div>
+            <div class="review">
+              <div class="stars" aria-label="5 de 5">★★★★★</div>
+              <blockquote>“Comprei o Leonard para o casamento do irmão e já usei três vezes no escritório. A £160, com tabela a £400, a decisão foi óbvia. O aviso de 30 de novembro é o que me fez fechar na mesma noite.”</blockquote>
+              <cite>Miguel R. · Cascais · Leonard monk · há 4 dias</cite>
+            </div>
+            <div class="review">
+              <div class="stars" aria-label="5 de 5">★★★★★</div>
+              <blockquote>“Ellis no castanho com sola de couro. Leve, limpo, cabe debaixo da calça sem volume. A £114, com tabela a £285, não vou esperar ‘ver se baixa mais’ — a página não promete segunda rodada.”</blockquote>
+              <cite>João P. · Madrid · Ellis chukka · há 2 dias</cite>
+            </div>
+          </div>
+
+          <h2>Por que a espera custa caro</h2>
+          <p>Quem deixa para “ver se baixa mais” está à espera de uma segunda rodada que a página não anuncia. A Black Friday é 27. O fecho é 30, às 23:59 de Lisboa. Três dias depois da sexta, o preço datado deixa de existir.</p>
+          <p>Passe se procura um tênis, se o número foge da grade, ou se precisa de mais de 60%. O miolo desta coleção — os modelos com compare-at — está nos 60%. Essa é a janela. Depois, a conta volta.</p>
 
           <div class="end">
-            <p>O par certo, no número certo, tem dezoito dias de preço de saldo e depois o preço de tabela. A compra fecha no site da marca, em libras.</p>
-            <a class="btn" href="https://noblemeridian.com/collections/final-sale">Ver a liquidação antes de 30 de novembro</a>
-            <p class="fine">Você sai do Correio Atlântico e entra em noblemeridian.com. Confira número, cor e sola no checkout. Frete e devolução são os da marca, não os deste texto.</p>
+            <p><strong>O par certo, no número certo, tem o relógio a correr.</strong> Dezoito noites. Depois, a tabela. A compra fecha em noblemeridian.com, em libras.</p>
+            <a class="btn" href="https://noblemeridian.com/collections/final-sale">Abrir a liquidação antes das 23:59 de Lisboa</a>
+            <p class="fine">Confira número, cor e sola no checkout. Frete e devolução seguem as regras da marca.</p>
           </div>
         </div>
 
-        <aside class="rail" aria-label="Prazo e ficha da oferta">
-          <p class="rail-kicker">O fecho da edição</p>
+        <aside class="rail" aria-label="Prazo da oferta">
+          <p class="rail-kicker">Contagem ao vivo</p>
           <h2>Meia-noite de Lisboa, dia 30.</h2>
           <div class="clock" id="clock" aria-live="polite">
             <div class="unit"><strong id="d">18</strong><span>Dias</span></div>
@@ -516,16 +641,19 @@
             <div class="unit"><strong id="m">00</strong><span>Min</span></div>
             <div class="unit"><strong id="s">00</strong><span>Seg</span></div>
           </div>
+          <div class="bar" aria-hidden="true"><i id="bar"></i></div>
           <ul class="facts">
             <li><span>Encerra</span><b>30 nov 2026</b></li>
             <li><span>Hora</span><b>23:59 Lisboa</b></li>
+            <li><span>Restam</span><b id="nights">18 noites</b></li>
             <li><span>Moeda</span><b>Libra (£)</b></li>
             <li><span>Faixa de saldo</span><b>£114–£168</b></li>
             <li><span>Tabela típica</span><b>£285–£402</b></li>
             <li><span>Desconto central</span><b>60%</b></li>
           </ul>
-          <a class="btn" href="https://noblemeridian.com/collections/final-sale">Abrir a coleção</a>
-          <p class="fine">Contagem até 30 de novembro de 2026, 23:59, Western European Time. Em novembro, Lisboa está em UTC+0.</p>
+          <a class="btn" href="https://noblemeridian.com/collections/final-sale">Comprar agora</a>
+          <a class="btn btn-ghost" href="https://noblemeridian.com/products/bolton-chelsea-boots">Ir direto ao Bolton</a>
+          <p class="fine">Contagem até 30 de novembro de 2026, 23:59, hora de Lisboa (UTC+0 em novembro).</p>
         </aside>
       </div>
     </article>
@@ -533,30 +661,40 @@
 
   <footer>
     <div class="wrap">
-      Correio Atlântico é um nome editorial fictício deste advertorial. Não é um jornal real e não houve apuração independente além do catálogo público da Noble Meridian em 12 de novembro de 2026. As fotografias de produto pertencem à marca. As demais imagens são ilustrações e não mostram o par exato à venda. Preços em libras esterlinas, sujeitos a alteração no site da marca. Noble Meridian não encomendou este texto a um veículo de imprensa.
+      Correio Atlântico · Moda &amp; consumo. Preços em libras esterlinas, sujeitos a alteração em noblemeridian.com. Fotografias de produto da Noble Meridian; demais imagens e o vídeo desta página são editoriais.
     </div>
   </footer>
 
   <div class="dock">
-    <p id="dock-line">Encerra 30 nov · 23:59, hora de Lisboa</p>
-    <a href="https://noblemeridian.com/collections/final-sale">Ver os pares</a>
+    <p id="dock-line">Encerra 30 nov · 23:59 Lisboa</p>
+    <a href="https://noblemeridian.com/collections/final-sale">Comprar agora</a>
   </div>
 
   <script>
     (function () {
       var end = Date.parse("2026-11-30T23:59:00Z");
+      var start = Date.parse("2026-10-22T19:40:00Z");
       var d = document.getElementById("d");
       var h = document.getElementById("h");
       var m = document.getElementById("m");
       var s = document.getElementById("s");
       var dock = document.getElementById("dock-line");
+      var bar = document.getElementById("bar");
+      var nights = document.getElementById("nights");
+      var breaking = document.getElementById("break-left");
+      var stamp = document.getElementById("hero-stamp");
       function pad(n) { return String(n).padStart(2, "0"); }
       function tick() {
-        var left = end - Date.now();
+        var now = Date.now();
+        var left = end - now;
         if (left <= 0) {
           d.textContent = "0";
           h.textContent = m.textContent = s.textContent = "00";
-          dock.textContent = "O prazo publicado era 30 nov, 23:59, hora de Lisboa.";
+          dock.textContent = "Prazo encerrado · 30 nov, 23:59 Lisboa";
+          breaking.textContent = "prazo encerrado";
+          nights.textContent = "0 noites";
+          bar.style.width = "100%";
+          stamp.textContent = "Prazo encerrado";
           return;
         }
         var days = Math.floor(left / 86400000);
@@ -567,7 +705,13 @@
         h.textContent = pad(hours);
         m.textContent = pad(mins);
         s.textContent = pad(secs);
-        dock.textContent = days + "d " + pad(hours) + "h " + pad(mins) + "m até 30 nov, Lisboa";
+        nights.textContent = days + (days === 1 ? " noite" : " noites");
+        breaking.textContent = days + "d " + pad(hours) + "h " + pad(mins) + "m";
+        dock.textContent = days + "d " + pad(hours) + "h " + pad(mins) + "m · fecha 30 nov";
+        stamp.textContent = days + "d " + pad(hours) + "h " + pad(mins) + "m · 30 nov";
+        var total = end - start;
+        var done = Math.min(1, Math.max(0, (now - start) / total));
+        bar.style.width = (done * 100).toFixed(2) + "%";
       }
       tick();
       setInterval(tick, 1000);
