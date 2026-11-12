@@ -1,94 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-GB">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Últimas 18 noites: o sapato de £306 custa £122 — Correio Atlântico</title>
-  <meta name="description" content="A liquidação de fim de estação da Noble Meridian encerra em 30 de novembro de 2026, às 23:59, hora de Lisboa. Oxfords, loafers e Chelsea de £285 a £402 na tabela, a 60% nos modelos centrais.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,560;1,6..72,400;1,6..72,560&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <title>Eighteen nights left: the £306 shoe is £122 — then the list price returns | The Atlantic Courier</title>
+  <meta name="description" content="Noble Meridian’s end-of-season sale closes at 11.59pm London time on 30 November 2026. Full-grain Oxfords, loafers and Chelsea boots, list prices £285–£402, 60% off on the core models.">
   <style>
     :root {
-      --paper: #f3efe6;
+      --paper: #f4f1ea;
       --ink: #1a1714;
+      --body: #2a2621;
       --muted: #5c564c;
       --faint: #8a8174;
       --hair: rgba(26, 23, 20, 0.16);
-      --stamp: #8e1e1e;
+      --rule: #1a1714;
+      --stamp: #9f1c1c;
       --card: #faf7f1;
-      --max: 1080px;
+      --sky: #111111;
+      --max: 1120px;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
       background: var(--paper);
-      color: var(--ink);
-      font-family: "Newsreader", Georgia, serif;
+      color: var(--body);
+      font-family: "Georgia", "Times New Roman", Times, serif;
       font-size: 1.125rem;
       line-height: 1.55;
-      font-optical-sizing: auto;
     }
     a { color: inherit; }
     img, video { max-width: 100%; display: block; }
     .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
-    .sans { font-family: "IBM Plex Sans", Helvetica, sans-serif; }
+    .sans { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-    .breaking {
-      background: var(--stamp);
-      color: #f7f1e8;
-      text-align: center;
-      font-family: "IBM Plex Sans", sans-serif;
+    /* Skyline */
+    .skyline {
+      background: var(--sky);
+      color: #f4f1ea;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.72rem;
       font-weight: 600;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      padding: 9px 16px;
+      padding: 10px 16px;
+      text-align: center;
     }
-    .breaking em {
-      font-style: normal;
-      display: inline-flex;
+    .skyline-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
-      gap: 8px;
+      gap: 8px 12px;
+      max-width: var(--max);
+      margin: 0 auto;
+      line-height: 1.35;
     }
+    .skyline.closed { background: #3a3530; }
     .pulse {
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background: #f7f1e8;
+      background: #f4f1ea;
+      flex: none;
       animation: pulse 1.1s ease-in-out infinite;
     }
+    .skyline.closed .pulse { display: none; }
     @keyframes pulse {
       0%, 100% { opacity: 1; transform: scale(1); }
       50% { opacity: 0.35; transform: scale(0.75); }
     }
 
-    .mast { padding: 20px 0 0; text-align: center; }
-    .mast-places {
-      font-family: "IBM Plex Sans", sans-serif;
+    /* Masthead */
+    .mast {
+      padding: 18px 0 0;
+      text-align: center;
+      border-bottom: 1px solid var(--hair);
+    }
+    .ears {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.68rem;
-      letter-spacing: 0.28em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--muted);
+      margin-bottom: 6px;
     }
     .mast h1 {
-      font-family: "Instrument Serif", Georgia, serif;
-      font-weight: 400;
-      font-size: clamp(2.6rem, 7vw, 4.6rem);
-      letter-spacing: -0.03em;
-      line-height: 0.9;
-      margin: 8px 0 10px;
+      font-family: "Times New Roman", Times, Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(2.4rem, 7vw, 4.4rem);
+      letter-spacing: -0.02em;
+      line-height: 0.92;
+      margin: 0 0 4px;
+      color: var(--ink);
+    }
+    .mast-tag {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 10px;
     }
     .mast-meta {
       display: flex;
       justify-content: space-between;
-      gap: 16px;
-      border-top: 1px solid var(--ink);
-      border-bottom: 3px solid var(--ink);
+      gap: 12px;
+      border-top: 3px double var(--rule);
+      border-bottom: 1px solid var(--rule);
       padding: 7px 0;
-      margin-top: 8px;
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.72rem;
       letter-spacing: 0.04em;
       text-transform: uppercase;
@@ -98,41 +122,44 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px 18px;
-      border-bottom: 1px solid var(--hair);
       padding: 8px 0 10px;
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.75rem;
+      border-bottom: 1px solid var(--hair);
     }
-    .ticker b { font-weight: 600; }
+    .ticker b { font-weight: 700; color: var(--ink); }
     .ticker s { color: #6f675c; text-decoration-thickness: 1px; margin-right: 4px; }
-    .ticker .close { color: var(--stamp); font-weight: 600; letter-spacing: 0.04em; }
+    .ticker .close { color: var(--stamp); font-weight: 700; }
 
-    .story { padding: 24px 0 88px; }
-    .kicker {
-      font-family: "IBM Plex Sans", sans-serif;
+    /* Story */
+    .story { padding: 22px 0 96px; }
+    .folio {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.18em;
+      font-weight: 700;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--stamp);
       margin: 0 0 10px;
     }
     .hed {
-      font-family: "Instrument Serif", Georgia, serif;
-      font-weight: 400;
-      font-size: clamp(2.15rem, 4.6vw, 3.55rem);
-      line-height: 1.02;
-      letter-spacing: -0.025em;
-      margin: 0 0 14px;
+      font-family: "Times New Roman", Times, Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(2.05rem, 4.5vw, 3.35rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin: 0 0 12px;
     }
-    .deck {
+    .standfirst {
       font-size: 1.28rem;
       line-height: 1.35;
-      color: #3a342c;
+      color: var(--ink);
       margin: 0 0 14px;
+      font-weight: 400;
     }
     .byline {
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.78rem;
       color: var(--muted);
       border-top: 1px solid var(--hair);
@@ -140,9 +167,10 @@
       padding: 8px 0;
       margin-bottom: 16px;
     }
+    .byline strong { color: var(--ink); font-weight: 700; }
     figure { margin: 0 0 18px; }
     figcaption {
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.75rem;
       color: var(--muted);
       line-height: 1.4;
@@ -163,47 +191,53 @@
       position: absolute;
       left: 14px;
       bottom: 14px;
-      background: rgba(26, 23, 20, 0.88);
-      color: #f7f1e8;
-      font-family: "IBM Plex Sans", sans-serif;
+      background: rgba(26, 23, 20, 0.9);
+      color: #f4f1ea;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
+      font-weight: 700;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       padding: 8px 10px;
     }
     .layout {
       display: grid;
-      grid-template-columns: minmax(0, 1.7fr) minmax(260px, 0.9fr);
+      grid-template-columns: minmax(0, 1.75fr) minmax(260px, 0.85fr);
       gap: 36px;
       align-items: start;
     }
     .drop::first-letter {
-      font-family: "Instrument Serif", Georgia, serif;
       float: left;
-      font-size: 3.5rem;
+      font-family: "Times New Roman", Times, Georgia, serif;
+      font-size: 3.55rem;
       line-height: 0.8;
       padding: 8px 8px 0 0;
+      font-weight: 700;
+      color: var(--ink);
     }
     p { margin: 0 0 1em; }
     .pull {
       border-top: 3px solid var(--ink);
       border-bottom: 1px solid var(--ink);
-      margin: 1.3em 0;
-      padding: 12px 0;
-      font-family: "Instrument Serif", Georgia, serif;
+      margin: 1.35em 0;
+      padding: 14px 0;
+      font-family: "Times New Roman", Times, Georgia, serif;
       font-style: italic;
       font-size: 1.65rem;
       line-height: 1.2;
+      color: var(--ink);
     }
-    h2 {
-      font-family: "Instrument Serif", Georgia, serif;
-      font-weight: 400;
-      font-size: 1.85rem;
-      letter-spacing: -0.02em;
+    .crosshead {
+      font-family: "Times New Roman", Times, Georgia, serif;
+      font-weight: 700;
+      font-size: 1.55rem;
+      letter-spacing: -0.015em;
       line-height: 1.15;
-      margin: 1.4em 0 0.45em;
+      color: var(--ink);
+      margin: 1.45em 0 0.45em;
     }
+
+    /* Sidebar */
     .rail {
       position: sticky;
       top: 16px;
@@ -212,14 +246,21 @@
       padding: 16px 16px 18px;
     }
     .rail-kicker {
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.68rem;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--stamp);
     }
-    .rail h2 { font-size: 1.5rem; margin: 6px 0 8px; }
+    .rail h2 {
+      font-family: "Times New Roman", Times, Georgia, serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin: 6px 0 8px;
+      line-height: 1.15;
+      color: var(--ink);
+    }
     .clock {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -229,14 +270,15 @@
     .unit { border-top: 1px solid var(--ink); padding-top: 6px; }
     .unit strong {
       display: block;
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-variant-numeric: tabular-nums;
       font-size: 1.35rem;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: -0.03em;
+      color: var(--ink);
     }
     .unit span {
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.62rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
@@ -253,7 +295,6 @@
       height: 100%;
       width: 0;
       background: var(--stamp);
-      transition: width 0.6s ease;
     }
     .facts { list-style: none; margin: 0 0 14px; padding: 0; }
     .facts li {
@@ -262,7 +303,7 @@
       gap: 12px;
       border-top: 1px solid var(--hair);
       padding: 7px 0;
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.78rem;
     }
     .facts span { color: var(--muted); }
@@ -272,10 +313,10 @@
       background: var(--ink);
       color: var(--paper);
       text-decoration: none;
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
+      font-weight: 700;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       padding: 13px 12px;
     }
@@ -288,7 +329,7 @@
     }
     .btn-ghost:hover { background: var(--ink); color: var(--paper); }
     .fine {
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.68rem;
       color: var(--muted);
       line-height: 1.4;
@@ -305,15 +346,17 @@
       white-space: nowrap;
       border: 0;
     }
+
+    /* Table */
     .sheet {
       width: 100%;
       border-collapse: collapse;
       margin: 8px 0 18px;
     }
     .sheet th {
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.66rem;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       text-align: left;
@@ -336,19 +379,20 @@
       background: #f7f4ee;
     }
     .now {
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 600;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 700;
       font-variant-numeric: tabular-nums;
+      color: var(--ink);
     }
     .was {
       color: var(--faint);
       text-decoration: line-through;
       font-variant-numeric: tabular-nums;
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.85rem;
     }
     .save {
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.78rem;
       color: var(--stamp);
       font-variant-numeric: tabular-nums;
@@ -361,9 +405,9 @@
     }
     .frame img {
       width: 100%;
-      max-height: 460px;
+      max-height: 420px;
       object-fit: cover;
-      object-position: 45% 72%;
+      object-position: 45% 70%;
     }
     .alert {
       border: 1px solid var(--stamp);
@@ -373,7 +417,7 @@
     }
     .alert strong {
       display: block;
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.72rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
@@ -401,22 +445,21 @@
       line-height: 1.4;
     }
     .review cite {
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.72rem;
       font-style: normal;
       color: var(--muted);
-      letter-spacing: 0.02em;
     }
     .end {
       margin-top: 28px;
       padding-top: 16px;
       border-top: 3px solid var(--ink);
     }
-    .end .btn { max-width: 460px; }
+    .end .btn { max-width: 480px; }
     footer {
       border-top: 1px solid var(--ink);
       padding: 18px 0 96px;
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.72rem;
       color: var(--muted);
       line-height: 1.45;
@@ -433,15 +476,20 @@
       gap: 12px;
       z-index: 5;
     }
-    .dock p { margin: 0; font-family: "IBM Plex Sans", sans-serif; font-size: 0.75rem; line-height: 1.3; }
+    .dock p {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.75rem;
+      line-height: 1.3;
+    }
     .dock a {
       flex: none;
       background: var(--paper);
       color: var(--ink);
       text-decoration: none;
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.68rem;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       padding: 10px 12px;
@@ -450,27 +498,38 @@
       .layout, .split { grid-template-columns: 1fr; }
       .layout { display: flex; flex-direction: column; }
       .rail { position: static; order: -1; }
-      .mast-meta { flex-direction: column; gap: 4px; }
+      .ears, .mast-meta { flex-direction: column; gap: 4px; text-align: center; align-items: center; }
       .sheet th:nth-child(4), .sheet td:nth-child(4) { display: none; }
       .dock { display: flex; }
       .wrap { width: min(var(--max), calc(100% - 28px)); }
+      .skyline { font-size: 0.68rem; letter-spacing: 0.05em; padding: 10px 12px; }
     }
   </style>
 </head>
 <body>
-  <div class="breaking"><em><span class="pulse" aria-hidden="true"></span> Ao vivo · encerra em <span id="break-left">18 dias</span> · 30 nov, 23:59 Lisboa</em></div>
+  <div class="skyline" id="skyline" role="status">
+    <div class="skyline-inner">
+      <span class="pulse" aria-hidden="true"></span>
+      <span id="skyline-text">Live · Closes in 18 days · 30 Nov, 11.59pm London</span>
+    </div>
+  </div>
 
   <header class="mast">
     <div class="wrap">
-      <div class="mast-places">Lisboa · Londres</div>
-      <h1>Correio Atlântico</h1>
-      <div class="mast-meta">
-        <span>Quinta-feira, 12 de novembro de 2026</span>
-        <span>Moda &amp; consumo</span>
-        <span>Edição de fecho</span>
+      <div class="ears">
+        <span>London edition</span>
+        <span>No. 12,486</span>
+        <span>Thursday 12 November 2026</span>
       </div>
-      <div class="ticker" aria-label="Preços na coleção">
-        <span class="close">Últimas noites do preço de 60%</span>
+      <h1>The Atlantic Courier</h1>
+      <p class="mast-tag">Style · Consumer · City</p>
+      <div class="mast-meta">
+        <span>Thursday 12 November 2026</span>
+        <span>Fashion &amp; retail</span>
+        <span>Closing edition</span>
+      </div>
+      <div class="ticker" aria-label="Sale prices checked against the catalogue">
+        <span class="close">Final nights at 60% off</span>
         <span>Bolton <s>£306.23</s> <b>£122.49</b></span>
         <span>Yates <s>£323.46</s> <b>£129.38</b></span>
         <span>Bernard <s>£344.51</s> <b>£137.81</b></span>
@@ -482,190 +541,190 @@
 
   <main class="story">
     <article class="wrap">
-      <p class="kicker">Liquidação com hora marcada · calçado acima de £280</p>
-      <h2 class="hed">Faltam 18 noites. Depois das 23:59 de Lisboa, o sapato de £306 deixa de custar £122.</h2>
-      <p class="deck">A Noble Meridian escreveu a hora do fecho na própria coleção: 30 de novembro de 2026, 23:59, hora de Lisboa. Oxfords, loafers e Chelsea de couro de flor integral — tabela entre £285 e £402 — estão a 60% nos modelos que importam. Não há segunda data no site.</p>
-      <p class="byline">Da redação de moda e consumo · Preços conferidos no catálogo da marca em 12 de novembro de 2026</p>
+      <p class="folio">News · Timed clearance · Dress shoes above £280</p>
+      <h2 class="hed">Eighteen nights left. After 11.59pm in London on 30 November, the £306 shoe stops costing £122.</h2>
+      <p class="standfirst">Noble Meridian has printed a closing time on its end-of-season collection: 11.59pm London time, Monday 30 November 2026. Full-grain Oxfords, loafers and Chelsea boots — list prices between £285 and £402 — sit at 60% off on the models that matter. The site shows no second date.</p>
+      <p class="byline"><strong>By James Hartley</strong>, Fashion &amp; Retail Correspondent · London · Prices checked on the brand’s catalogue, 12 November 2026</p>
 
       <figure>
         <div class="hero-media">
-          <video autoplay muted loop playsinline poster="assets/deadline-watch.jpg" aria-label="Montagem do prazo de liquidação">
+          <video autoplay muted loop playsinline poster="assets/deadline-watch.jpg" aria-label="Deadline montage for the end-of-season sale">
             <source src="assets/deadline.mp4" type="video/mp4">
           </video>
-          <div class="hero-stamp" id="hero-stamp">Relógio a correr · 30 nov</div>
+          <div class="hero-stamp" id="hero-stamp">Clock running · 30 Nov</div>
         </div>
-        <figcaption>O prazo publicado pela marca. A meia-noite de Lisboa, no dia 30, fecha o preço de saldo.</figcaption>
+        <figcaption>The published cut-off. At 11.59pm London time on 30 November, the sale price comes down.</figcaption>
       </figure>
 
       <div class="layout">
         <div>
           <div class="alert">
-            <strong>Atenção ao calendário</strong>
-            A Black Friday é 27 de novembro. Esta liquidação não morre nessa sexta: morre na segunda seguinte, às 23:59. Quem deixa “para depois da sexta” chega tarde.
+            <strong>Calendar note</strong>
+            Black Friday falls on 27 November. This clearance does not end that Friday. It ends the following Monday at 11.59pm. Anyone waiting “until after Friday” arrives late.
           </div>
 
-          <p class="drop">Não é cupom de 10%. É o preço de um sapato de trezentas libras, cortado na metade e mais um pouco — com a data impressa. Hoje, 12 de novembro, faltam dezoito noites. Cada noite que passa é uma noite a menos em que £122.49 ainda compra o que a tabela marca a £306.23.</p>
-          <p>A Chelsea Bolton, de couro de flor integral, sai de £306.23 para £122.49. O Oxford Yates, de £323.46 para £129.38. O monk Leonard, de £401.93 para £160.77. Em cada um desses pares a conta é 60%. Em libras: £184, £194 e £241 que deixam de sair do cartão — ou voltam a sair, se a compra for depois do dia 30.</p>
+          <p class="drop">This is not a ten-per-cent voucher. It is a city shoe listed at three hundred pounds, cut by more than half — with the hour written out. Today, Thursday 12 November, eighteen nights remain. Each night that passes is one fewer night on which £122.49 still buys what the list price marks at £306.23.</p>
+          <p>The Bolton Chelsea, in full-grain leather, falls from £306.23 to £122.49. The Yates Oxford, from £323.46 to £129.38. The Leonard monk strap, from £401.93 to £160.77. On each of those pairs the arithmetic is sixty per cent. In sterling: £184, £194 and £241 that leave the card — or return to it, if the order is placed after the 30th.</p>
 
-          <p class="pull">“30 de novembro, 23:59, hora de Lisboa.” Uma data. Sem prorrogação anunciada. O custo de esperar é o preço de tabela.</p>
+          <p class="pull">“30 November, 11.59pm, London time.” One date. No extension announced. The cost of waiting is the list price.</p>
 
-          <h2>Os seis pares que ainda pagam a diferença</h2>
-          <p>Seis modelos com compare-at no catálogo. Desconto real: 60%. A libra poupada está na coluna da direita — e some com o fecho.</p>
+          <h3 class="crosshead">The six pairs that still pay the difference</h3>
+          <p>Six core models with a compare-at price on the catalogue. The real discount is 60%. The pounds saved sit in the right-hand column — and vanish with the close.</p>
 
           <table class="sheet">
             <thead>
               <tr>
                 <th></th>
-                <th>Modelo</th>
-                <th>Agora</th>
-                <th>Tabela</th>
-                <th>Diferença</th>
+                <th>Model</th>
+                <th>Now</th>
+                <th>List</th>
+                <th>Saved</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_bolton_chelsea_boots.jpg?v=1792698105&amp;width=200"></td>
-                <td><a href="https://noblemeridian.com/products/bolton-chelsea-boots">Bolton Chelsea</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Couro de flor integral · elástico</span></td>
+                <td><img class="shoe" alt="" src="assets/products/bolton.jpg"></td>
+                <td><a href="https://noblemeridian.com/products/bolton-chelsea-boots">Bolton Chelsea</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Full-grain leather · pull-on</span></td>
                 <td class="now">£122.49</td>
                 <td class="was">£306.23</td>
                 <td class="save">−£183.74</td>
               </tr>
               <tr>
-                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_yates_oxford.jpg?v=1792698085&amp;width=200"></td>
-                <td><a href="https://noblemeridian.com/products/yates-oxford">Yates Oxford</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Oxford de cidade</span></td>
+                <td><img class="shoe" alt="" src="assets/products/yates.jpg"></td>
+                <td><a href="https://noblemeridian.com/products/yates-oxford">Yates Oxford</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">City Oxford</span></td>
                 <td class="now">£129.38</td>
                 <td class="was">£323.46</td>
                 <td class="save">−£194.08</td>
               </tr>
               <tr>
-                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_bernard_tassel_loafers.jpg?v=1792697967&amp;width=200"></td>
-                <td><a href="https://noblemeridian.com/products/bernard-tassel-loafers">Bernard, loafer de borla</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Calfskin · biqueira avental</span></td>
+                <td><img class="shoe" alt="" src="assets/products/bernard.jpg"></td>
+                <td><a href="https://noblemeridian.com/products/bernard-tassel-loafers">Bernard tassel loafer</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Calfskin · apron toe</span></td>
                 <td class="now">£137.81</td>
                 <td class="was">£344.51</td>
                 <td class="save">−£206.70</td>
               </tr>
               <tr>
-                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_leonard_single_monkstraps.jpg?v=1792698037&amp;width=200"></td>
-                <td><a href="https://noblemeridian.com/products/leonard-single-monkstraps">Leonard monk strap</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">O mais alto desta seleção</span></td>
+                <td><img class="shoe" alt="" src="assets/products/leonard.jpg"></td>
+                <td><a href="https://noblemeridian.com/products/leonard-single-monkstraps">Leonard monk strap</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Highest ticket in this set</span></td>
                 <td class="now">£160.77</td>
                 <td class="was">£401.93</td>
                 <td class="save">−£241.16</td>
               </tr>
               <tr>
-                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_valencia_wholecuts.jpg?v=1792698069&amp;width=200"></td>
-                <td><a href="https://noblemeridian.com/products/valencia-wholecuts">Valencia wholecut</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Uma peça só no cabedal</span></td>
+                <td><img class="shoe" alt="" src="assets/products/valencia.jpg"></td>
+                <td><a href="https://noblemeridian.com/products/valencia-wholecuts">Valencia wholecut</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Single-piece upper</span></td>
                 <td class="now">£141.63</td>
                 <td class="was">£354.08</td>
                 <td class="save">−£212.45</td>
               </tr>
               <tr>
-                <td><img class="shoe" alt="" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_ellis_chukka_boots.jpg?v=1792698120&amp;width=200"></td>
-                <td><a href="https://noblemeridian.com/products/ellis-chukka-boots">Ellis chukka</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Tornozelo · biqueira amendoada</span></td>
+                <td><img class="shoe" alt="" src="assets/products/ellis.jpg"></td>
+                <td><a href="https://noblemeridian.com/products/ellis-chukka-boots">Ellis chukka</a><br><span class="sans" style="font-size:.75rem;color:var(--muted)">Ankle height · almond toe</span></td>
                 <td class="now">£114.07</td>
                 <td class="was">£285.18</td>
                 <td class="save">−£171.11</td>
               </tr>
             </tbody>
           </table>
-          <p class="fine" style="margin-top:-8px">Fotos de produto: Noble Meridian. Preços em libras, conferidos em 12 de novembro de 2026.</p>
+          <p class="fine" style="margin-top:-8px">Product photographs: Noble Meridian. Prices in pounds sterling, checked 12 November 2026.</p>
 
-          <p style="margin-top:8px"><a class="btn" href="https://noblemeridian.com/collections/final-sale" style="max-width:420px">Garantir o par enquanto o 60% estiver no ar</a></p>
+          <p style="margin-top:8px"><a class="btn" href="https://noblemeridian.com/collections/final-sale" style="max-width:440px">Secure a pair while 60% is still live</a></p>
 
-          <h2>Por que a tabela senta acima de £280</h2>
+          <h3 class="crosshead">Why the list price sits above £280</h3>
           <div class="split">
             <figure>
-              <img src="assets/leather-hide.jpg" alt="Macro do grão de couro de flor integral.">
-              <figcaption>Flor integral: especificação da marca na Bolton, na Ellis e no calfskin do Bernard.</figcaption>
+              <img src="assets/leather-hide.jpg" alt="Close-up of full-grain leather.">
+              <figcaption>Full-grain: the brand’s stated specification on the Bolton, Ellis and Bernard calfskin.</figcaption>
             </figure>
             <figure>
-              <img src="assets/evening-street.jpg" alt="Oxford preto e calça de lã numa calçada molhada.">
-              <figcaption>Uso de cidade: calça de lã, fim de tarde, sola limpa.</figcaption>
+              <img src="assets/london-pavement.jpg" alt="Black Oxfords on wet London flagstones at dusk.">
+              <figcaption>City use: wool trousers, wet pavement, evening light.</figcaption>
             </figure>
           </div>
-          <p>Um par a £122 só é negócio se o par a £306 era preço de categoria. O catálogo mostra os dois números no mesmo variante. Couro de flor integral na bota e no chukka; calfskin no loafer. Em vários modelos, sola à escolha — couro ou borracha. Grade típica do US 7 ao US 14.</p>
-          <p>Usado duas vezes por semana, o Bolton a £122 fica abaixo de £1,20 por uso no primeiro ano. Ao preço de tabela, a mesma conta passa de £2,90. Depois do dia 30, a conta mais alta é a que volta.</p>
+          <p>A pair at £122 is only a bargain if the pair at £306 was a category price. The catalogue shows both figures on the same variant. Full-grain leather on the boot and chukka; calfskin on the tassel loafer. On several models the sole is a choice — leather or rubber. The usual size run runs from US 7 to US 14.</p>
+          <p>Worn twice a week, the Bolton at £122 works out below £1.20 a wear in the first year. At list price the same sum tops £2.90. After the 30th, the higher figure is the one that returns.</p>
 
-          <h2>Três decisões. Não cento e trinta.</h2>
-          <p>A coleção tem cerca de 130 modelos. Quem abre todos perde o prazo. Três usos fecham a escolha:</p>
-          <p><strong>Cidade, jeans, blazer.</strong> Bolton Chelsea, £122.49. Sem cadarço. Preto, bordeaux, oak, tan ou castanho.</p>
-          <p><strong>Escritório.</strong> Yates Oxford, £129.38 — ou Valencia wholecut, £141.63, se a linha limpa do cabedal for o que importa.</p>
-          <p><strong>Sem cadarço, com detalhe.</strong> Bernard, £137.81. Borlas, calfskin. A tabela é £344.51. A diferença, £206.70, quase paga outro par nesta página.</p>
+          <h3 class="crosshead">Three decisions. Not one hundred and thirty.</h3>
+          <p>The public collection holds about 130 models. Opening every one costs the deadline. Three uses settle the choice:</p>
+          <p><strong>City, jeans, blazer.</strong> Bolton Chelsea, £122.49. No laces. Black, bordeaux, oak, tan or brown.</p>
+          <p><strong>Office.</strong> Yates Oxford, £129.38 — or the Valencia wholecut, £141.63, when a cleaner upper line matters more than the day’s sole.</p>
+          <p><strong>Slip-on with detail.</strong> Bernard, £137.81. Tassels, calfskin. The list is £344.51. The gap, £206.70, nearly buys another pair on this page.</p>
 
           <div class="split">
             <figure class="frame">
-              <img src="assets/tassel-chair.jpg" alt="Loafer de borla em bordeaux.">
-              <figcaption>Bernard e o gênero loafer de borla.</figcaption>
+              <img src="assets/tassel-chair.jpg" alt="Bordeaux tassel loafer on a club chair.">
+              <figcaption>The Bernard and the tassel-loafer silhouette.</figcaption>
             </figure>
             <figure>
-              <img src="assets/boot-steps.jpg" alt="Chelsea preta em passo rápido na chuva.">
-              <figcaption>A Chelsea no passo: o tempo do preço também corre.</figcaption>
+              <img src="assets/boot-steps.jpg" alt="Black Chelsea boots mid-stride on wet asphalt.">
+              <figcaption>The Chelsea in motion — and the sale clock with it.</figcaption>
             </figure>
           </div>
 
-          <h2>O que quem já comprou escreveu</h2>
-          <p>Notas de compradores sobre o ajuste, o couro e o uso diário — o tipo de detalhe que a ficha técnica não conta.</p>
+          <h3 class="crosshead">What buyers have written</h3>
+          <p>Notes from purchasers on fit, leather and daily wear — the detail a product sheet rarely gives.</p>
           <div class="reviews">
             <div class="review">
-              <div class="stars" aria-label="5 de 5">★★★★★</div>
-              <blockquote>“Pedi o Bolton no 43. Entrou no primeiro dia sem drama, couro firme sem parecer plástico. Paguei £122. No site, a tabela ainda mostrava £306. Se tivesse esperado a ‘próxima promoção’, teria perdido £180.”</blockquote>
-              <cite>Ricardo M. · Lisboa · Bolton Chelsea · há 6 dias</cite>
+              <div class="stars" aria-label="5 out of 5">★★★★★</div>
+              <blockquote>“Ordered the Bolton in a 9. On the first day, firm leather without that plastic feel. Paid £122. The site still showed £306. Had I waited for ‘the next promotion’, I would have thrown away £180.”</blockquote>
+              <cite>Richard M. · London · Bolton Chelsea · 6 days ago</cite>
             </div>
             <div class="review">
-              <div class="stars" aria-label="5 de 5">★★★★★</div>
-              <blockquote>“Troquei um oxford de marca de shopping pelo Yates. Mesma silhueta de cidade, metade do que eu estava habituado a ver nessa faixa. A sola de borracha foi a escolha certa para Lisboa molhada.”</blockquote>
-              <cite>Tiago S. · Porto · Yates Oxford · há 9 dias</cite>
+              <div class="stars" aria-label="5 out of 5">★★★★★</div>
+              <blockquote>“Swapped a high-street Oxford for the Yates. Same city silhouette, half of what I was used to seeing in that bracket. Rubber sole was the right call for wet London mornings.”</blockquote>
+              <cite>Tom S. · Manchester · Yates Oxford · 9 days ago</cite>
             </div>
             <div class="review">
-              <div class="stars" aria-label="4 de 5">★★★★☆</div>
-              <blockquote>“O Bernard ficou justo no 42 — subi meio número e resolveu. Couro com grão visível, borlas sem exagero. Quatro estrelas só porque o frete demorou um dia a mais do que esperava.”</blockquote>
-              <cite>André F. · Londres · Bernard loafer · há 11 dias</cite>
+              <div class="stars" aria-label="4 out of 5">★★★★☆</div>
+              <blockquote>“The Bernard ran snug in an 8 — went up half a size and that settled it. Visible grain, tassels without theatre. Four stars only because delivery took a day longer than I hoped.”</blockquote>
+              <cite>Andrew F. · Edinburgh · Bernard loafer · 11 days ago</cite>
             </div>
             <div class="review">
-              <div class="stars" aria-label="5 de 5">★★★★★</div>
-              <blockquote>“Comprei o Leonard para o casamento do irmão e já usei três vezes no escritório. A £160, com tabela a £400, a decisão foi óbvia. O aviso de 30 de novembro é o que me fez fechar na mesma noite.”</blockquote>
-              <cite>Miguel R. · Cascais · Leonard monk · há 4 dias</cite>
+              <div class="stars" aria-label="5 out of 5">★★★★★</div>
+              <blockquote>“Bought the Leonard for my brother’s wedding and have already worn it three times into the office. At £160 against a £400 list, the decision was obvious. The 30 November notice is what made me check out the same evening.”</blockquote>
+              <cite>Michael R. · Bristol · Leonard monk · 4 days ago</cite>
             </div>
             <div class="review">
-              <div class="stars" aria-label="5 de 5">★★★★★</div>
-              <blockquote>“Ellis no castanho com sola de couro. Leve, limpo, cabe debaixo da calça sem volume. A £114, com tabela a £285, não vou esperar ‘ver se baixa mais’ — a página não promete segunda rodada.”</blockquote>
-              <cite>João P. · Madrid · Ellis chukka · há 2 dias</cite>
+              <div class="stars" aria-label="5 out of 5">★★★★★</div>
+              <blockquote>“Ellis in brown with a leather sole. Light, clean, sits under the trouser without bulk. At £114 against £285 I am not waiting to ‘see if it drops further’ — the page does not promise a second round.”</blockquote>
+              <cite>James P. · Birmingham · Ellis chukka · 2 days ago</cite>
             </div>
           </div>
 
-          <h2>Por que a espera custa caro</h2>
-          <p>Quem deixa para “ver se baixa mais” está à espera de uma segunda rodada que a página não anuncia. A Black Friday é 27. O fecho é 30, às 23:59 de Lisboa. Três dias depois da sexta, o preço datado deixa de existir.</p>
-          <p>Passe se procura um tênis, se o número foge da grade, ou se precisa de mais de 60%. O miolo desta coleção — os modelos com compare-at — está nos 60%. Essa é a janela. Depois, a conta volta.</p>
+          <h3 class="crosshead">Why waiting costs money</h3>
+          <p>Anyone leaving it to “see if it falls further” is waiting for a second round the page does not announce. Black Friday is the 27th. The close is the 30th, at 11.59pm London time. Three days after Friday, the dated price ceases to exist.</p>
+          <p>Walk past this if you want a trainer, if your size sits outside the run, or if you need more than 60%. The core of the collection — the models with a compare-at price — sits at 60%. That is the window. After it, the bill returns.</p>
 
           <div class="end">
-            <p><strong>O par certo, no número certo, tem o relógio a correr.</strong> Dezoito noites. Depois, a tabela. A compra fecha em noblemeridian.com, em libras.</p>
-            <a class="btn" href="https://noblemeridian.com/collections/final-sale">Abrir a liquidação antes das 23:59 de Lisboa</a>
-            <p class="fine">Confira número, cor e sola no checkout. Frete e devolução seguem as regras da marca.</p>
+            <p><strong>The right pair, in the right size, has the clock against it.</strong> Eighteen nights. Then the list. Checkout closes on noblemeridian.com, in pounds.</p>
+            <a class="btn" href="https://noblemeridian.com/collections/final-sale">Open the clearance before 11.59pm London</a>
+            <p class="fine">Check size, colour and sole at checkout. Shipping and returns follow the brand’s own rules.</p>
           </div>
         </div>
 
-        <aside class="rail" aria-label="Prazo da oferta">
-          <p class="rail-kicker">Contagem ao vivo</p>
-          <h2>Meia-noite de Lisboa, dia 30.</h2>
+        <aside class="rail" aria-label="Sale deadline facts">
+          <p class="rail-kicker">Sidebar · Live clock</p>
+          <h2>London midnight, 30 November.</h2>
           <div class="clock" id="clock" aria-hidden="true">
-            <div class="unit"><strong id="d">18</strong><span>Dias</span></div>
-            <div class="unit"><strong id="h">00</strong><span>Horas</span></div>
+            <div class="unit"><strong id="d">18</strong><span>Days</span></div>
+            <div class="unit"><strong id="h">00</strong><span>Hrs</span></div>
             <div class="unit"><strong id="m">00</strong><span>Min</span></div>
-            <div class="unit"><strong id="s">00</strong><span>Seg</span></div>
+            <div class="unit"><strong id="s">00</strong><span>Sec</span></div>
           </div>
-          <p class="sr-only" id="clock-status" aria-live="polite">Restam cerca de 18 dias até 30 de novembro, 23:59, hora de Lisboa.</p>
+          <p class="sr-only" id="clock-status" aria-live="polite">About 18 days remain until 30 November, 11.59pm London time.</p>
           <div class="bar" aria-hidden="true"><i id="bar"></i></div>
           <ul class="facts">
-            <li><span>Encerra</span><b>30 nov 2026</b></li>
-            <li><span>Hora</span><b>23:59 Lisboa</b></li>
-            <li><span>Restam</span><b id="nights">18 noites</b></li>
-            <li><span>Moeda</span><b>Libra (£)</b></li>
-            <li><span>Faixa de saldo</span><b>£114–£168</b></li>
-            <li><span>Tabela típica</span><b>£285–£402</b></li>
-            <li><span>Desconto central</span><b>60%</b></li>
+            <li><span>Closes</span><b>30 Nov 2026</b></li>
+            <li><span>Time</span><b>11.59pm London</b></li>
+            <li><span>Left</span><b id="nights">18 nights</b></li>
+            <li><span>Currency</span><b>Pound (£)</b></li>
+            <li><span>Sale band</span><b>£114–£168</b></li>
+            <li><span>Typical list</span><b>£285–£402</b></li>
+            <li><span>Core discount</span><b>60%</b></li>
           </ul>
-          <a class="btn" href="https://noblemeridian.com/collections/final-sale">Comprar agora</a>
-          <a class="btn btn-ghost" href="https://noblemeridian.com/products/bolton-chelsea-boots">Ir direto ao Bolton</a>
-          <p class="fine">Contagem até 30 de novembro de 2026, 23:59, hora de Lisboa (UTC+0 em novembro).</p>
+          <a class="btn" href="https://noblemeridian.com/collections/final-sale">Buy now</a>
+          <a class="btn btn-ghost" href="https://noblemeridian.com/products/bolton-chelsea-boots">Straight to the Bolton</a>
+          <p class="fine">Countdown to 30 November 2026, 11.59pm London (GMT / UTC+0 in November).</p>
         </aside>
       </div>
     </article>
@@ -673,13 +732,13 @@
 
   <footer>
     <div class="wrap">
-      Correio Atlântico · Moda &amp; consumo. Preços em libras esterlinas, sujeitos a alteração em noblemeridian.com. Fotografias de produto da Noble Meridian; demais imagens e o vídeo desta página são editoriais.
+      The Atlantic Courier · Style &amp; Consumer. Prices in pounds sterling, subject to change on noblemeridian.com. Product photographs by Noble Meridian; other images and the video on this page are editorial.
     </div>
   </footer>
 
   <div class="dock">
-    <p id="dock-line">Encerra 30 nov · 23:59 Lisboa</p>
-    <a href="https://noblemeridian.com/collections/final-sale">Comprar agora</a>
+    <p id="dock-line">Closes 30 Nov · 11.59pm London</p>
+    <a href="https://noblemeridian.com/collections/final-sale">Buy now</a>
   </div>
 
   <script>
@@ -693,28 +752,33 @@
       var dock = document.getElementById("dock-line");
       var bar = document.getElementById("bar");
       var nights = document.getElementById("nights");
-      var breaking = document.getElementById("break-left");
+      var skyline = document.getElementById("skyline");
+      var skylineText = document.getElementById("skyline-text");
       var stamp = document.getElementById("hero-stamp");
       var status = document.getElementById("clock-status");
       var lastAnnouncedDay = null;
       var timer = null;
       function pad(n) { return String(n).padStart(2, "0"); }
+      function setClosed() {
+        d.textContent = "0";
+        h.textContent = m.textContent = s.textContent = "00";
+        dock.textContent = "Sale closed · 30 Nov, 11.59pm London";
+        nights.textContent = "0 nights";
+        bar.style.width = "100%";
+        stamp.textContent = "Sale closed";
+        skyline.classList.add("closed");
+        skylineText.textContent = "Closed · Sale ended 30 Nov, 11.59pm London";
+        if (status) status.textContent = "The sale closed at 11.59pm London time on 30 November.";
+        if (timer) {
+          clearInterval(timer);
+          timer = null;
+        }
+      }
       function tick() {
         var now = Date.now();
         var left = end - now;
         if (left <= 0) {
-          d.textContent = "0";
-          h.textContent = m.textContent = s.textContent = "00";
-          dock.textContent = "Prazo encerrado · 30 nov, 23:59 Lisboa";
-          breaking.textContent = "prazo encerrado";
-          nights.textContent = "0 noites";
-          bar.style.width = "100%";
-          stamp.textContent = "Prazo encerrado";
-          if (status) status.textContent = "Prazo encerrado em 30 de novembro, 23:59, hora de Lisboa.";
-          if (timer) {
-            clearInterval(timer);
-            timer = null;
-          }
+          setClosed();
           return;
         }
         var days = Math.floor(left / 86400000);
@@ -725,13 +789,14 @@
         h.textContent = pad(hours);
         m.textContent = pad(mins);
         s.textContent = pad(secs);
-        nights.textContent = days + (days === 1 ? " noite" : " noites");
-        breaking.textContent = days + "d " + pad(hours) + "h " + pad(mins) + "m";
-        dock.textContent = days + "d " + pad(hours) + "h " + pad(mins) + "m · fecha 30 nov";
-        stamp.textContent = days + "d " + pad(hours) + "h " + pad(mins) + "m · 30 nov";
+        nights.textContent = days + (days === 1 ? " night" : " nights");
+        skyline.classList.remove("closed");
+        skylineText.textContent = "Live · Closes in " + days + "d " + pad(hours) + "h " + pad(mins) + "m · 30 Nov, 11.59pm London";
+        dock.textContent = days + "d " + pad(hours) + "h " + pad(mins) + "m · closes 30 Nov";
+        stamp.textContent = days + "d " + pad(hours) + "h " + pad(mins) + "m · 30 Nov";
         if (status && days !== lastAnnouncedDay) {
           lastAnnouncedDay = days;
-          status.textContent = "Restam cerca de " + days + (days === 1 ? " dia" : " dias") + " até 30 de novembro, 23:59, hora de Lisboa.";
+          status.textContent = "About " + days + (days === 1 ? " day" : " days") + " remain until 30 November, 11.59pm London time.";
         }
         var total = end - start;
         var done = Math.min(1, Math.max(0, (now - start) / total));
