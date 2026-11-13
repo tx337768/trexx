@@ -1,27 +1,19 @@
 {% assign vlm_collection = collection | default: collections['final-sale'] %}
 {% assign nm_listing_count = vlm_collection.products_count %}{% assign nm_gift_collections = all_products['cedar-shoe-tree'].collections | map: 'handle' %}{% if nm_gift_collections contains vlm_collection.handle %}{% if vlm_collection.products_count == vlm_collection.all_products_count %}{% assign nm_listing_count = nm_listing_count | minus: 1 %}{% endif %}{% endif %}
 {% if vlm_collection.handle == 'final-sale' %}
-<div class="nm-fs-sticky" role="status">
-  <span class="nm-fs-sticky-label">Black Friday</span>
-  <span class="nm-fs-sticky-mid"><span class="nm-fs-sticky-mid-full">Up to 60% off · Free shipping &amp; returns · Ends <span class="nm-geo-deadline">30 Nov</span></span><span class="nm-fs-sticky-mid-short">Up to 60% off · Ends <span class="nm-geo-deadline">30 Nov</span></span></span>
-  <a class="nm-fs-sticky-cta" href="#nm-bf-products">Shop the edit</a>
-</div>
-<section class="nm-fs-hero" data-nm-fs-end="2026-11-30T23:59:00+00:00" style="--nm-fs-hero:url('https://cdn.shopify.com/s/files/1/0811/8239/2552/files/nm-bf-hero-lifestyle.jpg?v=1794540195')">
-  <div class="nm-fs-hero-media" aria-hidden="true"></div>
-  <div class="nm-fs-hero-panel">
-    <p class="nm-fs-eyebrow">Noble Meridian · Black Friday</p>
-    <h1 class="nm-fs-title">Up to<br>60% off.</h1>
-    <p class="nm-fs-lede">Classic shoes, honest prices.</p>
-    <ul class="nm-fs-offer">
-      <li>Free shipping &amp; returns</li>
-      <li>60-day money-back</li>
-      <li>Ends <span class="nm-geo-deadline">30 Nov</span></li>
-    </ul>
-    <div class="nm-fs-hero-actions">
-      <a class="nm-fs-cta" href="#nm-bf-products">Shop the collection</a>
-      <p class="nm-fs-deadline"><span class="nm-fs-timer-inline" aria-label="Time remaining"><span data-nm-t="d">00</span>d <span data-nm-t="h">00</span>h <span data-nm-t="m">00</span>m</span> remaining</p>
-    </div>
+<div class="nm-fs-sticky" role="status"><span class="nm-fs-sticky-label">BLACK FRIDAY</span><span class="nm-fs-sticky-mid">Ends <span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span></span><a class="nm-fs-sticky-cta" href="#nm-bf-products">Shop sale</a></div>
+<section class="nm-fs-hero" data-nm-fs-end="2026-11-30T23:59:00+00:00">
+  <p class="nm-fs-eyebrow">Black Friday · Free shipping &amp; returns</p>
+  <h1 class="nm-fs-title">Up to 60% off.<br><em>While sizes last.</em></h1>
+  <p class="nm-fs-lede">Classic loafers, Oxfords and boots at Black Friday prices. 60-day money-back. Deadline <span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span>.</p>
+  <div class="nm-fs-trust"><div>Free shipping<span>&amp; returns</span></div><div>60-day<span>money-back</span></div><div>Ends<span><span class="nm-geo-deadline">30 Nov</span></span></div></div>
+  <div class="nm-fs-timer" aria-label="Black Friday countdown">
+    <span><b data-nm-t="d">00</b><i>days</i></span>
+    <span><b data-nm-t="h">00</b><i>hrs</i></span>
+    <span><b data-nm-t="m">00</b><i>min</i></span>
+    <span><b data-nm-t="s">00</b><i>sec</i></span>
   </div>
+  <a class="nm-fs-cta" href="#nm-bf-products">Shop Black Friday ↓</a>
 </section>
 
 <script>

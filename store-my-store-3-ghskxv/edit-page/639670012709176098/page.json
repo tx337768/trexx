@@ -48,6 +48,20 @@
       "chosenAtPublishedAt": "2026-11-13T09:56:31.093785Z",
       "splitExceptions": [],
       "note": "Luxury hero type: large offer headline, short line, readable trust lines"
+    },
+    "edit-20261113T100901Z-5ec1": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:09:01Z",
+      "chosenAtPublishedAt": "2026-11-13T10:05:31.186363Z",
+      "splitExceptions": [],
+      "note": "Fix colliding hero headline; remove shop-collection button"
+    },
+    "edit-20261113T101438Z-c4ad": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:14:38Z",
+      "chosenAtPublishedAt": "2026-11-13T10:05:31.186363Z",
+      "splitExceptions": [],
+      "note": "Restore original Black Friday countdown banner; drop stacked lifestyle panel"
     }
   },
   "activeDuplicate": null,
