@@ -12,7 +12,10 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.75rem; /* sticky header clears in-page anchors */
+}
 body {
   margin: 0;
   background: var(--bg);
