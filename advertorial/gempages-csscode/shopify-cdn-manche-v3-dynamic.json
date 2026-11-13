@@ -1,0 +1,19 @@
+{
+  "gifs": {
+    "lantern": "https://cdn.shopify.com/s/files/1/0845/3495/2219/files/nyCREe1.gif",
+    "power": "https://cdn.shopify.com/s/files/1/0845/3495/2219/files/nyCR8mX.gif",
+    "kit": "https://cdn.shopify.com/s/files/1/0845/3495/2219/files/nyCRUIn.gif",
+    "pulse_lantern": "https://cdn.shopify.com/s/files/1/0845/3495/2219/files/nyCRgXs.gif",
+    "radio": "https://cdn.shopify.com/s/files/1/0845/3495/2219/files/demo-radio-sm.gif"
+  },
+  "mp4_jsdelivr_base": "https://cdn.jsdelivr.net/gh/tx337768/trexx@2c79bf0a3cbf3d7a3f53f65ca1aab82ddb8a6245/advertorial/gempages-csscode/media",
+  "mp4": [
+    "demo-lantern.mp4",
+    "demo-radio.mp4",
+    "demo-power.mp4",
+    "demo-kit.mp4"
+  ],
+  "css_import": "https://cdn.jsdelivr.net/gh/tx337768/trexx@2c79bf0a3cbf3d7a3f53f65ca1aab82ddb8a6245/advertorial/gempages-csscode/bundle-manche.css",
+  "draft_page_id": "645928068392682027",
+  "preview": "https://loja-locom.myshopify.com/a/gempages?version=v7&shop_id=638679827007668768&theme_page_id=645928068392682027&page_type=GP_STATIC"
+}
