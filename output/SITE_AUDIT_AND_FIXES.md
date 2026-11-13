@@ -45,3 +45,10 @@ Homepage live published with free-ship bar + value hero + Final Sale ends 30 Nov
 
 ## Update 13 Nov ~02:00 UTC
 Black Friday angle restored site-wide with urgency + veracity: localized BF announcement, value H1, Shop Black Friday CTAs, live compare-at prices on ad LPs, free ship + 60-day money-back (no fabricated reviews).
+
+## Update 13 Nov ~03:10 UTC — final-sale overhaul
+Landing `/collections/final-sale` (~35k sessions / 30d, ~0.7% ATC, ~67% bounce):
+- Removed Lisbon deadline; visitor city + countdown to 30 Nov
+- Sticky BF bar, trust (free ship / 60-day), Choose size CTAs
+- Funnel events `nm_fs_*` → GA4 / Shopify analytics
+- Published live collection template
