@@ -1,0 +1,40 @@
+{
+  "schema": "edit-change/v1",
+  "editId": "edit-20261113T095243Z-09d4",
+  "pageId": "639670012709176098",
+  "sectionId": "639670171874624104",
+  "at": "2026-11-13T09:56:16.342788Z",
+  "summary": "Open Black Friday hero panel spacing: more padding/margins/line-height on .nm-fs-hero-panel, .nm-fs-lede, .nm-fs-offer li, .nm-fs-hero-actions (incl. mobile breakpoints)",
+  "expectedUpdatedAtBefore": "2026-11-13T09:50:24.58644Z",
+  "updatedAtAfter": "2026-11-13T09:56:16.342788Z",
+  "expectedPublishedAt": "2026-11-13T09:50:31.751187Z",
+  "publishedAtAfter": "2026-11-13T09:56:31.093785Z",
+  "publish": {
+    "ok": true,
+    "status": "PUBLISHED",
+    "wsStatus": "SUCCESS",
+    "elapsedMs": 2534,
+    "source": "websocket"
+  },
+  "verified": true,
+  "uids": [
+    "gVlmColl01"
+  ],
+  "paths": [
+    "advanced.editorData.css"
+  ],
+  "cssSource": "output/final_sale_patches/gVlmColl01.css",
+  "cssDelivery": "inline advanced.editorData.css (minified for MCP payload)",
+  "liveChecks": {
+    "url": "https://noblemeridian.com/collections/final-sale",
+    "padding_40px_22px_44px": true,
+    "nm_fs_offer_li_padding_22px_0": true,
+    "nm_fs_offer_li_gap_8px": true,
+    "nm_fs_hero_panel_desktop_68px": true,
+    "snippets": {
+      "mobile_panel": ".nm-fs-hero-panel{padding:40px 22px 44px}",
+      "offer_li": ".nm-fs-offer li{display:grid;gap:8px;padding:22px 0;border-bottom:1px solid rgba"
+    }
+  },
+  "commit": "a24b78947e2bfe390bda997b4259ec3b2c0f4f71"
+}

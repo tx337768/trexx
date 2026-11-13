@@ -1,0 +1,118 @@
+{
+  "writeTargets": {
+    "local-20261113T031919Z-11d2": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T03:23:00Z",
+      "chosenAtPublishedAt": "2026-11-13T03:11:17.677079Z",
+      "splitExceptions": [],
+      "note": "Merchant asked to apply redesign (fa\u00e7a) on live final-sale collection"
+    },
+    "edit-20261113T034739Z-1577": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T03:48:01Z",
+      "chosenAtPublishedAt": "2026-11-13T03:38:12.444693Z",
+      "splitExceptions": [],
+      "note": "Merchant asked to fix live black 128-styles strip (corrija isso)"
+    },
+    "edit-20261113T035049Z-4359": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T03:50:58Z",
+      "chosenAtPublishedAt": "2026-11-13T03:50:07.906928Z",
+      "splitExceptions": [],
+      "note": "Bugbot swatch srcset fix on live collection (standing live-edit thread)"
+    },
+    "edit-20261113T091924Z-d553": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T09:20:31Z",
+      "chosenAtPublishedAt": "2026-11-13T03:51:14.886749Z",
+      "splitExceptions": [],
+      "note": "Merchant: isto para celular esta muito feio \u2014 fix live mobile"
+    },
+    "edit-20261113T094909Z-1cf0": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T09:49:33Z",
+      "chosenAtPublishedAt": "2026-11-13T09:46:16.205514Z",
+      "splitExceptions": [],
+      "note": "Bugbot: replace head CSS @import with link stylesheet"
+    },
+    "edit-20261113T095243Z-09d4": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T09:53:17Z",
+      "chosenAtPublishedAt": "2026-11-13T09:50:31.751187Z",
+      "splitExceptions": [],
+      "note": "Open up Black Friday hero panel spacing (mobile+desktop)"
+    },
+    "edit-20261113T100113Z-d3f0": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:01:13Z",
+      "chosenAtPublishedAt": "2026-11-13T09:56:31.093785Z",
+      "splitExceptions": [],
+      "note": "Luxury hero type: large offer headline, short line, readable trust lines"
+    },
+    "edit-20261113T100901Z-5ec1": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:09:01Z",
+      "chosenAtPublishedAt": "2026-11-13T10:05:31.186363Z",
+      "splitExceptions": [],
+      "note": "Fix colliding hero headline; remove shop-collection button"
+    },
+    "edit-20261113T101438Z-c4ad": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:14:38Z",
+      "chosenAtPublishedAt": "2026-11-13T10:05:31.186363Z",
+      "splitExceptions": [],
+      "note": "Restore original Black Friday countdown banner; drop stacked lifestyle panel"
+    },
+    "edit-20261113T103045Z-376a": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:30:45Z",
+      "chosenAtPublishedAt": "2026-11-13T10:25:09.994134Z",
+      "splitExceptions": [],
+      "note": "Restore the pre-edit homepage banner (Your next pair / Up to 60% off) on final-sale"
+    },
+    "edit-20261113T104231Z-6579": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:42:31Z",
+      "chosenAtPublishedAt": "2026-11-13T10:36:36.245877Z",
+      "splitExceptions": [],
+      "note": "New audience banner image; keep copy under it; add Nov 30 countdown"
+    },
+    "edit-20261113T111601Z-ad80": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T11:16:01Z",
+      "chosenAtPublishedAt": "2026-11-13T11:00:12.811042Z",
+      "splitExceptions": [],
+      "note": "Collection: one-line offer, products first. Do not publish."
+    }
+  },
+  "activeDuplicate": null,
+  "restorePoints": [
+    {
+      "versionId": "645940697794347921",
+      "name": "[AI] Before Black Friday collection redesign",
+      "createdAt": "2026-11-13T03:24:18.381007498Z",
+      "conversationKey": "local-20261113T031919Z-11d2"
+    },
+    {
+      "versionId": "645980660065895061",
+      "name": "[AI] Before luxury hero type scale",
+      "createdAt": "2026-11-13T10:01:17.755466Z",
+      "conversationKey": "edit-20261113T100113Z-d3f0",
+      "status": "reused"
+    },
+    {
+      "versionId": "645983633374446229",
+      "name": "[AI] Before restoring original Your next pair banner",
+      "createdAt": "2026-11-13T10:30:49.989603Z",
+      "conversationKey": "edit-20261113T103045Z-376a",
+      "status": "reused"
+    },
+    {
+      "versionId": "645988188690580117",
+      "name": "[AI] Before collection first-screen offer",
+      "createdAt": "2026-11-13T11:16:05.162299Z",
+      "conversationKey": "edit-20261113T111601Z-ad80",
+      "status": "reused"
+    }
+  ]
+}

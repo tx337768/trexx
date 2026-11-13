@@ -1,0 +1,21 @@
+{
+  "writeTargets": {
+    "edit-20261113T111601Z-ad80": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T11:16:01Z",
+      "chosenAtPublishedAt": "2026-10-31T05:33:55.263864Z",
+      "splitExceptions": [],
+      "note": "Product buy box: free shipping and 60-day next to ATC. Do not publish."
+    }
+  },
+  "activeDuplicate": null,
+  "restorePoints": [
+    {
+      "versionId": "645988190166975360",
+      "name": "[AI] Before product buy-box trust line",
+      "createdAt": "2026-11-13T11:16:06.041209Z",
+      "conversationKey": "edit-20261113T111601Z-ad80",
+      "status": "reused"
+    }
+  ]
+}

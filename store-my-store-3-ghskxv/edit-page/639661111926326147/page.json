@@ -1,0 +1,43 @@
+{
+  "pageId": "639661111926326147",
+  "name": "Velmont \u2014 Clean Atelier",
+  "writeTargets": {
+    "edit-20261113T111601Z-ad80": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T11:16:01Z",
+      "chosenAtPublishedAt": "2026-11-13T02:46:14.297706Z",
+      "splitExceptions": [],
+      "note": "Homepage cart drawer shipping line. Do not publish."
+    },
+    "20261113T012409Z": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T01:24:00Z",
+      "chosenAtPublishedAt": "2026-10-31T05:23:16.352012Z",
+      "note": "User said aplique \u2014 apply proven patterns to live homepage",
+      "splitExceptions": []
+    },
+    "20261113T020656Z": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T02:07:30Z",
+      "chosenAtPublishedAt": "2026-11-13T02:01:42.953078Z",
+      "note": "Continuation of aplique \u2014 Lisbon\u2192visitor city on live homepage urgency copy",
+      "splitExceptions": []
+    }
+  },
+  "activeDuplicate": null,
+  "restorePoints": [
+    {
+      "versionId": "645933050974176128",
+      "name": "[AI] Remover Lisbon \u2014 cidade do visitante no prazo Black Friday",
+      "createdAt": "2026-11-13T02:08:20.52211161Z",
+      "conversationKey": "20261113T020656Z"
+    },
+    {
+      "versionId": "645988567268459409",
+      "name": "[AI] Cart drawer shipping and tax line",
+      "createdAt": "2026-11-13T11:19:50.813371119Z",
+      "conversationKey": "edit-20261113T111601Z-ad80",
+      "status": "protected"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+/* Live delivery: full sheet hosted on Shopify Files; CSSCode field holds mobile overrides only. Sync CDN when editing this file. */
+        .vg-shell{font-family:Arial,sans-serif;color:#25251f}.vg-shell a{color:inherit;text-decoration:none}.vg-announcement{background:#25251f;color:#f6f3ed;text-align:center;padding:10px 18px;font-size:9px;letter-spacing:1.2px;line-height:1.7}.vg-countdown{display:inline-block;margin-left:18px;font-variant-numeric:tabular-nums;min-width:110px}.vg-header{background:#fff;border-bottom:1px solid #e8e4dc;position:relative;z-index:50}.vg-header-inner{max-width:1344px;padding:24px 32px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:102px}.vg-wordmark{font:400 32px/1 Georgia,serif;letter-spacing:5px;white-space:nowrap}.vg-wordmark span{display:block;font:7px/2.8 Arial,sans-serif;letter-spacing:1.1px}.vg-desktop-nav{display:flex;align-items:center;gap:32px;font-size:11px;letter-spacing:.4px}.vg-desktop-nav details{position:relative}.vg-desktop-nav summary{list-style:none;cursor:pointer;padding:18px 0}.vg-desktop-nav summary::-webkit-details-marker,.vg-mobile-menu summary::-webkit-details-marker{display:none}.vg-desktop-nav details>div{position:absolute;top:100%;left:-20px;min-width:180px;border:1px solid #e8e4dc;background:#fff;box-shadow:0 8px 20px #00000008;padding:10px 0}.vg-desktop-nav details>div a{display:block;padding:12px 20px;font-size:12px;white-space:nowrap}.vg-desktop-nav details>div a:hover{background:#f6f3ed}.vg-header-actions{display:flex;gap:16px;align-items:center}.vg-header-actions a{width:26px;height:36px;display:flex;align-items:center;justify-content:center;position:relative}.vg-header-actions svg{width:22px;height:22px}.vg-header-actions span{position:absolute;font-size:9px;top:-4px;right:-4px}.vg-mobile-menu{display:none}.vg-shell a:focus-visible,.vg-shell summary:focus-visible{outline:2px solid #755b3c;outline-offset:4px}@media(max-width:900px){.vg-desktop-nav{display:none}.vg-mobile-menu{display:block}.vg-mobile-menu summary{list-style:none;cursor:pointer;font-size:22px}.vg-mobile-menu nav{position:absolute;left:0;right:0;top:100%;padding:12px 22px 22px;background:#fff;border-bottom:1px solid #e8e4dc;box-shadow:0 10px 20px #00000008}.vg-mobile-menu nav a{display:block;padding:11px 0;font-size:13px}.vg-header-inner{padding:16px 20px;min-height:84px}.vg-wordmark{font-size:27px;letter-spacing:3px}.vg-wordmark span{font-size:6px}.vg-header-actions{gap:10px}.vg-header-actions a:first-child{display:none}}@media(max-width:390px){.vg-header-inner{gap:12px;padding:14px 16px}.vg-wordmark{font-size:24px}.vg-header-actions{gap:6px}.vg-announcement{font-size:8px;letter-spacing:.6px;padding:8px 12px}.vg-countdown{margin-left:8px;min-width:95px}} .vg-desktop-nav{gap:24px}.vg-header-inner{min-height:84px;padding-top:22px;padding-bottom:22px}.vg-wordmark{font-size:30px;letter-spacing:1px}.vg-wordmark span{display:none}.vg-announcement{background:#000}
+.vg-wordmark{display:flex!important;align-items:center;gap:10px;font-size:20px!important;letter-spacing:2px!important}.vg-wordmark img{width:48px;height:48px;object-fit:contain}.vg-wordmark b{font:400 20px/1.15 Georgia,serif;letter-spacing:2px}@media(max-width:600px){.vg-wordmark img{width:38px;height:38px}.vg-wordmark b{font-size:15px;letter-spacing:1.1px}.vg-wordmark{gap:6px}}
+      
+html.nm-valmere-type body #MainContent .vg-shell .vg-header,html.nm-valmere-type body #MainContent .vg-shell .vg-header-inner{background:#fff!important;color:#111!important;border-color:#e7e7e7!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header a,html.nm-valmere-type body #MainContent .vg-shell .vg-header summary,html.nm-valmere-type body #MainContent .vg-shell .vg-header button,html.nm-valmere-type body #MainContent .vg-shell .vg-wordmark{color:#111!important}
+html.nm-valmere-type body #MainContent .vg-header .vg-wordmark img{filter:none!important}
+html.nm-valmere-type body #MainContent .vg-header .vg-wordmark{font-family:Georgia,serif!important;letter-spacing:.04em!important;font-size:25px!important;white-space:nowrap}
+html.nm-valmere-type body #MainContent .vg-mobile-menu nav{background:#fff!important;color:#111!important;border-color:#ddd!important}
+html.nm-valmere-type body #MainContent .vg-header-actions svg{width:22px!important;height:22px!important;stroke:currentColor}
+html.nm-valmere-type body #MainContent .nm-reference-field{display:block!important;width:100%!important;margin:0!important;padding:22px 0!important;border-top:1px solid #e7e7e7!important;min-width:0!important}
+html.nm-valmere-type body #MainContent .nm-reference-field>.nm-option-dropdown,html.nm-valmere-type body #MainContent .nm-reference-field>.variant-option-group,html.nm-valmere-type body #MainContent .nm-reference-field>div:not(.nm-reference-options){display:none!important}
+html.nm-valmere-type body #MainContent .nm-reference-options{display:block!important;width:100%;font-family:Arial,sans-serif;color:#111}
+html.nm-valmere-type body #MainContent .nm-ref-option-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px;min-height:18px}
+html.nm-valmere-type body #MainContent .nm-ref-option-label{font:400 11px/1.4 Arial,sans-serif;letter-spacing:.15em;color:#666}
+html.nm-valmere-type body #MainContent .nm-ref-option-selected{display:flex;align-items:center;gap:12px;font:400 13px/1.4 Arial,sans-serif}
+html.nm-valmere-type body #MainContent .nm-ref-option-selected b{font-weight:400}
+html.nm-valmere-type body #MainContent .nm-find-size{font:500 12px/1.4 Arial,sans-serif!important;text-decoration:underline;border:0!important;background:none!important;padding:0!important;color:#111!important}
+html.nm-valmere-type body #MainContent .nm-ref-option-grid{display:flex;gap:9px;flex-wrap:wrap}
+html.nm-valmere-type body #MainContent .nm-ref-option-grid button{appearance:none;box-shadow:none!important;cursor:pointer;color:#111;background:#f4f4f2;border:2px solid transparent;border-radius:6px;min-height:44px;min-width:0;font:400 13px/1.3 Arial,sans-serif!important;display:flex;align-items:center;justify-content:center;padding:8px!important}
+html.nm-valmere-type body #MainContent .nm-ref-option-grid button[aria-selected=true]{border-color:#171717!important;background:#fff}
+html.nm-valmere-type body #MainContent [data-nm-kind=color] .nm-ref-option-grid{gap:9px;padding:2px 3px 3px}
+html.nm-valmere-type body #MainContent [data-nm-kind=color] .nm-ref-option-grid button{width:40px;height:40px;min-height:40px;flex:0 0 40px;border:0!important;border-radius:50%;padding:0!important;position:relative}
+html.nm-valmere-type body #MainContent [data-nm-kind=color] .nm-ref-option-grid button img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+html.nm-valmere-type body #MainContent [data-nm-kind=color] .nm-ref-option-grid button[aria-selected=true]:after{content:'';position:absolute;inset:-5px;border:2px solid #111;border-radius:50%;pointer-events:none}
+html.nm-valmere-type body #MainContent [data-nm-kind=size] .nm-ref-option-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+html.nm-valmere-type body #MainContent [data-nm-kind=sole] .nm-ref-option-grid button{min-width:110px}
+html.nm-valmere-type body #MainContent .nm-ref-option-grid button:disabled{opacity:.35;text-decoration:line-through;cursor:not-allowed}
+html.nm-valmere-type body #MainContent .nm-ref-option-grid button:focus-visible{outline:2px solid #111;outline-offset:5px}
+html.nm-valmere-type body #MainContent .nm-title-reviews{display:flex!important;align-items:center;gap:9px;margin:0 0 9px!important;text-decoration:none!important;font:400 13px/1.4 Arial,sans-serif!important;color:#111!important}
+html.nm-valmere-type body #MainContent .nm-title-stars,html.nm-valmere-type body #MainContent .nm-stars-filled{font-size:21px!important;color:#ffb21a!important;letter-spacing:-1px}
+html.nm-valmere-type body #MainContent gp-product-title h1{font-family:Georgia,serif!important;font-size:32px!important;font-weight:400!important;line-height:1.15!important;margin:0 0 12px!important}
+html.nm-valmere-type body #MainContent .nm-bf-product-kicker{font-size:10px!important;margin:0 0 15px!important;color:#666!important;letter-spacing:.13em!important}
+html.nm-valmere-type body #MainContent gp-product-price .gp-money{font-size:30px!important;line-height:1.25!important;font-weight:600!important;color:#111!important;letter-spacing:-.02em!important}
+html.nm-valmere-type body #MainContent gp-product-price .gp-product-compare-price,html.nm-valmere-type body #MainContent .gp-product-compare-price{font-size:15px!important;font-weight:400!important;color:#777!important}
+html.nm-valmere-type body #MainContent .vlm-gp-prices,html.nm-valmere-type body #MainContent .vlm-gp-prices{font-size:21px!important;font-weight:600!important;color:#111!important;line-height:1.5!important;gap:10px!important}
+html.nm-valmere-type body #MainContent .vlm-gp-prices s,html.nm-valmere-type body #MainContent .vlm-gp-prices s{font-size:14px!important;font-weight:400!important;color:#777!important}
+html.nm-valmere-type body #MainContent .nmr-sticky-price,html.nm-valmere-type body #MainContent [class*=sticky] [class*=price],html.nm-valmere-type body #MainContent .nm-sticky-price{font-size:21px!important;font-weight:600!important;line-height:1.3!important}
+html.nm-valmere-type body #MainContent .nmr-sticky-title,html.nm-valmere-type body #MainContent [class*=sticky] [class*=title]{font-size:14px!important;line-height:1.35!important}
+html.nm-valmere-type body #MainContent .vlm-gp-sale{background:#111!important;color:#fff!important}
+html.nm-valmere-type body #MainContent .nm-gallery-grid{gap:4px!important}
+html.nm-valmere-type body #MainContent .nm-gallery-grid img{object-fit:contain!important;background:#f4f4f4!important}
+html.nm-valmere-type body #MainContent .nm-urgency-panel{background:#111;color:#fff;padding:60px 24px;text-align:center;width:100%}
+html.nm-valmere-type body #MainContent .nm-urgency-panel h2{color:#fff!important;max-width:750px;margin:16px auto!important;font:400 38px/1.2 Georgia,serif!important}
+html.nm-valmere-type body #MainContent .nm-urgency-panel p{max-width:630px;margin:0 auto 18px!important;font:400 15px/1.65 Arial,sans-serif!important;color:#eee!important}
+html.nm-valmere-type body #MainContent .nm-urgency-panel>p:first-child{font-size:10px!important;letter-spacing:.16em}
+html.nm-valmere-type body #MainContent .nm-urgency-panel a{display:inline-flex;justify-content:center;align-items:center;min-height:48px;padding:12px 32px;background:#fff;color:#111;font:600 11px/1.4 Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:1023px){html.nm-valmere-type body #MainContent .gVlmPWrap1{padding:0!important}html.nm-valmere-type body #MainContent .gVlmPmain1{gap:0!important}html.nm-valmere-type body #MainContent .gVlmPcol02{padding:24px 16px!important}html.nm-valmere-type body #MainContent .gVlmPcol01{padding:0!important}html.nm-valmere-type body #MainContent .nm-variant-gallery{margin:0!important;width:100%!important;position:relative}html.nm-valmere-type body #MainContent .nm-gallery-grid{gap:0!important}html.nm-valmere-type body #MainContent .nm-gallery-grid img{aspect-ratio:1.25!important;max-height:none!important;object-fit:contain!important}html.nm-valmere-type body #MainContent .nm-gallery-controls{position:absolute!important;top:14px!important;left:16px!important;bottom:auto!important;width:calc(100% - 32px)!important;padding:0!important;justify-content:space-between!important;pointer-events:none}html.nm-valmere-type body #MainContent .nm-gallery-controls button{pointer-events:auto;background:rgba(255,255,255,.8)!important;border:0!important;border-radius:50%!important;width:32px!important;height:32px!important;min-width:32px!important;min-height:32px!important}html.nm-valmere-type body #MainContent .nm-gallery-count{font:400 11px/1.4 Arial,sans-serif!important;border:1px solid #666;border-radius:20px;padding:3px 12px;background:rgba(255,255,255,.85);order:-1}html.nm-valmere-type body #MainContent .nm-gallery-controls button:first-child{margin-left:auto!important;margin-right:6px!important}html.nm-valmere-type body #MainContent .vg-header-inner{height:66px!important;min-height:66px!important;padding:0 16px!important;gap:12px!important;display:flex!important}html.nm-valmere-type body #MainContent .vg-wordmark{margin-right:auto!important}html.nm-valmere-type body #MainContent .vg-wordmark img{display:none!important}html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-wordmark{font-size:19px!important;letter-spacing:.02em!important}html.nm-valmere-type body #MainContent .vg-header-actions{gap:13px!important}html.nm-valmere-type body #MainContent .vg-header-actions a:first-child{display:none!important}html.nm-valmere-type body #MainContent .vg-mobile-menu summary{font-size:21px!important;width:22px!important;min-width:22px!important}html.nm-valmere-type body #MainContent gp-product-title h1{font-size:27px!important}html.nm-valmere-type body #MainContent .nm-reference-field{padding:20px 0!important}html.nm-valmere-type body #MainContent .nm-ref-option-head{gap:8px}html.nm-valmere-type body #MainContent .nm-ref-option-selected{font-size:12px}html.nm-valmere-type body #MainContent .nm-find-size{font-size:11px!important}html.nm-valmere-type body #MainContent .nm-urgency-panel h2{font-size:29px!important}}
+
+html.nm-valmere-type body #MainContent .vg-header .vg-wordmark b{display:block!important;color:#111!important;font:400 25px/1 Georgia,serif!important;letter-spacing:.03em!important}html.nm-valmere-type body #MainContent .vg-header .vg-wordmark img,html.nm-valmere-type body #MainContent .vg-header .vg-wordmark span,html.nm-valmere-type body #MainContent .vg-header .vg-wordmark br{display:none!important}html.nm-valmere-type body #MainContent gp-product-variants legend,html.nm-valmere-type body #MainContent gp-product-variants .pr-size{display:none!important}html.nm-valmere-type body #MainContent .nm-ref-option-grid button{background:#f3f3f1!important}html.nm-valmere-type body #MainContent .nm-ref-option-grid button[aria-selected=true]{background:#fff!important}@media(max-width:1023px){html.nm-valmere-type body #MainContent .vg-header .vg-wordmark b{font-size:18px!important}}
+html.nm-valmere-type body #MainContent [data-nm-kind=color] .nm-ref-option-grid button{background:var(--nm-swatch)!important}
+
+html.nm-valmere-type body #MainContent [data-id="gVlmPWrap1"] gp-product-title h1[data-gp-text]{font-family:Georgia,serif!important;font-size:32px!important;font-weight:400!important;line-height:1.18!important;margin:0 0 12px!important}html.nm-valmere-type body #MainContent .nm-scroll-buy .nm-scroll-buy-price{font:600 22px/1.3 Arial,sans-serif!important;color:#111!important}html.nm-valmere-type body #MainContent .nm-scroll-buy .nm-scroll-buy-title{font:400 15px/1.3 Arial,sans-serif!important;color:#111!important}html.nm-valmere-type body #MainContent .nm-scroll-buy-product{gap:4px!important}html.nm-valmere-type body #MainContent .nm-gallery-controls [data-nm-gallery-count]{font:400 11px/1.3 Arial,sans-serif!important;padding:4px 12px;border:1px solid #666;border-radius:18px;background:rgba(255,255,255,.85);order:-1}@media(max-width:1023px){html.nm-valmere-type body #MainContent [data-id="gVlmPWrap1"] gp-product-title h1[data-gp-text]{font-size:27px!important}html.nm-valmere-type body #MainContent .nm-scroll-buy .nm-scroll-buy-price{font-size:20px!important}html.nm-valmere-type body #MainContent .nm-scroll-buy .nm-scroll-buy-title{font-size:13px!important}}
+
+html.nm-valmere-type body #MainContent .nm-product-breadcrumb{font:400 11px/1.5 Arial,sans-serif!important;color:#555!important;margin:0 0 12px!important;display:block}html.nm-valmere-type body #MainContent .nm-product-breadcrumb a{text-decoration:underline;text-underline-offset:3px}html.nm-valmere-type body #MainContent [data-id="gVlmPWrap1"] p.nm-product-material{font:400 14px/1.5 Arial,sans-serif!important;color:#666!important;margin:0 0 12px!important}
+
+html.nm-valmere-type body #MainContent .vg-header .vg-wordmark::before,
+html.nm-valmere-type body #MainContent .vg-header .vg-wordmark::after{content:none!important;display:none!important}
+html.nm-valmere-type body #MainContent .vg-header .vg-wordmark{display:block!important;flex:none!important;width:auto!important;min-width:0!important;max-width:100%!important;margin:0!important;padding:0!important;overflow:visible!important}
+html.nm-valmere-type body #MainContent .vg-header .vg-wordmark img,
+html.nm-valmere-type body #MainContent .vg-header .vg-wordmark span,
+html.nm-valmere-type body #MainContent .vg-header .vg-wordmark br{display:none!important}
+html.nm-valmere-type body #MainContent .vg-header .vg-wordmark b{display:block!important;width:auto!important;max-width:100%!important;font:400 25px/1.2 Georgia,serif!important;letter-spacing:.03em!important;color:#111!important;white-space:nowrap!important}
+html.nm-valmere-type body #MainContent .vg-header-inner{display:grid!important;grid-template-columns:auto minmax(0,1fr) auto!important;align-items:center!important;gap:24px!important;min-height:84px!important;height:auto!important;padding:18px 24px!important}
+html.nm-valmere-type body #MainContent .vg-desktop-nav{display:flex!important;justify-content:center!important;flex-wrap:nowrap!important;gap:22px!important;min-width:0!important;font-size:12px!important}
+html.nm-valmere-type body #MainContent .vg-mobile-menu{display:none!important}
+html.nm-valmere-type body #MainContent .vg-header-actions{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:4px!important;margin:0!important;width:auto!important;min-width:0!important}
+html.nm-valmere-type body #MainContent .vg-header-actions>a{display:flex!important;width:38px!important;height:44px!important;flex:0 0 38px!important;align-items:center!important;justify-content:center!important}
+html.nm-valmere-type body #MainContent .vg-header-actions svg{width:22px!important;height:22px!important;flex:none!important}
+html.nm-valmere-type body #MainContent .vg-header-actions span{top:0!important;right:0!important;font:500 10px/1 Arial,sans-serif!important}
+html.nm-valmere-type body #MainContent .vlm-gp-prices{display:flex!important;align-items:baseline!important;flex-wrap:wrap!important;gap:4px 9px!important;font:600 18px/1.4 Arial,sans-serif!important;letter-spacing:0!important;color:#111!important}
+html.nm-valmere-type body #MainContent .vlm-gp-prices>span{font:inherit!important;white-space:nowrap!important}
+html.nm-valmere-type body #MainContent .vlm-gp-prices s{font:400 13px/1.4 Arial,sans-serif!important;white-space:nowrap!important;color:#777!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-spacer,
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-mobile-title{display:none!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-wrap{width:100%!important;max-width:1200px!important;padding:0 24px!important;margin:0 auto!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-row{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;align-items:center!important;gap:48px!important;height:auto!important;padding:0!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-copy{display:block!important;width:100%!important;min-width:0!important;height:auto!important;padding:0!important;margin:0!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-copy h2{display:block!important;font:400 clamp(28px,3.2vw,42px)/1.18 Georgia,serif!important;margin:0 0 20px!important;padding:0!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-body{height:auto!important;padding:0!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-body p,
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-body li{font:400 15px/1.65 Arial,sans-serif!important;overflow-wrap:break-word}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-body ul{columns:1!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-photo{display:block!important;width:100%!important;min-width:0!important;height:auto!important;margin:0!important;padding:0!important;position:static!important;transform:none!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-photo img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:4/5!important;object-fit:cover!important;margin:0!important}
+html.nm-valmere-type body #MainContent .nm-scroll-buy{padding-bottom:max(12px,env(safe-area-inset-bottom))!important}
+html.nm-valmere-type body #MainContent .nm-scroll-buy-price{font-size:20px!important;line-height:1.25!important}
+html.nm-valmere-type body #MainContent .nm-scroll-buy-title{font-size:13px!important;line-height:1.3!important;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:1099px){
+html.nm-valmere-type body #MainContent .vg-header-inner{grid-template-columns:44px minmax(0,1fr) 88px!important;gap:8px!important;min-height:66px!important;height:66px!important;padding:0 16px!important}
+html.nm-valmere-type body #MainContent .vg-desktop-nav{display:none!important}
+html.nm-valmere-type body #MainContent .vg-mobile-menu{display:block!important;width:44px!important;min-width:44px!important}
+html.nm-valmere-type body #MainContent .vg-mobile-menu summary{display:flex!important;width:44px!important;min-width:44px!important;height:44px!important;align-items:center!important;justify-content:flex-start!important;padding:0!important;font:400 22px/1 Arial,sans-serif!important;list-style:none!important}
+html.nm-valmere-type body #MainContent .vg-mobile-menu nav{position:absolute!important;left:0!important;right:0!important;top:100%!important;width:100%!important;max-height:calc(100dvh - 120px)!important;overflow-y:auto!important;padding:12px 24px 24px!important;background:#fff!important;color:#111!important}
+html.nm-valmere-type body #MainContent .vg-mobile-menu nav a{display:block!important;min-height:44px!important;padding:12px 0!important;font:400 14px/1.4 Arial,sans-serif!important}
+html.nm-valmere-type body #MainContent .vg-header .vg-wordmark{justify-self:center!important}
+html.nm-valmere-type body #MainContent .vg-header .vg-wordmark b{font-size:clamp(17px,4.5vw,21px)!important;letter-spacing:.02em!important}
+html.nm-valmere-type body #MainContent .vg-header-actions{width:88px!important;gap:0!important}
+html.nm-valmere-type body #MainContent .vg-header-actions>a{width:44px!important;flex-basis:44px!important}
+html.nm-valmere-type body #MainContent .vg-header-actions>a[href*="/account"]{display:none!important}
+}
+@media(max-width:1023px){
+html.nm-valmere-type body #MainContent .gVlmPmain1{display:flex!important;flex-direction:column!important;gap:0!important}
+html.nm-valmere-type body #MainContent .gVlmPcol01,
+html.nm-valmere-type body #MainContent .gVlmPcol02{width:100%!important;max-width:100%!important;height:auto!important;position:static!important;min-width:0!important;flex:none!important}
+html.nm-valmere-type body #MainContent .gVlmPcol02{max-width:660px!important;margin:0 auto!important;padding:28px 20px!important}
+html.nm-valmere-type body #MainContent .nm-variant-gallery{max-width:720px!important;margin:0 auto!important}
+html.nm-valmere-type body #MainContent .nm-gallery-grid{align-items:flex-start!important}
+html.nm-valmere-type body #MainContent .nm-gallery-frame{aspect-ratio:1.25!important;height:auto!important;flex:0 0 100%!important}
+html.nm-valmere-type body #MainContent .nm-gallery-frame img{height:100%!important;aspect-ratio:auto!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-background{padding:40px 0!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-row{grid-template-columns:minmax(0,1fr)!important;gap:28px!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-photo{max-width:600px!important;margin:0 auto!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-photo img{aspect-ratio:4/3!important;max-height:460px!important}
+}
+@media(max-width:767px){
+html.nm-valmere-type body #MainContent .gVlmPcol02{padding:24px 16px!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-material-mobile,
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-craft-overlay{position:static!important;inset:auto!important;width:100%!important;margin:0!important;box-shadow:none!important;border-radius:0!important}
+html.nm-valmere-type body #MainContent .vlm-gp-prices{font-size:16px!important;gap:3px 7px!important}
+html.nm-valmere-type body #MainContent .vlm-gp-prices s{font-size:12px!important}
+html.nm-valmere-type body #MainContent .vlm-gp-card-info h2{font-size:14px!important;line-height:1.4!important;margin-bottom:10px!important}
+html.nm-valmere-type body #MainContent .vlm-gp-swatches{gap:7px!important;flex-wrap:wrap!important}
+html.nm-valmere-type body #MainContent .vlm-gp-swatch{width:24px!important;height:24px!important;min-width:24px!important;min-height:24px!important}
+html.nm-valmere-type body #MainContent .vlm-gp-sale{font:600 10px/1.2 Arial,sans-serif!important;padding:6px 8px!important;top:8px!important;left:8px!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-wrap{padding:0 20px!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-copy h2{font-size:28px!important}
+html.nm-valmere-type body #MainContent #nm-editorial .nmr-story-photo img{aspect-ratio:1!important;max-height:none!important}
+html.nm-valmere-type body #MainContent .nm-scroll-buy-price{font-size:18px!important}
+html.nm-valmere-type body #MainContent .nm-scroll-buy-title{font-size:12px!important}
+html.nm-valmere-type body #MainContent .nm-ref-option-head{flex-wrap:wrap!important;row-gap:8px!important}
+html.nm-valmere-type body #MainContent .nm-ref-option-selected{margin-left:auto!important}
+}
+#PrSizeDialog{box-sizing:border-box!important;width:min(820px,94vw)!important;max-width:94vw!important;max-height:85dvh!important;overflow:auto!important;margin:auto!important;padding:30px!important;border:1px solid #ddd!important;border-radius:0!important;background:#fff!important;color:#111!important;box-shadow:0 12px 60px #0003!important}
+#PrSizeDialog::backdrop{background:#0008}
+#PrSizeDialog h2{font:400 28px/1.2 Georgia,serif!important;margin:0 40px 20px 0!important}
+#PrSizeDialog .pr-size-scroll{overflow-x:auto!important;max-width:100%!important}
+#PrSizeDialog table{border-collapse:collapse!important;width:100%!important;min-width:400px!important;font:400 13px/1.5 Arial,sans-serif!important}
+#PrSizeDialog th,#PrSizeDialog td{padding:10px 12px!important;text-align:left!important;border-bottom:1px solid #e6e6e6!important;white-space:nowrap!important}
+#PrSizeDialog th{font-weight:600!important;background:#f5f5f5!important}
+#PrSizeDialog .pr-size-close{position:absolute!important;right:12px!important;top:12px!important;width:40px!important;height:40px!important;border:0!important;background:#fff!important;color:#111!important;font:400 24px/1 Arial,sans-serif!important;padding:0!important}
+@media(max-width:767px){#PrSizeDialog{padding:24px 16px!important}#PrSizeDialog h2{font-size:24px!important}}
+@media(max-width:359px){
+html.nm-valmere-type body #MainContent .vg-header-inner{padding:0 12px!important;gap:4px!important}
+html.nm-valmere-type body #MainContent .vg-header .vg-wordmark b{font-size:17px!important;letter-spacing:0!important}
+html.nm-valmere-type body #MainContent .vlm-gp-prices{font-size:15px!important}
+html.nm-valmere-type body #MainContent .vlm-gp-collection{padding-left:14px!important;padding-right:14px!important}
+html.nm-valmere-type body #MainContent .vlm-gp-grid{column-gap:12px!important}
+}
+
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-desktop-nav details>div{display:block!important;position:absolute!important;top:calc(100% + 16px)!important;left:-14px!important;right:auto!important;z-index:100!important;width:max-content!important;min-width:220px!important;max-width:min(320px,calc(100vw - 32px))!important;max-height:calc(100dvh - 150px)!important;overflow-y:auto!important;padding:7px!important;margin:0!important;border:1px solid #dedede!important;border-radius:3px!important;background:#fff!important;color:#111!important;box-shadow:0 12px 30px #00000012!important;text-align:left!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-desktop-nav details:not([open])>div{display:none!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-desktop-nav details>div>a{display:flex!important;align-items:center!important;min-height:44px!important;width:100%!important;padding:12px 15px!important;margin:0!important;border:0!important;border-radius:2px!important;background:#fff!important;color:#111!important;font:400 14px/1.4 Arial,sans-serif!important;letter-spacing:0!important;white-space:normal!important;text-decoration:none!important;overflow-wrap:break-word}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-desktop-nav details>div>a:hover,
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-desktop-nav details>div>a:focus-visible{background:#f2f2f0!important;color:#111!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-desktop-nav summary{list-style:none!important;cursor:pointer;border:0!important;border-radius:2px!important;background:transparent!important;color:#111!important;white-space:nowrap!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header a:focus-visible,
+html.nm-valmere-type body #MainContent .vg-shell .vg-header summary:focus-visible{outline:2px solid #111!important;outline-offset:3px!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-mobile-menu nav{background:#fff!important;color:#111!important;border-color:#ddd!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-mobile-menu nav a{color:#111!important;background:#fff!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-mobile-menu nav a:hover,
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-mobile-menu nav a:focus-visible{background:#f4f4f2!important;color:#111!important}
+
+@media(min-width:901px) and (max-width:1099px){
+html.nm-valmere-type body #MainContent .vg-shell .vg-header-inner{display:grid!important;grid-template-columns:auto minmax(0,1fr) auto!important;gap:16px!important;height:auto!important;min-height:78px!important;padding:14px 20px!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-mobile-menu{display:none!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-desktop-nav{display:flex!important;justify-content:center!important;gap:12px!important;width:auto!important;min-width:0!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-desktop-nav>a,
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-desktop-nav>details>summary{font:400 12px/1.4 Arial,sans-serif!important;letter-spacing:0!important;white-space:nowrap!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-wordmark{justify-self:start!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-wordmark b{font-size:20px!important;letter-spacing:.02em!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-header-actions{width:88px!important}
+html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-header-actions>a[href*="/account"]{display:none!important}
+}
+
+/* NM mobile announcement: keep one line (override theme column stack) */
+@media (max-width:900px){
+  .vg-announcement{
+    display:block!important;
+    text-align:center!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+    min-height:0!important;
+    padding:9px 14px!important;
+    font-size:10px!important;
+    line-height:1.35!important;
+    letter-spacing:.04em!important;
+    max-width:100%!important;
+  }
+  .vg-announcement .nm-announcement-message,
+  .vg-announcement .nm-geo-deadline{display:inline!important}
+  .vg-announcement .nm-geo-city{display:none!important}
+}
+@media (max-width:390px){
+  .vg-announcement{font-size:8px!important;padding:8px 10px!important}
+}
