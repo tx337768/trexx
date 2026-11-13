@@ -4,11 +4,16 @@
 .nm-home-clean *{box-sizing:border-box}
 .nm-home-clean img{display:block;max-width:100%}
 .nm-home-clean h1{font-family:Georgia,"Times New Roman",serif!important;font-weight:400!important;letter-spacing:-.02em!important;color:#111!important;font-size:clamp(36px,4vw,58px);line-height:1.15!important;margin:0 0 24px}
-.nm-home-clean .nh-hero-photo{width:100%;height:min(52vw,620px);min-height:330px;object-fit:cover;object-position:center}
+.nm-home-clean .nh-hero-photo{width:100%;height:min(56vw,640px);min-height:280px;object-fit:cover;object-position:center 40%}
 .nm-home-clean .nh-hero-copy{text-align:center;padding:50px 24px 40px;max-width:850px;margin:auto}
 .nm-home-clean .nh-kicker{display:block;font-size:11px;color:#757575;letter-spacing:.18em;line-height:1.5;font-weight:600;margin-bottom:20px}
 .nm-home-clean .nh-hero-copy p{max-width:550px;margin:0 auto 10px;font-size:16px;line-height:1.6;color:#333}
 .nm-home-clean .nh-hero-copy strong{font-weight:700;display:block;margin:0;font-size:16px;color:#111}
+.nm-home-clean .nh-ends{margin:26px 0 0;font:600 13px/1.4 Arial,Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#755b3c}
+.nm-home-clean .nh-timer{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:14px 0 0}
+.nm-home-clean .nh-timer span{min-width:68px;padding:12px 8px;border:1px solid #e4dcc8;background:#faf7f2}
+.nm-home-clean .nh-timer b{display:block;font:400 26px/1 Georgia,"Times New Roman",serif;color:#16140f;font-variant-numeric:tabular-nums}
+.nm-home-clean .nh-timer i{display:block;margin-top:6px;font:600 10px/1 Arial,Helvetica,sans-serif;letter-spacing:.12em;text-transform:uppercase;font-style:normal;color:#76634b}
 .vlm-gp-collection--sale{background:#fff!important;color:#25251f!important}
 .nm-fs-grid-intro{display:none}
 .vlm-gp-collection--sale .vlm-gp-toolbar{border-top:0;margin-top:8px}

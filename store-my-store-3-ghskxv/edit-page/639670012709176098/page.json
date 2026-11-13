@@ -69,6 +69,13 @@
       "chosenAtPublishedAt": "2026-11-13T10:25:09.994134Z",
       "splitExceptions": [],
       "note": "Restore the pre-edit homepage banner (Your next pair / Up to 60% off) on final-sale"
+    },
+    "edit-20261113T104231Z-6579": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:42:31Z",
+      "chosenAtPublishedAt": "2026-11-13T10:36:36.245877Z",
+      "splitExceptions": [],
+      "note": "New audience banner image; keep copy under it; add Nov 30 countdown"
     }
   },
   "activeDuplicate": null,

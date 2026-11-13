@@ -6,12 +6,19 @@
 {% capture nh_body %}{% case request.locale.iso_code %}{% when 'de' %}Klassische Loafer, Schnürschuhe und Boots. Finden Sie das passende Paar für Ihre Garderobe zu Black-Friday-Preisen.{% when 'es' %}Mocasines, zapatos de cordones y botas clásicos. Encuentra el par que encaja con tu armario a precios de Black Friday.{% when 'fr' %}Mocassins, chaussures à lacets et bottines classiques. Trouvez la paire qui complète votre garde-robe aux prix du Black Friday.{% else %}Classic loafers, lace-ups and boots. Find the pair that works with your wardrobe, at Black Friday prices.{% endcase %}{% endcapture %}
 {% capture nh_urgent %}{% case request.locale.iso_code %}{% when 'de' %}Farbe wählen. Größe finden. Jetzt Ihr Paar sichern.{% when 'es' %}Elige tu color. Encuentra tu talla. Hazlo tuyo.{% when 'fr' %}Choisissez votre couleur. Trouvez votre pointure. Adoptez votre paire.{% else %}Choose your colour. Find your size. Make it yours.{% endcase %}{% endcapture %}
 <section class="nm-home-clean">
-  <img class="nh-hero-photo" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/velmont-hero.webp" alt="Noble Meridian" fetchpriority="high" width="1600" height="800">
+  <img class="nh-hero-photo" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/nm-bf-audience-banner.jpg" alt="Noble Meridian" fetchpriority="high" width="1600" height="900">
   <div class="nh-hero-copy">
     <span class="nh-kicker">{{ nh_kicker }}</span>
     <h1>{{ nh_title }}</h1>
     <p>{{ nh_body }}</p>
     <strong>{{ nh_urgent }}</strong>
+    <p class="nh-ends">{% case request.locale.iso_code %}{% when 'de' %}Endet{% when 'es' %}Termina{% when 'fr' %}Jusqu’au{% else %}Ends{% endcase %} <span class="nm-geo-deadline">30 Nov</span></p>
+    <div class="nh-timer" aria-label="Time left">
+      <span><b data-nm-t="d">00</b><i>{% case request.locale.iso_code %}{% when 'de' %}Tage{% when 'es' %}días{% when 'fr' %}jours{% else %}days{% endcase %}</i></span>
+      <span><b data-nm-t="h">00</b><i>{% case request.locale.iso_code %}{% when 'de' %}Std{% when 'es' %}hrs{% when 'fr' %}hrs{% else %}hrs{% endcase %}</i></span>
+      <span><b data-nm-t="m">00</b><i>min</i></span>
+      <span><b data-nm-t="s">00</b><i>{% case request.locale.iso_code %}{% when 'de' %}Sek{% when 'es' %}seg{% when 'fr' %}sec{% else %}sec{% endcase %}</i></span>
+    </div>
   </div>
 </section>
 
