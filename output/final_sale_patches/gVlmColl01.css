@@ -25,10 +25,9 @@
 .nm-fs-deadline{margin:0;font:400 13px/1.4 Arial,Helvetica,sans-serif;color:#b7aea0}
 .nm-fs-timer-inline{font-variant-numeric:tabular-nums;color:#e8dfd0}
 .nm-fs-city-wrap{white-space:nowrap}
-.nm-fs-list-head{margin:8px 0 4px;text-align:left;max-width:720px}
-.nm-fs-list-head .vlm-gp-kicker{color:#76634b}
-.nm-fs-list-head h2{margin:6px 0 0;font:400 32px/1.15 Georgia,serif;color:#25251f;letter-spacing:-.3px}
-.nm-fs-list-note{margin:10px 0 0;color:#67665f;font:400 15px/1.55 Arial,Helvetica,sans-serif;max-width:560px}
+.vlm-gp-collection--sale{background:#fff!important;color:#25251f!important}
+.nm-fs-grid-intro{display:none}
+.vlm-gp-collection--sale .vlm-gp-toolbar{border-top:0;margin-top:8px}
 .vlm-gp-collection--sale .nm-fs-card-cta{display:inline-block;margin-top:12px;padding:11px 14px;background:#16140f;color:#fff!important;text-decoration:none;font:600 11px/1 Arial,Helvetica,sans-serif;letter-spacing:.08em;text-transform:uppercase}
 .vlm-gp-collection--sale .vlm-gp-card{border:0;border-bottom:1px solid #ece7df;padding-bottom:8px}
 .vlm-gp-collection--sale .vlm-gp-card-image{background:#f4f1eb}
@@ -43,5 +42,4 @@
 @media (max-width:749px){
   .nm-fs-sticky-label{display:none}
   .nm-fs-hero-media{min-height:220px}
-  .nm-fs-list-head h2{font-size:26px}
 }
