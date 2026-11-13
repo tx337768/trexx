@@ -179,8 +179,6 @@
 .sh-lp .ugc p{margin:.4rem 0;font-size:.92rem}
 .sh-lp .ugc footer{font-size:.75rem;font-weight:700;color:var(--forest);text-transform:uppercase}
 @media (max-width:900px){
-  .sh-lp .ugc-grid{grid-template-columns:1fr 1fr}
-}
   .sh-lp .nav-links{display:none}
   .sh-lp .hero-copy{margin:0 auto;width:min(100% - 1.5rem,560px);padding-top:3.2rem}
   .sh-lp .feat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -189,6 +187,7 @@
   .sh-lp .use-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
   .sh-lp .promise{grid-template-columns:1fr}
   .sh-lp .mini-grid{grid-template-columns:1fr}
+  .sh-lp .ugc-grid{grid-template-columns:1fr 1fr}
 }
 @media (prefers-reduced-motion:reduce){
   .sh-lp .btn-red,.sh-lp .hero-copy{animation:none}
