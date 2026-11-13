@@ -172,3 +172,29 @@ html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-wordmark b{font-
 html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-header-actions{width:88px!important}
 html.nm-valmere-type body #MainContent .vg-shell .vg-header .vg-header-actions>a[href*="/account"]{display:none!important}
 }
+
+/* NM mobile announcement: keep one line (override theme column stack) */
+@media (max-width:900px){
+  .vg-announcement{
+    display:flex!important;
+    flex-direction:row!important;
+    flex-wrap:nowrap!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:6px!important;
+    min-height:0!important;
+    padding:9px 14px!important;
+    font-size:10px!important;
+    line-height:1.35!important;
+    letter-spacing:.04em!important;
+  }
+  .vg-announcement .nm-announcement-message{
+    display:inline!important;
+    max-width:min(100%,72vw)!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+    white-space:nowrap!important;
+  }
+  .vg-announcement .nm-geo-deadline{display:inline!important;white-space:nowrap!important}
+  .vg-announcement .nm-geo-city{display:none!important}
+}

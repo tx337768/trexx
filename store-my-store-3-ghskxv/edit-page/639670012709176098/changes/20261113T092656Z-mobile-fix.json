@@ -1,0 +1,29 @@
+{
+  "schema": "edit-change/v1",
+  "editId": "edit-20261113T091924Z-d553",
+  "pageId": "639670012709176098",
+  "sectionId": "639670171874624104",
+  "at": "2026-11-13T09:26:56.462415Z",
+  "summary": "Mobile-fix: gVlmColl01 sticky/hero HTML+CSS (nm-fs-sticky-mid-short) + announcement one-line CSS; gVlmHead01 announcement rules covered via same-section coll CSS",
+  "expectedUpdatedAtBefore": "2026-11-13T03:51:10.315817Z",
+  "updatedAtAfter": "2026-11-13T09:26:56.462415Z",
+  "expectedPublishedAt": "2026-11-13T03:51:14.886749Z",
+  "verified": true,
+  "uids": [
+    "gVlmColl01"
+  ],
+  "paths": [
+    "advanced.editorData.css",
+    "advanced.editorData.html"
+  ],
+  "changeLedger": {
+    "note": "CSS call-id 42268242-00b4-4e00-a081-0cca2c1a01aa; HTML call-id dc28e768-f92c-43e3-999a-7b4de0ba8dfa. Head CSS announcement block is duplicated on gVlmColl01 (same section) for live page.",
+    "checks": {
+      "paginate": true,
+      "vlm-gp-grid": true,
+      "nm_fs_view": true,
+      "nm-fs-sticky-mid-short": true,
+      "styles_in_the_sale": false
+    }
+  }
+}
