@@ -23,13 +23,66 @@
     </div>
   </div>
 </section>
+
+<script>
+(function(){
+  var END=new Date('2026-11-30T23:59:00+00:00');
+  function pad(n){return String(n).padStart(2,'0');}
+  function tick(){
+    var left=Math.max(0, END-Date.now());
+    var s=Math.floor(left/1000);
+    var d=Math.floor(s/86400), h=Math.floor((s%86400)/3600), m=Math.floor((s%3600)/60), sec=s%60;
+    document.querySelectorAll('[data-nm-t="d"]').forEach(function(el){el.textContent=pad(d);});
+    document.querySelectorAll('[data-nm-t="h"]').forEach(function(el){el.textContent=pad(h);});
+    document.querySelectorAll('[data-nm-t="m"]').forEach(function(el){el.textContent=pad(m);});
+    document.querySelectorAll('[data-nm-t="s"]').forEach(function(el){el.textContent=pad(sec);});
+  }
+  tick(); setInterval(tick,1000);
+  function emit(name, params){
+    params=params||{};
+    params.page_type='collection';
+    params.collection='final-sale';
+    try{
+      if(typeof gtag==='function'){ gtag('event', name, params); }
+      window.dataLayer=window.dataLayer||[]; window.dataLayer.push(Object.assign({event:name}, params));
+      if(window.Shopify&&Shopify.analytics&&typeof Shopify.analytics.publish==='function'){
+        Shopify.analytics.publish(name, params);
+      }
+    }catch(e){}
+  }
+  emit('nm_fs_view', {engagement_time_msec:1});
+  var marks={25:0,50:0,75:0,90:0};
+  window.addEventListener('scroll', function(){
+    var h=document.documentElement;
+    var pct=Math.round((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)||0;
+    Object.keys(marks).forEach(function(k){
+      if(!marks[k] && pct>=Number(k)){ marks[k]=1; emit('nm_fs_scroll', {percent:Number(k)}); }
+    });
+  }, {passive:true});
+  document.addEventListener('click', function(e){
+    var a=e.target.closest('[data-nm-track]');
+    if(!a) return;
+    var card=a.closest('[data-nm-product-card]');
+    emit('nm_fs_click', {
+      click_type:a.getAttribute('data-nm-track'),
+      product_handle: card && card.getAttribute('data-handle'),
+      product_id: card && card.getAttribute('data-product-id')
+    });
+  });
+  var spent=0;
+  setInterval(function(){ spent+=5; if(spent===15||spent===30||spent===60) emit('nm_fs_time', {seconds:spent}); }, 5000);
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState==='hidden') emit('nm_fs_exit', {seconds:spent, scroll_marks:Object.keys(marks).filter(function(k){return marks[k];}).join(',')});
+  });
+})();
+</script>
 {% endif %}
-<section class="vlm-gp-collection{% if vlm_collection.handle == 'final-sale' %} vlm-gp-collection--sale{% endif %}" id="nm-bf-products" style="max-width:1344px!important;margin-left:auto!important;margin-right:auto!important">
+<section class="vlm-gp-collection{% if vlm_collection.handle == 'final-sale' %} vlm-gp-collection--sale{% endif %}" id="nm-bf-products" data-nm-collection="{{ vlm_collection.handle | escape }}" style="max-width:1344px!important;margin-left:auto!important;margin-right:auto!important">
 {% unless vlm_collection.handle == 'final-sale' %}<div class="vlm-gp-collection-heading"><p class="vlm-gp-kicker">{{ 'nm_localized.collection_kicker' | t }}</p><h1>{{ vlm_collection.title | escape }}</h1><div class="vlm-gp-description">{{ vlm_collection.description }}</div></div>
 <nav class="vlm-gp-categories" aria-label="{{ 'nm_localized.categories' | t }}"><a href="{{ routes.root_url | append: '/collections/final-sale' | replace: '//', '/' }}"{% if vlm_collection.handle == 'final-sale' %} aria-current="page"{% endif %}>{{ 'nm_localized.c081' | t }}</a><a href="{{ routes.root_url | append: '/collections/mens-loafers' | replace: '//', '/' }}">{{ 'nm_localized.c003' | t }}</a><a href="{{ routes.root_url | append: '/collections/mens-derbies' | replace: '//', '/' }}">{{ 'nm_localized.c004' | t }}</a><a href="{{ routes.root_url | append: '/collections/mens-oxfords' | replace: '//', '/' }}">{{ 'nm_localized.c005' | t }}</a><a href="{{ routes.root_url | append: '/collections/mens-monkstraps' | replace: '//', '/' }}">{{ 'nm_localized.c006' | t }}</a><a href="{{ routes.root_url | append: '/collections/hybrid-shoes' | replace: '//', '/' }}">{{ 'nm_localized.c007' | t }}</a><a href="{{ routes.root_url | append: '/collections/mens-chelsea-boots' | replace: '//', '/' }}">{{ 'nm_localized.c008' | t }}</a><a href="{{ routes.root_url | append: '/collections/mens-chukka-boots' | replace: '//', '/' }}">{{ 'nm_localized.c009' | t }}</a><a href="{{ routes.root_url | append: '/collections/mens-lace-up-boots' | replace: '//', '/' }}">{{ 'nm_localized.c010' | t }}</a><a href="{{ routes.root_url | append: '/collections/mens-jodhpur-boots' | replace: '//', '/' }}">{{ 'nm_localized.c011' | t }}</a></nav>
 {% else %}<div class="vlm-gp-collection-heading nm-fs-list-head"><p class="vlm-gp-kicker">The Black Friday edit</p><h2>{{ nm_listing_count }} styles in the sale</h2><p class="nm-fs-list-note">Choose a pair below — every style includes free shipping &amp; returns and a 60-day money-back guarantee.</p></div>{% endunless %}
 <div class="vlm-gp-toolbar"><span>{{ 'collection.count' | t: count: nm_listing_count }}</span><form method="get"><label for="VlmGpSort">{{ 'collection.sort' | t }}</label><select id="VlmGpSort" name="sort_by" onchange="this.form.submit()">{% assign vlm_sort = vlm_collection.sort_by | default: vlm_collection.default_sort_by %}{% for option in vlm_collection.sort_options %}<option value="{{ option.value | escape }}"{% if option.value == vlm_sort %} selected{% endif %}>{{ option.name }}</option>{% endfor %}</select><noscript><button>{{ 'general.apply' | t }}</button></noscript></form></div>
 {% paginate vlm_collection.products by 24 %}<div class="vlm-gp-grid">{% for vlm_product in vlm_collection.products %}{% if vlm_product.handle == 'cedar-shoe-tree' %}{% continue %}{% endif %}
-<article class="vlm-gp-card" data-nm-product-card data-handle="{{ vlm_product.handle | escape }}" data-product-id="{{ vlm_product.id }}"><a class="vlm-gp-card-image" href="{{ vlm_product.url }}" data-nm-track="product_image">{% if vlm_product.featured_image %}{{ vlm_product.featured_image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '240,400,600,900', sizes: '(min-width: 1024px) 30vw, 46vw', alt: vlm_product.title }}{% endif %}{% if vlm_product.compare_at_price > vlm_product.price %}{% assign vlm_saving = vlm_product.compare_at_price | minus: vlm_product.price | times: 100.0 | divided_by: vlm_product.compare_at_price | floor %}<span class="vlm-gp-sale">{{ 'nm_localized.discount_badge' | t: amount: vlm_saving }}</span>{% endif %}</a><div class="vlm-gp-card-info"><h2><a href="{{ vlm_product.url }}" data-nm-track="product_title">{{ vlm_product.title | escape }}</a></h2>{% for vlm_option in vlm_product.options_with_values %}{% assign vlm_option_name = vlm_option.name | downcase %}{% if vlm_option_name contains 'color' or vlm_option_name contains 'colour' or vlm_option_name contains 'couleur' or vlm_option_name contains 'farbe' %}<div class="vlm-gp-swatches" role="group" aria-label="{{ vlm_option.name | escape }}">{% for vlm_color in vlm_option.values %}{% assign vlm_variant = vlm_color.variant %}{% assign vlm_color_name = vlm_color.name | downcase %}{% assign vlm_fallback = '#9a8065' %}{% if vlm_color_name contains 'black' %}{% assign vlm_fallback = '#171717' %}{% elsif vlm_color_name contains 'bordeaux' or vlm_color_name contains 'oxblood' or vlm_color_name contains 'burgundy' %}{% assign vlm_fallback = '#642b35' %}{% elsif vlm_color_name contains 'brown' or vlm_color_name contains 'chestnut' %}{% assign vlm_fallback = '#75472f' %}{% elsif vlm_color_name contains 'oak' or vlm_color_name contains 'tan' %}{% assign vlm_fallback = '#b88754' %}{% elsif vlm_color_name contains 'white' or vlm_color_name contains 'ivory' %}{% assign vlm_fallback = '#f4f0e8' %}{% elsif vlm_color_name contains 'grey' or vlm_color_name contains 'gray' %}{% assign vlm_fallback = '#9b9b98' %}{% elsif vlm_color_name contains 'navy' %}{% assign vlm_fallback = '#243044' %}{% elsif vlm_color_name contains 'sand' or vlm_color_name contains 'beige' %}{% assign vlm_fallback = '#d5c3a2' %}{% endif %}<button type="button" class="vlm-gp-swatch{% if forloop.first %} is-active{% endif %}" data-vlm-color-swatch data-image="{% if vlm_variant.featured_image %}{{ vlm_variant.featured_image | image_url: width: 900 }}{% endif %}" data-url="{{ vlm_product.url }}?variant={{ vlm_variant.id }}" aria-label="{{ vlm_color.name | escape }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}" title="{{ vlm_color.name | escape }}">{% if vlm_color.swatch.image %}<img src="{{ vlm_color.swatch.image | image_url: width: 64 }}" alt="" width="64" height="64" loading="lazy">{% else %}<span style="background-color:{% if vlm_color.swatch.color %}{{ vlm_color.swatch.color }}{% else %}{{ vlm_fallback }}{% endif %}"></span>{% endif %}</button>{% endfor %}</div>{% endif %}{% endfor %}<div class="vlm-gp-prices"><span>{{ vlm_product.price | money_with_currency }}</span>{% if vlm_product.compare_at_price > vlm_product.price %}<s>{{ vlm_product.compare_at_price | money }}</s>{% endif %}</div><a class="vlm-gp-explore nm-fs-card-cta" href="{{ vlm_product.url }}" data-nm-track="choose_size">Choose size →</a></div></article>
+<article class="vlm-gp-card" data-nm-product-card data-handle="{{ vlm_product.handle | escape }}" data-product-id="{{ vlm_product.id }}"><a class="vlm-gp-card-image" href="{{ vlm_product.url }}" data-nm-track="product_image">{% if vlm_product.featured_image %}{{ vlm_product.featured_image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '240,400,600,900', sizes: '(min-width: 1024px) 30vw, 46vw', alt: vlm_product.title }}{% endif %}{% if vlm_product.compare_at_price > vlm_product.price %}{% assign vlm_saving = vlm_product.compare_at_price | minus: vlm_product.price | times: 100.0 | divided_by: vlm_product.compare_at_price | floor %}<span class="vlm-gp-sale">{{ 'nm_localized.discount_badge' | t: amount: vlm_saving }}</span>{% endif %}</a><div class="vlm-gp-card-info"><h2><a href="{{ vlm_product.url }}" data-nm-track="product_title">{{ vlm_product.title | escape }}</a></h2>{% for vlm_option in vlm_product.options_with_values %}{% assign vlm_option_name = vlm_option.name | downcase %}{% if vlm_option_name contains 'color' or vlm_option_name contains 'colour' or vlm_option_name contains 'couleur' or vlm_option_name contains 'farbe' %}<div class="vlm-gp-swatches" role="group" aria-label="{{ vlm_option.name | escape }}">{% for vlm_color in vlm_option.values %}{% assign vlm_variant = vlm_color.variant %}{% assign vlm_color_name = vlm_color.name | downcase %}{% assign vlm_fallback = '#9a8065' %}{% if vlm_color_name contains 'black' %}{% assign vlm_fallback = '#171717' %}{% elsif vlm_color_name contains 'bordeaux' or vlm_color_name contains 'oxblood' or vlm_color_name contains 'burgundy' %}{% assign vlm_fallback = '#642b35' %}{% elsif vlm_color_name contains 'brown' or vlm_color_name contains 'chestnut' %}{% assign vlm_fallback = '#75472f' %}{% elsif vlm_color_name contains 'oak' or vlm_color_name contains 'tan' %}{% assign vlm_fallback = '#b88754' %}{% elsif vlm_color_name contains 'white' or vlm_color_name contains 'ivory' %}{% assign vlm_fallback = '#f4f0e8' %}{% elsif vlm_color_name contains 'grey' or vlm_color_name contains 'gray' %}{% assign vlm_fallback = '#9b9b98' %}{% elsif vlm_color_name contains 'navy' %}{% assign vlm_fallback = '#243044' %}{% elsif vlm_color_name contains 'sand' or vlm_color_name contains 'beige' %}{% assign vlm_fallback = '#d5c3a2' %}{% endif %}<button type="button" class="vlm-gp-swatch{% if forloop.first %} is-active{% endif %}" data-vlm-color-swatch data-image="{% if vlm_variant.featured_image %}{{ vlm_variant.featured_image | image_url: width: 900 }}{% endif %}" data-url="{{ vlm_product.url }}?variant={{ vlm_variant.id }}" aria-label="{{ vlm_color.name | escape }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}" title="{{ vlm_color.name | escape }}">{% if vlm_color.swatch.image %}<img src="{{ vlm_color.swatch.image | image_url: width: 64 }}" alt="" width="64" height="64" loading="lazy">{% else %}<span style="background-color:{% if vlm_color.swatch.color %}{{ vlm_color.swatch.color }}{% else %}{{ vlm_fallback }}{% endif %}"></span>{% endif %}</button>{% endfor %}</div>{% endif %}{% endfor %}<div class="vlm-gp-prices"><span>{{ vlm_product.price | money_with_currency }}</span>{% if vlm_product.compare_at_price > vlm_product.price %}<s>{{ vlm_product.compare_at_price | money }}</s>{% endif %}</div>{% if vlm_collection.handle == 'final-sale' %}<a class="vlm-gp-explore nm-fs-card-cta" href="{{ vlm_product.url }}" data-nm-track="choose_size">Choose size →</a>{% else %}<a class="vlm-gp-explore" href="{{ vlm_product.url }}">{% case request.locale.iso_code %}{% when 'de' %}Entdecken{% when 'es' %}Explorar{% when 'fr' %}Découvrir{% else %}Explore{% endcase %}</a>{% endif %}</div></article>
 {% else %}<p>{{ 'nm_localized.shared3' | t }}</p>{% endfor %}</div><nav class="vlm-gp-pagination" aria-label="Collection pages">{{ paginate | default_pagination }}</nav>{% endpaginate %}
 </section>

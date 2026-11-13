@@ -9,7 +9,7 @@
 ## Live now on final-sale
 Page: sticky Black Friday bar, countdown to 30 Nov, visitor city + local deadline, free shipping / 60-day trust, **Choose size** CTAs.
 
-Custom GA4 / Shopify analytics events (prefix `nm_fs_`):
+Custom GA4 / Shopify analytics events (prefix `nm_fs_`) — emitted only on `final-sale` via a Liquid-gated `<script>` (not in shared collection JS):
 
 | Event | Meaning |
 |---|---|

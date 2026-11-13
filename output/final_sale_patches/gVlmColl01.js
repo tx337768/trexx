@@ -1,60 +1,39 @@
 
+/* Collection color swatches — update card image + links */
 (function(){
-  var END=new Date('2026-11-30T23:59:00+00:00');
-  function pad(n){return String(n).padStart(2,'0');}
-  function tick(){
-    var left=Math.max(0, END-Date.now());
-    var s=Math.floor(left/1000);
-    var d=Math.floor(s/86400), h=Math.floor((s%86400)/3600), m=Math.floor((s%3600)/60), sec=s%60;
-    document.querySelectorAll('[data-nm-t="d"]').forEach(function(el){el.textContent=pad(d);});
-    document.querySelectorAll('[data-nm-t="h"]').forEach(function(el){el.textContent=pad(h);});
-    document.querySelectorAll('[data-nm-t="m"]').forEach(function(el){el.textContent=pad(m);});
-    document.querySelectorAll('[data-nm-t="s"]').forEach(function(el){el.textContent=pad(sec);});
-  }
-  tick(); setInterval(tick,1000);
-
-  // Funnel / abandonment beacons → GA4 + dataLayer (visible in GA4 DebugView / Explorations)
-  function emit(name, params){
-    params=params||{};
-    params.page_type='collection';
-    params.collection='final-sale';
-    try{
-      if(typeof gtag==='function'){ gtag('event', name, params); }
-      window.dataLayer=window.dataLayer||[]; window.dataLayer.push(Object.assign({event:name}, params));
-      if(window.Shopify&&Shopify.analytics&&typeof Shopify.analytics.publish==='function'){
-        Shopify.analytics.publish(name, params);
-      }
-    }catch(e){}
-  }
-  emit('nm_fs_view', {engagement_time_msec:1});
-  var marks={25:0,50:0,75:0,90:0};
-  window.addEventListener('scroll', function(){
-    var h=document.documentElement;
-    var pct=Math.round((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)||0;
-    Object.keys(marks).forEach(function(k){
-      if(!marks[k] && pct>=Number(k)){ marks[k]=1; emit('nm_fs_scroll', {percent:Number(k)}); }
-    });
-  }, {passive:true});
   document.addEventListener('click', function(e){
-    var a=e.target.closest('[data-nm-track]');
-    if(!a) return;
-    var card=a.closest('[data-nm-product-card]');
-    emit('nm_fs_click', {
-      click_type:a.getAttribute('data-nm-track'),
-      product_handle: card && card.getAttribute('data-handle'),
-      product_id: card && card.getAttribute('data-product-id')
-    });
-  });
-  var spent=0;
-  setInterval(function(){ spent+=5; if(spent===15||spent===30||spent===60) emit('nm_fs_time', {seconds:spent}); }, 5000);
-  document.addEventListener('visibilitychange', function(){
-    if(document.visibilityState==='hidden') emit('nm_fs_exit', {seconds:spent, scroll_marks:Object.keys(marks).filter(function(k){return marks[k];}).join(',')});
+    var btn = e.target.closest('[data-vlm-color-swatch]');
+    if(!btn) return;
+    e.preventDefault();
+    var card = btn.closest('.vlm-gp-card');
+    if(!card) return;
+    var group = btn.closest('.vlm-gp-swatches');
+    if(group){
+      group.querySelectorAll('[data-vlm-color-swatch]').forEach(function(b){
+        b.classList.remove('is-active');
+        b.setAttribute('aria-pressed','false');
+      });
+    }
+    btn.classList.add('is-active');
+    btn.setAttribute('aria-pressed','true');
+    var imgUrl = btn.getAttribute('data-image');
+    var linkUrl = btn.getAttribute('data-url');
+    var img = card.querySelector('.vlm-gp-card-image img');
+    if(img && imgUrl){
+      img.src = imgUrl;
+      if(img.hasAttribute('srcset')) img.removeAttribute('srcset');
+    }
+    if(linkUrl){
+      card.querySelectorAll('a.vlm-gp-card-image, .vlm-gp-card-info h2 a, a.vlm-gp-explore').forEach(function(a){
+        a.setAttribute('href', linkUrl);
+      });
+    }
   });
 })();
 
 /* Noble Meridian — fill visitor city + local Black Friday deadline */
 (function () {
-  var END = new Date('2026-11-30T23:59:00+00:00'); // sale end (absolute)
+  var END = new Date('2026-11-30T23:59:00+00:00');
   var FALLBACK = 'your area';
 
   function localDeadline() {
@@ -72,7 +51,6 @@
 
   function apply(city) {
     var c = (city || FALLBACK).trim() || FALLBACK;
-    // Classes only — never [data-nm-geo-city] (that matched <html> and wiped the page)
     document.querySelectorAll('.nm-geo-city').forEach(function (el) {
       el.textContent = c;
     });
@@ -86,6 +64,8 @@
     if (!d || typeof d !== 'object') return '';
     return (d.city || d.region || d.country || d.country_name || '').trim();
   }
+
+  if (!document.querySelector('.nm-geo-city, .nm-geo-deadline')) return;
 
   apply(FALLBACK);
 
@@ -117,10 +97,8 @@
       });
   }
 
-  // First non-empty success wins; empty/fail from one provider does not cancel the other
   get('https://get.geojs.io/v1/ip/geo.json', fromGeoJson);
   get('https://ipwho.is/', function (d) {
     return d && d.success !== false ? fromGeoJson(d) : '';
   });
 })();
-
