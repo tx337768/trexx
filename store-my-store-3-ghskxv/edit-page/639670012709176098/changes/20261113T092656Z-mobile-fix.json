@@ -4,9 +4,9 @@
   "pageId": "639670012709176098",
   "sectionId": "639670171874624104",
   "at": "2026-11-13T09:26:56.462415Z",
-  "summary": "Mobile-fix: gVlmColl01 sticky/hero HTML+CSS (nm-fs-sticky-mid-short) + announcement one-line CSS; gVlmHead01 announcement rules covered via same-section coll CSS",
+  "summary": "Mobile-fix: gVlmColl01 sticky/hero HTML+CSS; gVlmHead01 CSS via Shopify CDN @import (announcement one-line + full head styles)",
   "expectedUpdatedAtBefore": "2026-11-13T03:51:10.315817Z",
-  "updatedAtAfter": "2026-11-13T09:26:56.462415Z",
+  "updatedAtAfter": "2026-11-13T09:41:39.1983Z",
   "expectedPublishedAt": "2026-11-13T03:51:14.886749Z",
   "verified": true,
   "uids": [
@@ -24,6 +24,11 @@
       "nm_fs_view": true,
       "nm-fs-sticky-mid-short": true,
       "styles_in_the_sale": false
+    },
+    "headCss": {
+      "delivery": "Shopify CDN @import",
+      "url": "https://cdn.shopify.com/s/files/1/0811/8239/2552/files/gVlmHead01-mobile-fix.css?v=1794562886",
+      "note": "Exact mobile_fix_head.css content hosted as shop file; section field uses @import due to 32KB MCP payload limit"
     }
   }
 }
