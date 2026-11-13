@@ -1,0 +1,68 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_738f1c7eedd4",
+  "kind": "structural",
+  "pageId": "645981726744511377",
+  "sectionId": "645981932735169067",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T11:23:33Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionHash": {
+    "before": "753becbbe27da94c38a2590cc40da44236c8e40d2ef0efe83a8879e11c9b15fb",
+    "after": "738f1c7eedd4b04f133aa56f1f13bface0ca9b7991eb1c01e61b5d7304948b76"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T11:22:41.435918Z",
+    "after": "2026-11-13T11:23:33.353755Z"
+  },
+  "operations": [
+    {
+      "parentUid": "gAnnColR",
+      "position": 0,
+      "node": {
+        "uid": "gAnnLocRw",
+        "tag": "Row"
+      }
+    },
+    {
+      "action": "remove",
+      "uid": "gAnnLoc"
+    }
+  ],
+  "changedValues": [
+    {
+      "label": "Store Locator",
+      "value": "pin Icon + Store Locator text"
+    }
+  ],
+  "changeLedger": {
+    "patches": [],
+    "removed": [
+      {
+        "uid": "gAnnLoc",
+        "tag": "Text",
+        "parentUid": "gAnnColR",
+        "position": 0,
+        "node": {
+          "uid": "gAnnLoc",
+          "tag": "Text",
+          "settings": {
+            "text": "<p style=\"text-align:right\">&#128205; Store Locator</p>"
+          }
+        }
+      }
+    ],
+    "sectionHash": {
+      "before": "753becbbe27da94c38a2590cc40da44236c8e40d2ef0efe83a8879e11c9b15fb",
+      "after": "738f1c7eedd4b04f133aa56f1f13bface0ca9b7991eb1c01e61b5d7304948b76"
+    }
+  }
+}

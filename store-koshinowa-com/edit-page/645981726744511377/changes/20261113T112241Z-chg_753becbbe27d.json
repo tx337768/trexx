@@ -1,0 +1,65 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_753becbbe27d",
+  "kind": "apply",
+  "pageId": "645981726744511377",
+  "sectionId": "645981932735169067",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T11:22:41Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionHash": {
+    "before": "9f6c735ff4775ee6b6e875f8a1bb25e1f2fa7583a840bd6d469d4c63b2accc06",
+    "after": "753becbbe27da94c38a2590cc40da44236c8e40d2ef0efe83a8879e11c9b15fb"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T11:22:20.769357Z",
+    "after": "2026-11-13T11:22:41.435918Z"
+  },
+  "changedValues": [
+    {
+      "label": "Gear tile CTAs",
+      "value": "red \u25cf\u2192 after SHOP links"
+    }
+  ],
+  "changeLedger": {
+    "patches": [
+      {
+        "uid": "gTTx0",
+        "path": "settings.text",
+        "before": "<p><strong style=\"font-size:26px;line-height:1;text-transform:uppercase;font-family:Bebas Neue,sans-serif\">SURVIVAL SYSTEMS</strong><br>72 hours of self-reliance<br><span style=\"text-decoration:underline\">SHOP SURVIVAL KITS</span></p>",
+        "after": "<p><strong style=\"font-size:26px;line-height:1;text-transform:uppercase;font-family:Bebas Neue,sans-serif\">SURVIVAL SYSTEMS</strong><br>72 hours of self-reliance<br><span style=\"text-decoration:underline\">SHOP SURVIVAL KITS</span> <span style=\"color:#de3232;font-weight:700\">&#9679;&#8594;</span></p>"
+      },
+      {
+        "uid": "gTTx1",
+        "path": "settings.text",
+        "before": "<p><strong style=\"font-size:26px;line-height:1;text-transform:uppercase;font-family:Bebas Neue,sans-serif\">FIRST AID KITS</strong><br>HSA/FSA eligible kits for every scenario<br><span style=\"text-decoration:underline\">SHOP FIRST AID</span></p>",
+        "after": "<p><strong style=\"font-size:26px;line-height:1;text-transform:uppercase;font-family:Bebas Neue,sans-serif\">FIRST AID KITS</strong><br>HSA/FSA eligible kits for every scenario<br><span style=\"text-decoration:underline\">SHOP FIRST AID</span> <span style=\"color:#de3232;font-weight:700\">&#9679;&#8594;</span></p>"
+      },
+      {
+        "uid": "gTTx2",
+        "path": "settings.text",
+        "before": "<p><strong style=\"font-size:26px;line-height:1;text-transform:uppercase;font-family:Bebas Neue,sans-serif\">POWER SYSTEMS</strong><br>Jump starters, chargers, and flashlights<br><span style=\"text-decoration:underline\">SHOP POWER</span></p>",
+        "after": "<p><strong style=\"font-size:26px;line-height:1;text-transform:uppercase;font-family:Bebas Neue,sans-serif\">POWER SYSTEMS</strong><br>Jump starters, chargers, and flashlights<br><span style=\"text-decoration:underline\">SHOP POWER</span> <span style=\"color:#de3232;font-weight:700\">&#9679;&#8594;</span></p>"
+      },
+      {
+        "uid": "gTTx3",
+        "path": "settings.text",
+        "before": "<p><strong style=\"font-size:26px;line-height:1;text-transform:uppercase;font-family:Bebas Neue,sans-serif\">VEHICLE SAFETY</strong><br>Car kits for every driver<br><span style=\"text-decoration:underline\">SHOP AUTO</span></p>",
+        "after": "<p><strong style=\"font-size:26px;line-height:1;text-transform:uppercase;font-family:Bebas Neue,sans-serif\">VEHICLE SAFETY</strong><br>Car kits for every driver<br><span style=\"text-decoration:underline\">SHOP AUTO</span> <span style=\"color:#de3232;font-weight:700\">&#9679;&#8594;</span></p>"
+      }
+    ],
+    "removed": [],
+    "sectionHash": {
+      "before": "9f6c735ff4775ee6b6e875f8a1bb25e1f2fa7583a840bd6d469d4c63b2accc06",
+      "after": "753becbbe27da94c38a2590cc40da44236c8e40d2ef0efe83a8879e11c9b15fb"
+    }
+  }
+}

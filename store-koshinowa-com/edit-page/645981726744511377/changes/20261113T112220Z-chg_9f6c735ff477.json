@@ -1,0 +1,77 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_9f6c735ff477",
+  "kind": "structural",
+  "pageId": "645981726744511377",
+  "sectionId": "645981932735169067",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T11:22:20Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionHash": {
+    "before": "0a58dea10741253d8eeef34609ca72f19aaed62ff9f5ccbe9dee0684d6d1a5ca",
+    "after": "9f6c735ff4775ee6b6e875f8a1bb25e1f2fa7583a840bd6d469d4c63b2accc06"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T11:21:32.743289Z",
+    "after": "2026-11-13T11:22:20.769357Z"
+  },
+  "operations": [
+    {
+      "parentUid": "gHdrColR",
+      "position": 0,
+      "node": {
+        "uid": "gHdrActRw",
+        "tag": "Row"
+      }
+    },
+    {
+      "action": "remove",
+      "uid": "gHdrActTx"
+    }
+  ],
+  "changedValues": [
+    {
+      "label": "Header right",
+      "value": "Search/Login/Bag Icons"
+    }
+  ],
+  "changeLedger": {
+    "patches": [],
+    "removed": [
+      {
+        "uid": "gHdrActTx",
+        "tag": "Text",
+        "parentUid": "gHdrColR",
+        "position": 0,
+        "node": {
+          "uid": "gHdrActTx",
+          "tag": "Text",
+          "label": "Text Block",
+          "settings": {
+            "text": "<p style=\"text-align:right\">Search&nbsp;&nbsp;Login&nbsp;&nbsp;Bag</p>"
+          },
+          "styles": {
+            "typo": {
+              "type": "paragraph-2",
+              "attrs": {
+                "color": "#1a1919"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "sectionHash": {
+      "before": "0a58dea10741253d8eeef34609ca72f19aaed62ff9f5ccbe9dee0684d6d1a5ca",
+      "after": "9f6c735ff4775ee6b6e875f8a1bb25e1f2fa7583a840bd6d469d4c63b2accc06"
+    }
+  }
+}

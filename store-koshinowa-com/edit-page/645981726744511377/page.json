@@ -21,10 +21,10 @@
       "label": "Before visual parity fixes vs Uncharted homepage"
     }
   ],
-  "lastSectionUpdatedAt": "2026-11-13T11:17:09.168015Z",
+  "lastSectionUpdatedAt": "2026-11-13T11:23:33.353755Z",
   "lastTrustedUpdatedAt": "2026-11-13T11:09:41.102276Z",
-  "lastHeroUpdatedAt": "2026-11-13T11:15:11.519034Z",
-  "lastShopBySituationUpdatedAt": "2026-11-13T11:16:28.305791Z",
+  "lastHeroUpdatedAt": "2026-11-13T11:23:33.353755Z",
+  "lastShopBySituationUpdatedAt": "2026-11-13T11:23:12.321919Z",
   "lastPressUpdatedAt": "2026-11-13T11:17:02.692179Z",
   "sectionPosition": [
     "645981932735169067",
@@ -34,5 +34,7 @@
     "645982380384846379",
     "645982047793316753",
     "645982352417227307"
-  ]
+  ],
+  "previewUrl": "https://loja-locom.myshopify.com/a/gempages?version=v7&shop_id=638679827007668768&theme_page_id=645981726744511377&page_type=GP_STATIC",
+  "editorUrl": "https://admin.shopify.com/store/loja-locom/apps/gempages-cro/app/builder/v7?pageId=645981726744511377&version=v7&shopId=638679827007668768&themeId=638679834641302228&type=gempagesv7&pageType=GP_STATIC&shop=loja-locom.myshopify.com"
 }

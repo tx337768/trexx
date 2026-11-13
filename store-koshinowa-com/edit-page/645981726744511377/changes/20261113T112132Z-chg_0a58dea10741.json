@@ -1,0 +1,185 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_0a58dea10741",
+  "kind": "structural",
+  "pageId": "645981726744511377",
+  "sectionId": "645981932735169067",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T11:21:32Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionHash": {
+    "before": "d9eecc45bb883eed8e441ca0a6579c6bee5ceee7a1a297c96e304b4f79887006",
+    "after": "0a58dea10741253d8eeef34609ca72f19aaed62ff9f5ccbe9dee0684d6d1a5ca"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T11:15:11.519034Z",
+    "after": "2026-11-13T11:21:32.743289Z"
+  },
+  "operations": [
+    {
+      "parentUid": "gAnnBar",
+      "position": 1,
+      "node": {
+        "uid": "gAnnColR",
+        "tag": "Col"
+      }
+    }
+  ],
+  "changedValues": [
+    {
+      "label": "Announcement right",
+      "value": "Store Locator right-aligned"
+    },
+    {
+      "label": "Logo",
+      "value": "weight 800, 16px, 0.02em tracking"
+    },
+    {
+      "label": "Nav",
+      "value": "uppercase 0.08em letter-spacing"
+    }
+  ],
+  "changeLedger": {
+    "patches": [
+      {
+        "uid": "gAnnBar",
+        "path": "settings.layout.desktop.cols",
+        "before": [
+          12
+        ],
+        "after": [
+          9,
+          3
+        ],
+        "effective": {
+          "desktop": [
+            9,
+            3
+          ],
+          "tablet": [
+            9,
+            3
+          ],
+          "mobile": [
+            9,
+            3
+          ]
+        }
+      },
+      {
+        "uid": "gAnnBar",
+        "path": "settings.layout.desktop.display",
+        "before": "fill",
+        "after": "fill",
+        "effective": {
+          "desktop": "fill",
+          "tablet": "fill",
+          "mobile": "fill"
+        }
+      },
+      {
+        "uid": "gAnnTx",
+        "path": "settings.text",
+        "before": "<p style=\"text-align:center\">Free shipping on orders $150+ <strong style=\"text-decoration:underline\">SHOP NOW</strong></p>",
+        "after": "<p style=\"text-align:left\">Free shipping on orders $150+ <strong style=\"text-decoration:underline\">SHOP NOW</strong></p>"
+      },
+      {
+        "uid": "gAnnTx",
+        "path": "styles.typo.attrs.textAlign.desktop",
+        "before": "center",
+        "after": "left",
+        "effective": {
+          "desktop": "left",
+          "tablet": "left",
+          "mobile": "left"
+        }
+      },
+      {
+        "uid": "gAnnTx",
+        "path": "styles.textAlign.desktop",
+        "before": "center",
+        "after": "left",
+        "effective": {
+          "desktop": "left",
+          "tablet": "left",
+          "mobile": "left"
+        }
+      },
+      {
+        "uid": "gAnnTx",
+        "path": "styles.align.desktop",
+        "before": "center",
+        "after": "left",
+        "effective": {
+          "desktop": "left",
+          "tablet": "left",
+          "mobile": "left"
+        }
+      },
+      {
+        "uid": "gHdrLogo",
+        "path": "styles.typo.custom.fontWeight",
+        "before": "700",
+        "after": "800"
+      },
+      {
+        "uid": "gHdrLogo",
+        "path": "styles.typo.custom.fontSize.desktop",
+        "before": "15px",
+        "after": "16px",
+        "effective": {
+          "desktop": "16px",
+          "tablet": "13px",
+          "mobile": "12px"
+        }
+      },
+      {
+        "uid": "gHdrLogo",
+        "path": "styles.typo.custom.letterSpacing.desktop",
+        "before": "0.04em",
+        "after": "0.02em",
+        "effective": {
+          "desktop": "0.02em",
+          "tablet": "0.02em",
+          "mobile": "0.02em"
+        }
+      },
+      {
+        "uid": "gHdrNavTx",
+        "path": "styles.typo.attrs.transform",
+        "before": "none",
+        "after": "uppercase"
+      },
+      {
+        "uid": "gHdrNavTx",
+        "path": "styles.typo.custom.letterSpacing.desktop",
+        "before": "0.05em",
+        "after": "0.08em",
+        "effective": {
+          "desktop": "0.08em",
+          "tablet": "0.08em",
+          "mobile": "0.08em"
+        }
+      },
+      {
+        "uid": "gHdrNavTx",
+        "path": "styles.typo.custom.fontWeight",
+        "before": "600",
+        "after": "700"
+      }
+    ],
+    "removed": [],
+    "sectionHash": {
+      "before": "d9eecc45bb883eed8e441ca0a6579c6bee5ceee7a1a297c96e304b4f79887006",
+      "after": "0a58dea10741253d8eeef34609ca72f19aaed62ff9f5ccbe9dee0684d6d1a5ca"
+    }
+  }
+}

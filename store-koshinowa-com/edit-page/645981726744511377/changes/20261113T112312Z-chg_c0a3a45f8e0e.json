@@ -1,0 +1,113 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_c0a3a45f8e0e",
+  "kind": "apply",
+  "pageId": "645981726744511377",
+  "sectionId": "645982115774595627",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T11:23:12Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionHash": {
+    "before": "2e4ecf7af57ffc9bed5449126310db299812e90b64d985d30bbb54fad49d1e50",
+    "after": "c0a3a45f8e0ec43b0b96e06f50752ef204a34603d6028586e0a960c68aaa31a5"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T11:16:28.305791Z",
+    "after": "2026-11-13T11:23:12.321919Z"
+  },
+  "changedValues": [
+    {
+      "label": "SHOP BY ACTIVITY",
+      "value": "5 filled squares, labels 700/15px"
+    }
+  ],
+  "changeLedger": {
+    "patches": [
+      {
+        "uid": "gSbList0",
+        "path": "settings.layout.desktop.display",
+        "before": "fit",
+        "after": "fill"
+      },
+      {
+        "uid": "gSbList0",
+        "path": "styles.verticalGutter.desktop",
+        "before": "12px",
+        "after": "8px"
+      },
+      {
+        "uid": "gSbBtn0",
+        "path": "styles.typo.custom.fontWeight",
+        "before": "600",
+        "after": "700"
+      },
+      {
+        "uid": "gSbBtn0",
+        "path": "styles.typo.custom.fontSize.desktop",
+        "before": "14px",
+        "after": "15px"
+      },
+      {
+        "uid": "gSbBtn1",
+        "path": "styles.typo.custom.fontWeight",
+        "before": "600",
+        "after": "700"
+      },
+      {
+        "uid": "gSbBtn1",
+        "path": "styles.typo.custom.fontSize.desktop",
+        "before": "14px",
+        "after": "15px"
+      },
+      {
+        "uid": "gSbBtn2",
+        "path": "styles.typo.custom.fontWeight",
+        "before": "600",
+        "after": "700"
+      },
+      {
+        "uid": "gSbBtn2",
+        "path": "styles.typo.custom.fontSize.desktop",
+        "before": "14px",
+        "after": "15px"
+      },
+      {
+        "uid": "gSbBtn3",
+        "path": "styles.typo.custom.fontWeight",
+        "before": "600",
+        "after": "700"
+      },
+      {
+        "uid": "gSbBtn3",
+        "path": "styles.typo.custom.fontSize.desktop",
+        "before": "14px",
+        "after": "15px"
+      },
+      {
+        "uid": "gSbBtn4",
+        "path": "styles.typo.custom.fontWeight",
+        "before": "600",
+        "after": "700"
+      },
+      {
+        "uid": "gSbBtn4",
+        "path": "styles.typo.custom.fontSize.desktop",
+        "before": "14px",
+        "after": "15px"
+      }
+    ],
+    "removed": [],
+    "sectionHash": {
+      "before": "2e4ecf7af57ffc9bed5449126310db299812e90b64d985d30bbb54fad49d1e50",
+      "after": "c0a3a45f8e0ec43b0b96e06f50752ef204a34603d6028586e0a960c68aaa31a5"
+    }
+  }
+}
