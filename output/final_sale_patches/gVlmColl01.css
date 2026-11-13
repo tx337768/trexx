@@ -31,30 +31,28 @@
 .vlm-gp-collection--sale .nm-fs-card-cta{display:inline-block;margin-top:12px;padding:11px 14px;background:#16140f;color:#fff!important;text-decoration:none;font:600 11px/1 Arial,Helvetica,sans-serif;letter-spacing:.08em;text-transform:uppercase}
 .vlm-gp-collection--sale .vlm-gp-card{border:0;border-bottom:1px solid #ece7df;padding-bottom:8px}
 .vlm-gp-collection--sale .vlm-gp-card-image{background:#f4f1eb}
+.nm-fs-sticky-mid-short{display:none}
 /* Override theme announcement column stack on mobile */
 @media (max-width:900px){
   .vg-announcement{
-    display:flex!important;
-    flex-direction:row!important;
-    flex-wrap:nowrap!important;
-    align-items:center!important;
-    justify-content:center!important;
-    gap:6px!important;
+    display:block!important;
+    text-align:center!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
     min-height:0!important;
     padding:9px 14px!important;
     font-size:10px!important;
     line-height:1.35!important;
     letter-spacing:.04em!important;
+    max-width:100%!important;
   }
-  .vg-announcement .nm-announcement-message{
-    display:inline!important;
-    max-width:min(100%,70vw)!important;
-    overflow:hidden!important;
-    text-overflow:ellipsis!important;
-    white-space:nowrap!important;
-  }
-  .vg-announcement .nm-geo-deadline{display:inline!important;white-space:nowrap!important}
+  .vg-announcement .nm-announcement-message,
+  .vg-announcement .nm-geo-deadline{display:inline!important}
   .vg-announcement .nm-geo-city{display:none!important} /* city shown in SHIPPING TO rotator */
+}
+@media (max-width:390px){
+  .vg-announcement{font-size:8px!important;padding:8px 10px!important}
 }
 @media (max-width:980px){
   .nm-fs-hero{grid-template-columns:1fr;min-height:0}
@@ -113,4 +111,3 @@
   }
   .nm-fs-deadline{text-align:center;font-size:12px}
 }
-.nm-fs-sticky-mid-short{display:none}
