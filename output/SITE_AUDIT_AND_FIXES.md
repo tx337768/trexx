@@ -41,3 +41,7 @@ Homepage is **discount-first** (“Up to 60% off” / Black Friday) with **no li
 
 ## Update 13 Nov 01:30 UTC
 Homepage live published with free-ship bar + value hero + Final Sale ends 30 Nov urgency. Ad LP drafts re-synced with same urgency bar.
+
+
+## Update 13 Nov ~02:00 UTC
+Black Friday angle restored site-wide with urgency + veracity: localized BF announcement, value H1, Shop Black Friday CTAs, live compare-at prices on ad LPs, free ship + 60-day money-back (no fabricated reviews).
