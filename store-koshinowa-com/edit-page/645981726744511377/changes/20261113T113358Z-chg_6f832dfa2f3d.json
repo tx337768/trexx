@@ -1,0 +1,41 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_6f832dfa2f3d",
+  "kind": "apply",
+  "pageId": "645981726744511377",
+  "sectionId": "645982352417227307",
+  "conversationKey": "edit-20261113T112829Z-9db7",
+  "editId": "edit-20261113T112829Z-9db7",
+  "at": "2026-11-13T11:33:58Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645989760212403089"
+  },
+  "sectionHash": {
+    "before": "db780263e7ac9d7713fe580c880a57d8fa3335b0f14584ef0a30fe017a5f4bc6",
+    "after": "6f832dfa2f3d1d1c824b57194286119aee5d1108827f5b78b5b26109c746d561"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T10:18:06.477696Z",
+    "after": "2026-11-13T11:33:58.387325Z"
+  },
+  "patches": [
+    {
+      "uid": "JupxAdl0ww",
+      "path": "settings.layout.mobile",
+      "after": {
+        "cols": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "display": "fill"
+      }
+    }
+  ]
+}

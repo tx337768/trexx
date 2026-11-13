@@ -1,0 +1,71 @@
+{
+  "pageId": "645981726744511377",
+  "writeTargets": {
+    "local-20261113T103233Z": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:35:41Z",
+      "chosenAtPublishedAt": null,
+      "splitExceptions": []
+    },
+    "edit-20261113T103233Z-7ddc": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:58:00Z",
+      "chosenAtPublishedAt": null,
+      "splitExceptions": []
+    },
+    "edit-20261113T112829Z-9db7": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T11:31:41Z",
+      "chosenAtPublishedAt": null,
+      "splitExceptions": [],
+      "note": "draft write-direct"
+    },
+    "edit-20261113T113713Z-fd9d": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T11:38:34Z",
+      "chosenAtPublishedAt": null,
+      "splitExceptions": [],
+      "note": "draft write-direct mobile CSS grid fixes"
+    }
+  },
+  "activeDuplicate": null,
+  "restorePoints": [
+    {
+      "versionId": "645984122631619221",
+      "label": "Before visual parity fixes vs Uncharted homepage"
+    },
+    {
+      "versionId": "645989760212403089",
+      "name": "[AI] Before mobile width/layout fixes on Uncharted clone",
+      "createdAt": "2026-11-13T11:31:41.865406626Z",
+      "conversationKey": "edit-20261113T112829Z-9db7",
+      "status": "protected"
+    },
+    {
+      "versionId": "645990452876542613",
+      "name": "[AI] Before mobile CSS grid fixes vs Uncharted",
+      "createdAt": "2026-11-13T11:38:34.723658247Z",
+      "conversationKey": "edit-20261113T113713Z-fd9d",
+      "status": "protected"
+    }
+  ],
+  "lastSectionUpdatedAt": "2026-11-13T11:42:13.987013Z",
+  "lastTrustedUpdatedAt": "2026-11-13T11:09:41.102276Z",
+  "lastHeroUpdatedAt": "2026-11-13T11:42:13.987013Z",
+  "lastShopBySituationUpdatedAt": "2026-11-13T11:39:13.30065Z",
+  "lastPressUpdatedAt": "2026-11-13T11:39:20.181613Z",
+  "sectionPosition": [
+    "645981932735169067",
+    "645982115774595627",
+    "645982265309921835",
+    "645988285209904000",
+    "645982380384846379",
+    "645982047793316753",
+    "645982352417227307"
+  ],
+  "previewUrl": "https://loja-locom.myshopify.com/a/gempages?version=v7&shop_id=638679827007668768&theme_page_id=645981726744511377&page_type=GP_STATIC",
+  "editorUrl": "https://admin.shopify.com/store/loja-locom/apps/gempages-cro/app/builder/v7?pageId=645981726744511377&version=v7&shopId=638679827007668768&themeId=638679834641302228&type=gempagesv7&pageType=GP_STATIC&shop=loja-locom.myshopify.com",
+  "lastBlogUpdatedAt": "2026-11-13T11:33:43.345776Z",
+  "lastVideoUpdatedAt": "2026-11-13T11:39:15.66506Z",
+  "lastStoresUpdatedAt": "2026-11-13T11:39:17.761292Z"
+}
