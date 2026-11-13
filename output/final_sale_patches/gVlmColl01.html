@@ -1,7 +1,11 @@
 {% assign vlm_collection = collection | default: collections['final-sale'] %}
 {% assign nm_listing_count = vlm_collection.products_count %}{% assign nm_gift_collections = all_products['cedar-shoe-tree'].collections | map: 'handle' %}{% if nm_gift_collections contains vlm_collection.handle %}{% if vlm_collection.products_count == vlm_collection.all_products_count %}{% assign nm_listing_count = nm_listing_count | minus: 1 %}{% endif %}{% endif %}
 {% if vlm_collection.handle == 'final-sale' %}
-<p class="nm-fs-oneline">Up to 60% off · Free shipping &amp; returns · Ends <span class="nm-geo-deadline">30 Nov</span></p>
+<section class="nm-atelier-banner">
+  <img src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/nm-atelier-noble-meridian.jpg" alt="Noble Meridian" width="1600" height="900" fetchpriority="high">
+</section>
+<h1 class="nm-fs-page-title">{{ vlm_collection.title | escape }}</h1>
+<p class="nm-fs-oneline">{% case request.locale.iso_code %}{% when 'de' %}Bis zu 60 % Rabatt · Kostenloser Versand &amp; Rückgabe · Endet <span class="nm-geo-deadline">30. Nov</span>{% when 'es' %}Hasta un 60 % de descuento · Envío y devoluciones gratis · Termina el <span class="nm-geo-deadline">30 Nov</span>{% when 'fr' %}Jusqu’à −60 % · Livraison et retours offerts · Jusqu’au <span class="nm-geo-deadline">30 nov</span>{% else %}Up to 60% off · Free shipping &amp; returns · Ends <span class="nm-geo-deadline">30 Nov</span>{% endcase %}</p>
 <script>
 (function(){
   var END=new Date('2026-11-30T23:59:00+00:00');
