@@ -12,10 +12,20 @@
 
   var menu = document.querySelector(".menu-btn");
   var drawer = document.getElementById("drawer");
+  function closeDrawer() {
+    drawer.classList.remove("open");
+    menu.setAttribute("aria-expanded", "false");
+  }
   menu.addEventListener("click", function () {
     var open = !drawer.classList.contains("open");
     drawer.classList.toggle("open", open);
     menu.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  drawer.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", closeDrawer);
+  });
+  window.addEventListener("resize", function () {
+    if (window.matchMedia("(min-width: 981px)").matches) closeDrawer();
   });
 
   var searchBtn = document.getElementById("search-open");
