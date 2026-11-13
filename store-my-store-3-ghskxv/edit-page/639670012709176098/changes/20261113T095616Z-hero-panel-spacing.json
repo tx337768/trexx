@@ -36,5 +36,5 @@
       "offer_li": ".nm-fs-offer li{display:grid;gap:8px;padding:22px 0;border-bottom:1px solid rgba"
     }
   },
-  "commit": "778ee23bc67e6a6de8c64ec31564dac2c008c767"
+  "commit": "a24b78947e2bfe390bda997b4259ec3b2c0f4f71"
 }
