@@ -1,0 +1,32 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_366c93b071be",
+  "kind": "structural",
+  "pageId": "645981726744511377",
+  "sectionId": "645982265309921835",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T11:09:41Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionHash": {
+    "before": "f000913e7246846ae9519e9f504173ba2a4ad88543c0da64585380d8215d5791",
+    "after": "366c93b071be36dfadd5ccb261cce07b6d1a3815d59028deed24bc30efef5d2e"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T10:17:14.551459Z",
+    "after": "2026-11-13T11:09:41.102276Z"
+  },
+  "changedValues": [
+    {
+      "label": "Trusted reviews",
+      "value": "4.8 / 2,112+ summary + 4 quote cards (Jamie, Edwin, Scott, Robert)"
+    }
+  ]
+}

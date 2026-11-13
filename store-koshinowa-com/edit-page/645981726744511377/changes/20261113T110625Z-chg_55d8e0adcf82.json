@@ -1,0 +1,32 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_55d8e0adcf82",
+  "kind": "structural",
+  "pageId": "645981726744511377",
+  "sectionId": "645981932735169067",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T11:06:25Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionHash": {
+    "before": "61ee303cd975fefc419e1f1ca0802c4f4099c367d58f875618b1266cf3336287",
+    "after": "55d8e0adcf82b7f3606ef2c73996c44e553dd1b7945120bca3d603928f1f3714"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T11:05:38.381596Z",
+    "after": "2026-11-13T11:06:25.42404Z"
+  },
+  "changedValues": [
+    {
+      "label": "Best seller cards 1-3",
+      "value": "PREORDER/people badges, stars (194)/(94)/(96), grey plates, cleaned text"
+    }
+  ]
+}

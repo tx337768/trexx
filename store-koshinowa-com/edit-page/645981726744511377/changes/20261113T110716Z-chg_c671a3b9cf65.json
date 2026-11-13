@@ -1,0 +1,32 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_c671a3b9cf65",
+  "kind": "apply",
+  "pageId": "645981726744511377",
+  "sectionId": "645981932735169067",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T11:07:16Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionHash": {
+    "before": "55d8e0adcf82b7f3606ef2c73996c44e553dd1b7945120bca3d603928f1f3714",
+    "after": "c671a3b9cf6563e4dfc2b5bd420375ee91d72c2486dfec021858fdb0ede909bb"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T11:06:25.42404Z",
+    "after": "2026-11-13T11:07:16.706061Z"
+  },
+  "changedValues": [
+    {
+      "label": "Find the Right Gear tiles",
+      "value": "4 equal 5:8 tiles with absolute lifestyle images + bottom gradient overlays"
+    }
+  ]
+}

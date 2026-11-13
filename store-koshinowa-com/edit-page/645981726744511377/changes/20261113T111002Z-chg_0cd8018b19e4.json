@@ -1,0 +1,32 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_0cd8018b19e4",
+  "kind": "structural",
+  "pageId": "645981726744511377",
+  "sectionId": "645981932735169067",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T11:10:02Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionHash": {
+    "before": "c671a3b9cf6563e4dfc2b5bd420375ee91d72c2486dfec021858fdb0ede909bb",
+    "after": "0cd8018b19e4d26a8fab530ef4c345998042e4ede4244c4ff617e2727d8801bd"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T11:07:16.706061Z",
+    "after": "2026-11-13T11:10:02.490622Z"
+  },
+  "changedValues": [
+    {
+      "label": "Announcement bar",
+      "value": "Free shipping on orders $150+ SHOP NOW"
+    }
+  ]
+}
