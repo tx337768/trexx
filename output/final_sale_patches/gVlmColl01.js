@@ -20,8 +20,10 @@
     var linkUrl = btn.getAttribute('data-url');
     var img = card.querySelector('.vlm-gp-card-image img');
     if(img && imgUrl){
+      // Clear responsive attrs first — browsers prefer srcset over src.
+      img.removeAttribute('srcset');
+      img.removeAttribute('sizes');
       img.src = imgUrl;
-      if(img.hasAttribute('srcset')) img.removeAttribute('srcset');
     }
     if(linkUrl){
       card.querySelectorAll('a.vlm-gp-card-image, .vlm-gp-card-info h2 a, a.vlm-gp-explore').forEach(function(a){
