@@ -24,8 +24,8 @@
   .vg-announcement{font-size:8px!important;padding:8px 10px!important}
   .nm-fs-oneline{font-size:11px}
 }
-.nm-atelier-banner{display:block;width:100vw;max-width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);padding:0;overflow:hidden;line-height:0;background:#16140f}
-.nm-atelier-banner img{display:block;width:100%;height:520px;max-width:none;object-fit:cover;object-position:center 30%}
+.nm-atelier-banner{display:block;width:100%;max-width:100%;margin:0;padding:0;overflow:hidden;line-height:0;background:#16140f}
+.nm-atelier-banner img{display:block;width:100%;height:520px;max-width:100%;object-fit:cover;object-position:center 30%}
 @media (max-width:749px){
   .nm-atelier-banner img{height:62vw;min-height:240px;object-position:center center}
 }
