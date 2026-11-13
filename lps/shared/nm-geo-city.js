@@ -18,50 +18,54 @@
 
   function apply(city) {
     var c = (city || FALLBACK).trim() || FALLBACK;
-    document.querySelectorAll('.nm-geo-city,[data-nm-geo-city]').forEach(function (el) {
+    // Classes only — never [data-nm-geo-city] (that matched <html> and wiped the page)
+    document.querySelectorAll('.nm-geo-city').forEach(function (el) {
       el.textContent = c;
     });
-    document.querySelectorAll('.nm-geo-deadline,[data-nm-geo-deadline]').forEach(function (el) {
+    document.querySelectorAll('.nm-geo-deadline').forEach(function (el) {
       el.textContent = localDeadline();
     });
-    document.documentElement.setAttribute('data-nm-geo-city', c);
+    document.documentElement.setAttribute('data-nm-geo-resolved', c);
   }
 
   function fromGeoJson(d) {
     if (!d || typeof d !== 'object') return '';
-    return d.city || d.region || d.country || d.country_name || '';
+    return (d.city || d.region || d.country || d.country_name || '').trim();
   }
 
   apply(FALLBACK);
 
-  var controllers = [];
-  function get(url) {
-    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
-    if (ctrl) controllers.push(ctrl);
-    return fetch(url, {
-      credentials: 'omit',
-      signal: ctrl && ctrl.signal
-    }).then(function (r) {
-      if (!r.ok) throw new Error('geo');
-      return r.json();
-    });
+  var pending = 2;
+  var found = false;
+
+  function settle(city) {
+    if (found) return;
+    if (city) {
+      found = true;
+      apply(city);
+      return;
+    }
+    pending -= 1;
+    if (pending <= 0) apply(FALLBACK);
   }
 
-  Promise.race([
-    get('https://get.geojs.io/v1/ip/geo.json').then(fromGeoJson),
-    get('https://ipwho.is/').then(function (d) {
-      return d && d.success !== false ? fromGeoJson(d) : '';
-    })
-  ])
-    .then(function (city) {
-      controllers.forEach(function (c) {
-        try {
-          c.abort();
-        } catch (e) {}
+  function get(url, parse) {
+    fetch(url, { credentials: 'omit' })
+      .then(function (r) {
+        if (!r.ok) throw new Error('geo');
+        return r.json();
+      })
+      .then(function (d) {
+        settle(parse(d));
+      })
+      .catch(function () {
+        settle('');
       });
-      apply(city || FALLBACK);
-    })
-    .catch(function () {
-      apply(FALLBACK);
-    });
+  }
+
+  // First non-empty success wins; empty/fail from one provider does not cancel the other
+  get('https://get.geojs.io/v1/ip/geo.json', fromGeoJson);
+  get('https://ipwho.is/', function (d) {
+    return d && d.success !== false ? fromGeoJson(d) : '';
+  });
 })();

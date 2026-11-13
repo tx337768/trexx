@@ -31,7 +31,7 @@
 .nlp .trust{display:grid;grid-template-columns:1fr 1fr 1fr;background:#fff;border-bottom:1px solid var(--l)}
 .nlp .trust>div{padding:18px 8px;text-align:center;border-right:1px solid var(--l);font:600 11px/1.3 Arial,Helvetica,sans-serif;letter-spacing:.04em;text-transform:uppercase}
 .nlp .trust>div:last-child{border:0}
-.nlp .trust span{display:block;margin-top:4px;font:400 12px/1.3 Arial,Helvetica,sans-serif;letter-spacing:0;text-transform:none;color:var(--m);font-weight:400}
+.nlp .trust>div>span{display:block;margin-top:4px;font:400 12px/1.3 Arial,Helvetica,sans-serif;letter-spacing:0;text-transform:none;color:var(--m);font-weight:400}
 .nlp .sec{padding:56px 22px;max-width:1120px;margin:0 auto}
 .nlp .sec h2{margin:0 0 12px;font:400 clamp(26px,6vw,38px)/1.15 Georgia,"Iowan Old Style",serif}
 .nlp .sec>p,.nlp .sec .sub{margin:0 0 22px;color:var(--m);max-width:52ch;font-family:Arial,Helvetica,sans-serif;font-size:15px}
@@ -77,12 +77,12 @@
 </head>
 <body>
 <div class="nlp">
-<div class="ann">Black Friday ends 30 Nov, <span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span> · Free shipping &amp; returns</div>
+<div class="ann">Black Friday ends <span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span> · Free shipping &amp; returns</div>
 <div class="brand"><b>Noble Meridian</b><i>Weston Classic Loafers</i></div>
 <div class="hero"><img src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_Weston_loafers_0c228a5a-d879-476f-8b91-4f7fea666cd4.jpg?v=1792698024&width=1400" alt="Weston Classic loafers in black" width="1400" height="1750" loading="eager" decoding="async">
-<div class="copy"><div class="ey">Black Friday · Ends 30 Nov</div><h1>Weston Classic.<br><em>Now $180.</em></h1><p class="lede">Was $450. Full-grain leather slip-ons — free shipping, free returns, 60-day money-back. Deadline 30 Nov, <span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span>.</p>
+<div class="copy"><div class="ey">Black Friday · Ends 30 Nov</div><h1>Weston Classic.<br><em>Now $180.</em></h1><p class="lede">Was $450. Full-grain leather slip-ons — free shipping, free returns, 60-day money-back. Deadline <span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span>.</p>
 <a class="btn" href="https://noblemeridian.com/products/weston-loafers-mens">Choose size — $180</a><p class="note">Popular sizes sell out during Black Friday</p></div></div>
-<div class="trust"><div>Free shipping<span>&amp; returns</span></div><div>60-day<span>money-back</span></div><div>Ends 30 Nov<span><span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span></span></div></div>
+<div class="trust"><div>Free shipping<span>&amp; returns</span></div><div>60-day<span>money-back</span></div><div>Ends<span><span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span></span></div></div>
 
 <div class="sec">
 <h2>What’s on this pair</h2>
@@ -93,7 +93,7 @@
 <li>Black Friday price $180 · compare-at $450</li>
 <li>Free standard shipping (destinations at checkout)</li>
 <li>60-day money-back guarantee</li>
-<li>Sale window ends 30 November, <span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span></li>
+<li>Sale window ends <span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span></li>
 </ul>
 <a class="btnd" href="https://noblemeridian.com/products/weston-loafers-mens">Shop Weston — Black Friday</a>
 </div>
@@ -135,52 +135,56 @@
 
   function apply(city) {
     var c = (city || FALLBACK).trim() || FALLBACK;
-    document.querySelectorAll('.nm-geo-city,[data-nm-geo-city]').forEach(function (el) {
+    // Classes only — never [data-nm-geo-city] (that matched <html> and wiped the page)
+    document.querySelectorAll('.nm-geo-city').forEach(function (el) {
       el.textContent = c;
     });
-    document.querySelectorAll('.nm-geo-deadline,[data-nm-geo-deadline]').forEach(function (el) {
+    document.querySelectorAll('.nm-geo-deadline').forEach(function (el) {
       el.textContent = localDeadline();
     });
-    document.documentElement.setAttribute('data-nm-geo-city', c);
+    document.documentElement.setAttribute('data-nm-geo-resolved', c);
   }
 
   function fromGeoJson(d) {
     if (!d || typeof d !== 'object') return '';
-    return d.city || d.region || d.country || d.country_name || '';
+    return (d.city || d.region || d.country || d.country_name || '').trim();
   }
 
   apply(FALLBACK);
 
-  var controllers = [];
-  function get(url) {
-    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
-    if (ctrl) controllers.push(ctrl);
-    return fetch(url, {
-      credentials: 'omit',
-      signal: ctrl && ctrl.signal
-    }).then(function (r) {
-      if (!r.ok) throw new Error('geo');
-      return r.json();
-    });
+  var pending = 2;
+  var found = false;
+
+  function settle(city) {
+    if (found) return;
+    if (city) {
+      found = true;
+      apply(city);
+      return;
+    }
+    pending -= 1;
+    if (pending <= 0) apply(FALLBACK);
   }
 
-  Promise.race([
-    get('https://get.geojs.io/v1/ip/geo.json').then(fromGeoJson),
-    get('https://ipwho.is/').then(function (d) {
-      return d && d.success !== false ? fromGeoJson(d) : '';
-    })
-  ])
-    .then(function (city) {
-      controllers.forEach(function (c) {
-        try {
-          c.abort();
-        } catch (e) {}
+  function get(url, parse) {
+    fetch(url, { credentials: 'omit' })
+      .then(function (r) {
+        if (!r.ok) throw new Error('geo');
+        return r.json();
+      })
+      .then(function (d) {
+        settle(parse(d));
+      })
+      .catch(function () {
+        settle('');
       });
-      apply(city || FALLBACK);
-    })
-    .catch(function () {
-      apply(FALLBACK);
-    });
+  }
+
+  // First non-empty success wins; empty/fail from one provider does not cancel the other
+  get('https://get.geojs.io/v1/ip/geo.json', fromGeoJson);
+  get('https://ipwho.is/', function (d) {
+    return d && d.success !== false ? fromGeoJson(d) : '';
+  });
 })();
 
 </script>
