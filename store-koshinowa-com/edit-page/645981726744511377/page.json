@@ -1,0 +1,25 @@
+{
+  "pageId": "645981726744511377",
+  "writeTargets": {
+    "local-20261113T103233Z": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:35:41Z",
+      "chosenAtPublishedAt": null,
+      "splitExceptions": []
+    },
+    "edit-20261113T103233Z-7ddc": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:58:00Z",
+      "chosenAtPublishedAt": null,
+      "splitExceptions": []
+    }
+  },
+  "activeDuplicate": null,
+  "restorePoints": [
+    {
+      "versionId": "645984122631619221",
+      "label": "Before visual parity fixes vs Uncharted homepage"
+    }
+  ],
+  "lastSectionUpdatedAt": "2026-11-13T10:59:45.043319Z"
+}

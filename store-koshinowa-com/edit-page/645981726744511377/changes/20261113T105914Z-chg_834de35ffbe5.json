@@ -1,0 +1,32 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_834de35ffbe5",
+  "kind": "structural",
+  "pageId": "645981726744511377",
+  "sectionId": "645981932735169067",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T10:59:14Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionHash": {
+    "before": "0e0c87276f735e0e329ba96ac1c145343880a2f4752c6255620f7b967b36c6f6",
+    "after": "834de35ffbe5ac197eabe50159b051f15a4241430c8e9dffd3a42876bd9ab287"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T10:58:43.685379Z",
+    "after": "2026-11-13T10:59:14.435362Z"
+  },
+  "changedValues": [
+    {
+      "label": "SHOP BEST SELLERS / quiz / gear tiles",
+      "value": "Red CTA, full-width quiz #de3232, black gear section, stacked tiles"
+    }
+  ]
+}

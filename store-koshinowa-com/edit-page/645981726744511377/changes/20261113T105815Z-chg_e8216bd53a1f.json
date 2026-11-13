@@ -1,0 +1,20 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_e8216bd53a1f",
+  "kind": "structural",
+  "pageId": "645981726744511377",
+  "sectionId": "645981932735169067",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T10:58:15Z",
+  "pageStateAtWrite": {"status": "DRAFT", "publishedAt": null, "isPlatformDefault": false},
+  "restorePoint": {"versionId": "645984122631619221"},
+  "sectionHash": {
+    "before": "8a02714f8e3a992a60ca0a6edb4b7e78820dbbfb4c8348cd82aff232692de11b",
+    "after": "e8216bd53a1fe86e683d7d7f08a8ad6f0f20b38976bcfd92020f32c36743b79d"
+  },
+  "sectionUpdatedAt": {"before": "2026-11-13T10:16:49.820831Z", "after": "2026-11-13T10:58:15.198882Z"},
+  "changedValues": [
+    {"label": "Hero stars layout", "value": "5 gold stars horizontal beside OVER 50,000 PEOPLE READY"}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_0e0c87276f73",
+  "kind": "structural",
+  "pageId": "645981726744511377",
+  "sectionId": "645981932735169067",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T10:58:43Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionHash": {
+    "before": "e8216bd53a1fe86e683d7d7f08a8ad6f0f20b38976bcfd92020f32c36743b79d",
+    "after": "0e0c87276f735e0e329ba96ac1c145343880a2f4752c6255620f7b967b36c6f6"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T10:58:15.198882Z",
+    "after": "2026-11-13T10:58:43.685379Z"
+  },
+  "changedValues": [
+    {
+      "label": "Product cards",
+      "value": "Vertical image+text stack; readable titles/prices"
+    }
+  ]
+}

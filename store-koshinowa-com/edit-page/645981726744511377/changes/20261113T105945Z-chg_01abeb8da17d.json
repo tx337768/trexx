@@ -1,0 +1,32 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_01abeb8da17d",
+  "kind": "apply",
+  "pageId": "645981726744511377",
+  "sectionId": "645981932735169067",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T10:59:45Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionHash": {
+    "before": "834de35ffbe5ac197eabe50159b051f15a4241430c8e9dffd3a42876bd9ab287",
+    "after": "01abeb8da17d9ef39e3ac071942e6647eb1cdf668ab7f49f5f03f5d634d13be3"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T10:59:14.435362Z",
+    "after": "2026-11-13T10:59:45.043319Z"
+  },
+  "changedValues": [
+    {
+      "label": "Polish",
+      "value": "OUR BEST SELLERS, tile black bg, proof mobile stack"
+    }
+  ]
+}
