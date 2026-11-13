@@ -1,6 +1,6 @@
 {% assign vlm_collection = collection | default: collections['final-sale'] %}
 {% assign nm_listing_count = vlm_collection.products_count %}{% assign nm_gift_collections = all_products['cedar-shoe-tree'].collections | map: 'handle' %}{% if nm_gift_collections contains vlm_collection.handle %}{% if vlm_collection.products_count == vlm_collection.all_products_count %}{% assign nm_listing_count = nm_listing_count | minus: 1 %}{% endif %}{% endif %}
-{% if vlm_collection.handle == 'final-sale' %}
+{% if vlm_collection.handle == 'final-sale' or request.path contains 'gempages' %}
 <section class="nm-atelier-banner">
   <img src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/nm-atelier-noble-meridian.jpg" alt="Noble Meridian" width="1600" height="900" fetchpriority="high">
 </section>
