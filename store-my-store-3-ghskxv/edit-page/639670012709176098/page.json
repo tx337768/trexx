@@ -1,0 +1,69 @@
+{
+  "writeTargets": {
+    "local-20261113T031919Z-11d2": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T03:23:00Z",
+      "chosenAtPublishedAt": "2026-11-13T03:11:17.677079Z",
+      "splitExceptions": [],
+      "note": "Merchant asked to apply redesign (fa\u00e7a) on live final-sale collection"
+    },
+    "edit-20261113T034739Z-1577": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T03:48:01Z",
+      "chosenAtPublishedAt": "2026-11-13T03:38:12.444693Z",
+      "splitExceptions": [],
+      "note": "Merchant asked to fix live black 128-styles strip (corrija isso)"
+    },
+    "edit-20261113T035049Z-4359": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T03:50:58Z",
+      "chosenAtPublishedAt": "2026-11-13T03:50:07.906928Z",
+      "splitExceptions": [],
+      "note": "Bugbot swatch srcset fix on live collection (standing live-edit thread)"
+    },
+    "edit-20261113T091924Z-d553": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T09:20:31Z",
+      "chosenAtPublishedAt": "2026-11-13T03:51:14.886749Z",
+      "splitExceptions": [],
+      "note": "Merchant: isto para celular esta muito feio \u2014 fix live mobile"
+    },
+    "edit-20261113T094909Z-1cf0": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T09:49:33Z",
+      "chosenAtPublishedAt": "2026-11-13T09:46:16.205514Z",
+      "splitExceptions": [],
+      "note": "Bugbot: replace head CSS @import with link stylesheet"
+    },
+    "edit-20261113T095243Z-09d4": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T09:53:17Z",
+      "chosenAtPublishedAt": "2026-11-13T09:50:31.751187Z",
+      "splitExceptions": [],
+      "note": "Open up Black Friday hero panel spacing (mobile+desktop)"
+    },
+    "edit-20261113T100113Z-d3f0": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:01:13Z",
+      "chosenAtPublishedAt": "2026-11-13T09:56:31.093785Z",
+      "splitExceptions": [],
+      "note": "Luxury hero type: large offer headline, short line, readable trust lines"
+    }
+  },
+  "activeDuplicate": null,
+  "restorePoints": [
+    {
+      "versionId": "645940697794347921",
+      "name": "[AI] Before Black Friday collection redesign",
+      "createdAt": "2026-11-13T03:24:18.381007498Z",
+      "conversationKey": "local-20261113T031919Z-11d2"
+    },
+    {
+      "versionId": "645980660065895061",
+      "name": "[AI] Before luxury hero type scale",
+      "createdAt": "2026-11-13T10:01:17.755466Z",
+      "conversationKey": "edit-20261113T100113Z-d3f0",
+      "status": "reused"
+    }
+  ]
+}
