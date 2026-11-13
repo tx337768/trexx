@@ -1,0 +1,93 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_2e4ecf7af57f",
+  "kind": "structural",
+  "pageId": "645981726744511377",
+  "sectionId": "645982115774595627",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T11:16:28Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionHash": {
+    "before": "24c3744ba1299bc25aa94b8649cb6a778bde4bd84f80b5730ddbe4831bf0a9eb",
+    "after": "2e4ecf7af57ffc9bed5449126310db299812e90b64d985d30bbb54fad49d1e50"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T10:17:06.065647Z",
+    "after": "2026-11-13T11:16:28.305791Z"
+  },
+  "patches": [
+    {
+      "uid": "gSbTab1",
+      "path": "settings.label",
+      "before": "<p>Shop by Activity</p>",
+      "after": "<p>SHOP BY ACTIVITY /</p>"
+    },
+    {
+      "uid": "gSbTab2",
+      "path": "settings.label",
+      "before": "<p>Shop by Emergency</p>",
+      "after": "<p>SHOP BY EMERGENCY</p>"
+    },
+    {
+      "uid": "gSbTab1",
+      "path": "styles.borderBtnV2",
+      "before": {
+        "normal": {
+          "borderType": "style-1",
+          "border": "solid",
+          "borderWidth": "2px",
+          "width": "0px 0px 2px 0px",
+          "color": "#de3232",
+          "isCustom": true
+        }
+      },
+      "after": {
+        "normal": {
+          "borderType": "none",
+          "border": "none",
+          "borderWidth": "1px",
+          "width": "1px 1px 1px 1px",
+          "color": "line-3",
+          "isCustom": true
+        }
+      }
+    }
+  ],
+  "operations": [
+    {
+      "parentUid": "iqLl7QRR2W",
+      "position": 0,
+      "node": {
+        "uid": "gSbList0",
+        "tag": "Row"
+      }
+    }
+  ],
+  "changeLedger": {
+    "removedUids": [
+      "gSbIt0",
+      "gSbIt1",
+      "gSbIt2",
+      "gSbIt3",
+      "gSbIt4"
+    ],
+    "sectionHash": {
+      "before": "24c3744ba1299bc25aa94b8649cb6a778bde4bd84f80b5730ddbe4831bf0a9eb",
+      "after": "2e4ecf7af57ffc9bed5449126310db299812e90b64d985d30bbb54fad49d1e50"
+    }
+  },
+  "changedValues": [
+    {
+      "label": "Shop by Situation",
+      "value": "Stacked SHOP BY ACTIVITY / over SHOP BY EMERGENCY; 5 square tiles Hunting/Water Sports/UTV/Auto Overlanding/Hiking Camping"
+    }
+  ]
+}

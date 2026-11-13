@@ -1,0 +1,47 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_press_645988285209904000",
+  "kind": "structural",
+  "pageId": "645981726744511377",
+  "sectionId": "645988285209904000",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T11:17:09Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645984122631619221"
+  },
+  "sectionUpdatedAt": {
+    "before": null,
+    "after": "2026-11-13T11:17:02.692179Z"
+  },
+  "sectionPosition": {
+    "before": [
+      "645981932735169067",
+      "645982115774595627",
+      "645982265309921835",
+      "645982380384846379",
+      "645982047793316753",
+      "645982352417227307"
+    ],
+    "after": [
+      "645981932735169067",
+      "645982115774595627",
+      "645982265309921835",
+      "645988285209904000",
+      "645982380384846379",
+      "645982047793316753",
+      "645982352417227307"
+    ]
+  },
+  "changedValues": [
+    {
+      "label": "Press strip",
+      "value": "Beige #e8e7df quote + GEAR JUNKIE / GEAR PATROL / TIME / NEW YORK POST / MENS JOURNAL after Trusted"
+    }
+  ]
+}

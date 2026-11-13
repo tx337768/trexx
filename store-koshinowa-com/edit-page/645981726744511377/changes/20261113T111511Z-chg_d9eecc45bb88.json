@@ -1,0 +1,22 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_d9eecc45bb88",
+  "kind": "structural",
+  "pageId": "645981726744511377",
+  "sectionId": "645981932735169067",
+  "conversationKey": "edit-20261113T103233Z-7ddc",
+  "editId": "edit-20261113T103233Z-7ddc",
+  "at": "2026-11-13T11:15:11Z",
+  "pageStateAtWrite": {"status": "DRAFT", "publishedAt": null, "isPlatformDefault": false},
+  "restorePoint": {"versionId": "645984122631619221"},
+  "sectionHash": {
+    "before": "0cd8018b19e4d26a8fab530ef4c345998042e4ede4244c4ff617e2727d8801bd",
+    "after": "d9eecc45bb883eed8e441ca0a6579c6bee5ceee7a1a297c96e304b4f79887006"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T11:10:02.490622Z",
+    "after": "2026-11-13T11:15:11.519034Z"
+  },
+  "operations": [{"parentUid": "Z4bTdCOBlf", "position": 1, "node": {"uid": "gHdrBar01", "tag": "Row"}}],
+  "changedValues": [{"label": "Header bar", "value": "White bar: UNCHARTED SUPPLY CO. | FIND YOUR KIT / SHOP PRODUCTS / GEAR FOR / FOUR PILLARS / CONTENT | Search Login Bag"}]
+}
