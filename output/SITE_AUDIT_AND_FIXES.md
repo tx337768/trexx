@@ -9,7 +9,7 @@ Homepage is **discount-first** (“Up to 60% off” / Black Friday) with **no li
 | Renamed 12 Online Store pages from “Velmont — …” → Noble Meridian titles | **Live** (Shopify Admin) |
 | Rebuilt Craft Value + Comfort Loafer LPs (value narrative, specs, $ prices, free ship/60-day) | **Code** `/lps` |
 | New Weston PDP-style ad LP (Amberjack pattern: 1 product destination) | **Code** `/lps/weston-pdp` |
-| Homepage copy patches prepared (announcement evergreen + hero value copy, EN/DE/ES/FR) | **Ready** in `/output/homepage_patches` — awaiting live vs duplicate choice |
+| Homepage value hero + free ship + Final Sale urgency (EN/DE/ES/FR) | **Published** to live GP_INDEX |
 
 ## Homepage issues (still live until you choose write target)
 1. Announcement bar **expired 31 Oct 2026** → currently hidden → zero “free shipping” on first viewport
@@ -37,3 +37,7 @@ Homepage is **discount-first** (“Up to 60% off” / Black Friday) with **no li
 ## Policy truth (use in ads + site)
 - Free standard shipping (destinations at checkout) — Shipping Policy
 - 60-day money-back — Returns policy
+
+
+## Update 13 Nov 01:30 UTC
+Homepage live published with free-ship bar + value hero + Final Sale ends 30 Nov urgency. Ad LP drafts re-synced with same urgency bar.
