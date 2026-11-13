@@ -171,7 +171,16 @@
 .sh-lp .final{text-align:center;padding:2.4rem 0 3rem}
 .sh-lp .final p{margin:.55rem auto 1.1rem;max-width:40ch;color:var(--muted)}
 .sh-lp .foot{padding:1.2rem;border-top:1px solid var(--line);text-align:center;color:#777;font-size:.82rem}
+.sh-lp .ugc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.85rem}
+.sh-lp .ugc{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.sh-lp .ugc img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.sh-lp .ugc .body{padding:.85rem}
+.sh-lp .ugc .stars{color:#e2a100;letter-spacing:.06em}
+.sh-lp .ugc p{margin:.4rem 0;font-size:.92rem}
+.sh-lp .ugc footer{font-size:.75rem;font-weight:700;color:var(--forest);text-transform:uppercase}
 @media (max-width:900px){
+  .sh-lp .ugc-grid{grid-template-columns:1fr 1fr}
+}
   .sh-lp .nav-links{display:none}
   .sh-lp .hero-copy{margin:0 auto;width:min(100% - 1.5rem,560px);padding-top:3.2rem}
   .sh-lp .feat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
