@@ -62,6 +62,13 @@
       "chosenAtPublishedAt": "2026-11-13T10:05:31.186363Z",
       "splitExceptions": [],
       "note": "Restore original Black Friday countdown banner; drop stacked lifestyle panel"
+    },
+    "edit-20261113T103045Z-376a": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T10:30:45Z",
+      "chosenAtPublishedAt": "2026-11-13T10:25:09.994134Z",
+      "splitExceptions": [],
+      "note": "Restore the pre-edit homepage banner (Your next pair / Up to 60% off) on final-sale"
     }
   },
   "activeDuplicate": null,
@@ -77,6 +84,13 @@
       "name": "[AI] Before luxury hero type scale",
       "createdAt": "2026-11-13T10:01:17.755466Z",
       "conversationKey": "edit-20261113T100113Z-d3f0",
+      "status": "reused"
+    },
+    {
+      "versionId": "645983633374446229",
+      "name": "[AI] Before restoring original Your next pair banner",
+      "createdAt": "2026-11-13T10:30:49.989603Z",
+      "conversationKey": "edit-20261113T103045Z-376a",
       "status": "reused"
     }
   ]
