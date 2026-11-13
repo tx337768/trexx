@@ -1,0 +1,64 @@
+{
+  "pages": [
+    {
+      "key": "lp-apagao",
+      "pageId": "645924810911646592",
+      "sectionId": "645925274667450923",
+      "links": {
+        "editorUrl": "https://admin.shopify.com/store/loja-locom/apps/gempages-cro/app/builder/v7?pageId=645924810911646592&version=v7&shopId=638679827007668768&themeId=638679834641302228&type=gempagesv7&pageType=GP_STATIC&shop=loja-locom.myshopify.com",
+        "previewUrl": "https://loja-locom.myshopify.com/a/gempages?version=v7&shop_id=638679827007668768&theme_page_id=645924810911646592&page_type=GP_STATIC",
+        "themeHelper": {
+          "enabled": true
+        }
+      },
+      "handle": "lp-apagao",
+      "status": "DRAFT",
+      "afterPublishUrl": "https://standbyhouse.com/pages/lp-apagao"
+    },
+    {
+      "key": "lp-blackout",
+      "pageId": "645924812052497280",
+      "sectionId": "645925279130190737",
+      "links": {
+        "editorUrl": "https://admin.shopify.com/store/loja-locom/apps/gempages-cro/app/builder/v7?pageId=645924812052497280&version=v7&shopId=638679827007668768&themeId=638679834641302228&type=gempagesv7&pageType=GP_STATIC&shop=loja-locom.myshopify.com",
+        "previewUrl": "https://loja-locom.myshopify.com/a/gempages?version=v7&shop_id=638679827007668768&theme_page_id=645924812052497280&page_type=GP_STATIC",
+        "themeHelper": {
+          "enabled": true
+        }
+      },
+      "handle": "lp-blackout",
+      "status": "DRAFT",
+      "afterPublishUrl": "https://standbyhouse.com/pages/lp-blackout"
+    },
+    {
+      "key": "lp-free-bag",
+      "pageId": "645924813612778385",
+      "sectionId": "645925283844588181",
+      "links": {
+        "editorUrl": "https://admin.shopify.com/store/loja-locom/apps/gempages-cro/app/builder/v7?pageId=645924813612778385&version=v7&shopId=638679827007668768&themeId=638679834641302228&type=gempagesv7&pageType=GP_STATIC&shop=loja-locom.myshopify.com",
+        "previewUrl": "https://loja-locom.myshopify.com/a/gempages?version=v7&shop_id=638679827007668768&theme_page_id=645924813612778385&page_type=GP_STATIC",
+        "themeHelper": {
+          "enabled": true
+        }
+      },
+      "handle": "lp-free-bag",
+      "status": "DRAFT",
+      "afterPublishUrl": "https://standbyhouse.com/pages/lp-free-bag"
+    },
+    {
+      "key": "lp-72h",
+      "pageId": "645924815240168085",
+      "sectionId": "645925288340881963",
+      "links": {
+        "editorUrl": "https://admin.shopify.com/store/loja-locom/apps/gempages-cro/app/builder/v7?pageId=645924815240168085&version=v7&shopId=638679827007668768&themeId=638679834641302228&type=gempagesv7&pageType=GP_STATIC&shop=loja-locom.myshopify.com",
+        "previewUrl": "https://loja-locom.myshopify.com/a/gempages?version=v7&shop_id=638679827007668768&theme_page_id=645924815240168085&page_type=GP_STATIC",
+        "themeHelper": {
+          "enabled": true
+        }
+      },
+      "handle": "lp-72h",
+      "status": "DRAFT",
+      "afterPublishUrl": "https://standbyhouse.com/pages/lp-72h"
+    }
+  ]
+}
