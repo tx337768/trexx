@@ -77,12 +77,12 @@
 </head>
 <body>
 <div class="nlp">
-<div class="ann">Black Friday ends 30 Nov, 23:59 Lisbon · Free shipping &amp; returns</div>
+<div class="ann">Black Friday ends 30 Nov, <span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span> · Free shipping &amp; returns</div>
 <div class="brand"><b>Noble Meridian</b><i>Weston Classic Loafers</i></div>
 <div class="hero"><img src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/color_black_1_Weston_loafers_0c228a5a-d879-476f-8b91-4f7fea666cd4.jpg?v=1792698024&width=1400" alt="Weston Classic loafers in black" width="1400" height="1750" loading="eager" decoding="async">
-<div class="copy"><div class="ey">Black Friday · Ends 30 Nov</div><h1>Weston Classic.<br><em>Now $138.</em></h1><p class="lede">Was $345. Full-grain leather slip-ons — free shipping, free returns, 60-day money-back. Deadline 30 Nov, 23:59 Lisbon.</p>
+<div class="copy"><div class="ey">Black Friday · Ends 30 Nov</div><h1>Weston Classic.<br><em>Now $138.</em></h1><p class="lede">Was $345. Full-grain leather slip-ons — free shipping, free returns, 60-day money-back. Deadline 30 Nov, <span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span>.</p>
 <a class="btn" href="https://noblemeridian.com/products/weston-loafers-mens">Choose size — $138</a><p class="note">Popular sizes sell out during Black Friday</p></div></div>
-<div class="trust"><div>Free shipping<span>&amp; returns</span></div><div>60-day<span>money-back</span></div><div>Ends 30 Nov<span>23:59 Lisbon</span></div></div>
+<div class="trust"><div>Free shipping<span>&amp; returns</span></div><div>60-day<span>money-back</span></div><div>Ends 30 Nov<span><span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span></span></div></div>
 
 <div class="sec">
 <h2>What’s on this pair</h2>
@@ -93,7 +93,7 @@
 <li>Black Friday price $138 · compare-at $345</li>
 <li>Free standard shipping (destinations at checkout)</li>
 <li>60-day money-back guarantee</li>
-<li>Sale window ends 30 November, 23:59 Europe/Lisbon</li>
+<li>Sale window ends 30 November, <span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span></li>
 </ul>
 <a class="btnd" href="https://noblemeridian.com/products/weston-loafers-mens">Shop Weston — Black Friday</a>
 </div>
@@ -109,10 +109,80 @@
 
 <div class="final">
 <h2>Pick your size before 30 Nov.</h2>
-<p>Free shipping &amp; returns · 60-day money-back · 23:59 Lisbon</p>
+<p>Free shipping &amp; returns · 60-day money-back · <span class="nm-geo-deadline">30 Nov</span> · <span class="nm-geo-city">your area</span></p>
 <a class="btnd" href="https://noblemeridian.com/products/weston-loafers-mens">Shop Black Friday — Weston</a>
 </div>
 <div class="foot">Noble Meridian · support@noblemeridian.com · Black Friday ends 30 Nov</div>
 </div>
+<script>
+/* Noble Meridian — fill visitor city + local Black Friday deadline */
+(function () {
+  var END = new Date('2026-11-30T23:59:00+00:00'); // sale end (absolute)
+  var FALLBACK = 'your area';
+
+  function localDeadline() {
+    try {
+      return new Intl.DateTimeFormat(undefined, {
+        day: 'numeric',
+        month: 'short',
+        hour: '2-digit',
+        minute: '2-digit'
+      }).format(END);
+    } catch (e) {
+      return '30 Nov, 23:59';
+    }
+  }
+
+  function apply(city) {
+    var c = (city || FALLBACK).trim() || FALLBACK;
+    document.querySelectorAll('.nm-geo-city,[data-nm-geo-city]').forEach(function (el) {
+      el.textContent = c;
+    });
+    document.querySelectorAll('.nm-geo-deadline,[data-nm-geo-deadline]').forEach(function (el) {
+      el.textContent = localDeadline();
+    });
+    document.documentElement.setAttribute('data-nm-geo-city', c);
+  }
+
+  function fromGeoJson(d) {
+    if (!d || typeof d !== 'object') return '';
+    return d.city || d.region || d.country || d.country_name || '';
+  }
+
+  apply(FALLBACK);
+
+  var controllers = [];
+  function get(url) {
+    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    if (ctrl) controllers.push(ctrl);
+    return fetch(url, {
+      credentials: 'omit',
+      signal: ctrl && ctrl.signal
+    }).then(function (r) {
+      if (!r.ok) throw new Error('geo');
+      return r.json();
+    });
+  }
+
+  Promise.race([
+    get('https://get.geojs.io/v1/ip/geo.json').then(fromGeoJson),
+    get('https://ipwho.is/').then(function (d) {
+      return d && d.success !== false ? fromGeoJson(d) : '';
+    })
+  ])
+    .then(function (city) {
+      controllers.forEach(function (c) {
+        try {
+          c.abort();
+        } catch (e) {}
+      });
+      apply(city || FALLBACK);
+    })
+    .catch(function () {
+      apply(FALLBACK);
+    });
+})();
+
+</script>
 </body>
 </html>
