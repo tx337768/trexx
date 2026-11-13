@@ -1,0 +1,81 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_9d5340d85f03",
+  "kind": "apply",
+  "pageId": "645981726744511377",
+  "sectionId": "645982380384846379",
+  "conversationKey": "edit-20261113T112829Z-9db7",
+  "editId": "edit-20261113T112829Z-9db7",
+  "at": "2026-11-13T11:33:14Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645989760212403089"
+  },
+  "sectionHash": {
+    "before": "7ba5e8c34716ddc11daac42ceb024c115546952295fb524b9a60984454202556",
+    "after": "9d5340d85f0399cfa2d5bb5353143763564bf86bd04029dbda16212b1a5b0807"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T10:19:23.349156Z",
+    "after": "2026-11-13T11:33:14.23351Z"
+  },
+  "patches": [
+    {
+      "uid": "gVgHead0",
+      "path": "settings.layout.mobile",
+      "after": {
+        "cols": [
+          12,
+          12
+        ],
+        "display": "fill"
+      }
+    },
+    {
+      "uid": "gVgHead0",
+      "path": "styles.width.mobile",
+      "after": "100%"
+    },
+    {
+      "uid": "gVgHead0",
+      "path": "styles.width.tablet",
+      "after": "100%"
+    },
+    {
+      "uid": "gVgTxt0",
+      "path": "settings.text",
+      "after": "<p>The Zeus Air Overview<br>3:38 \u00b7 Overview</p>"
+    },
+    {
+      "uid": "gVgTxt1",
+      "path": "settings.text",
+      "after": "<p>The 60L Basecamp<br>0:43 \u00b7 Uncharted X YETI</p>"
+    },
+    {
+      "uid": "gVgTxt2",
+      "path": "settings.text",
+      "after": "<p>The Rapid Raft<br>0:50 \u00b7 How Fast Can You Inflate?</p>"
+    },
+    {
+      "uid": "gVgCar0",
+      "path": "advanced.editorData",
+      "after": {
+        "css": "overflow hidden"
+      }
+    }
+  ],
+  "changedValues": [
+    {
+      "label": "Video head mobile cols",
+      "value": "[12,12]"
+    },
+    {
+      "label": "Video titles",
+      "value": "title<br>meta"
+    }
+  ]
+}

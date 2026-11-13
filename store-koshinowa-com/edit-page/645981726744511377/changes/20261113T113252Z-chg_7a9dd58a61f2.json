@@ -1,0 +1,33 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_7a9dd58a61f2",
+  "kind": "apply",
+  "pageId": "645981726744511377",
+  "sectionId": "645981932735169067",
+  "conversationKey": "edit-20261113T112829Z-9db7",
+  "editId": "edit-20261113T112829Z-9db7",
+  "at": "2026-11-13T11:32:52Z",
+  "pageStateAtWrite": {"status": "DRAFT", "publishedAt": null, "isPlatformDefault": false},
+  "restorePoint": {"versionId": "645989760212403089"},
+  "sectionHash": {
+    "before": "738f1c7eedd4b04f133aa56f1f13bface0ca9b7991eb1c01e61b5d7304948b76",
+    "after": "7a9dd58a61f263074f276aa1a555fdafb955ca2c9bb8f60aa7485f49661a93a6"
+  },
+  "sectionUpdatedAt": {"before": "2026-11-13T11:23:33.353755Z", "after": "2026-11-13T11:32:52.533081Z"},
+  "patches": [
+    {"uid": "gAnnBar", "path": "settings.layout.mobile", "after": {"cols": [12, 12], "display": "fill"}},
+    {"uid": "gHdrBar01", "path": "settings.layout.mobile", "before": {"cols": [12], "display": "fill"}, "after": {"cols": [8, 0, 4], "display": "fill"}},
+    {"uid": "gCtaRow", "path": "settings.layout.mobile", "before": {"cols": [12], "display": "fill"}, "after": {"cols": [12, 12], "display": "fill"}},
+    {"uid": "gPerkRow", "path": "settings.layout.mobile", "before": {"cols": [6, 6], "display": "fit"}, "after": {"cols": [12, 12], "display": "fill"}},
+    {"uid": "gProdGrid", "path": "settings.layout.mobile", "before": {"cols": [6, 6], "display": "fill"}, "after": {"cols": [6, 6, 6, 6], "display": "fill"}},
+    {"uid": "gTilesRw", "path": "settings.layout.mobile", "before": {"cols": [6, 6], "display": "fill"}, "after": {"cols": [6, 6, 6, 6], "display": "fill"}},
+    {"uid": "oRFdwN3gjV", "path": "advanced.editorData", "after": {"rootClassName": "{{rootClassName}}", "css": ".{{rootClassName}}{max-width:100%;overflow-x:hidden}"}}
+  ],
+  "operations": null,
+  "changedValues": [
+    {"label": "Announcement mobile cols", "value": "[12,12]"},
+    {"label": "Header mobile cols", "value": "[8,0,4]"},
+    {"label": "CTA/Perk mobile cols", "value": "[12,12]"},
+    {"label": "Product/Tiles mobile cols", "value": "[6,6,6,6]"}
+  ]
+}

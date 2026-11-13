@@ -1,0 +1,49 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_4470d1054027",
+  "kind": "structural",
+  "pageId": "645981726744511377",
+  "sectionId": "645982047793316753",
+  "conversationKey": "edit-20261113T112829Z-9db7",
+  "editId": "edit-20261113T112829Z-9db7",
+  "at": "2026-11-13T11:33:12Z",
+  "pageStateAtWrite": {
+    "status": "DRAFT",
+    "publishedAt": null,
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645989760212403089"
+  },
+  "sectionHash": {
+    "before": "8f5fa97a245ff2c22ad0430e8b485b0f13556bc2b225d6a7c005fedaa1c7072e",
+    "after": "4470d10540270ad1bcc5094709646f073b002ff097974d72f022ae2770a1a944"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T10:23:03.114186Z",
+    "after": "2026-11-13T11:33:12.001565Z"
+  },
+  "operations": [
+    {
+      "action": "move",
+      "uid": "gCaroBlog",
+      "parentUid": "gWrapCol01",
+      "position": 1
+    },
+    {
+      "action": "remove",
+      "uid": "gHeadColR"
+    }
+  ],
+  "patches": "see changeLedger from write \u2014 heading above carousel, uppercase title, carousel overflow",
+  "changedValues": [
+    {
+      "label": "Blog heading layout",
+      "value": "full-width above carousel"
+    },
+    {
+      "label": "Heading text",
+      "value": "THE FOUR PILLARS BLOG"
+    }
+  ]
+}
