@@ -2,6 +2,13 @@
   "pageId": "639661111926326147",
   "name": "Velmont \u2014 Clean Atelier",
   "writeTargets": {
+    "edit-20261113T111601Z-ad80": {
+      "choice": "main",
+      "chosenAt": "2026-11-13T11:16:01Z",
+      "chosenAtPublishedAt": "2026-11-13T02:46:14.297706Z",
+      "splitExceptions": [],
+      "note": "Homepage cart drawer shipping line. Do not publish."
+    },
     "20261113T012409Z": {
       "choice": "main",
       "chosenAt": "2026-11-13T01:24:00Z",
@@ -24,6 +31,13 @@
       "name": "[AI] Remover Lisbon \u2014 cidade do visitante no prazo Black Friday",
       "createdAt": "2026-11-13T02:08:20.52211161Z",
       "conversationKey": "20261113T020656Z"
+    },
+    {
+      "versionId": "645988567268459409",
+      "name": "[AI] Cart drawer shipping and tax line",
+      "createdAt": "2026-11-13T11:19:50.813371119Z",
+      "conversationKey": "edit-20261113T111601Z-ad80",
+      "status": "protected"
     }
   ]
 }

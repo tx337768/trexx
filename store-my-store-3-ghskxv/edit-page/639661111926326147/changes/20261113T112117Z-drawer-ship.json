@@ -1,0 +1,53 @@
+{
+  "schema": "edit-change/v1",
+  "changeId": "chg_2275236aeedf",
+  "kind": "apply",
+  "pageId": "639661111926326147",
+  "sectionId": "639662887291323267",
+  "conversationKey": "edit-20261113T111601Z-ad80",
+  "editId": "edit-20261113T111601Z-ad80",
+  "at": "2026-11-13T11:21:17.146509Z",
+  "summary": "Cart drawer shipping and tax line.",
+  "pageStateAtWrite": {
+    "status": "PUBLISHED",
+    "publishedAt": "2026-11-13T02:46:14.297706Z",
+    "isPlatformDefault": false
+  },
+  "restorePoint": {
+    "versionId": "645988567268459409"
+  },
+  "sectionHash": {
+    "before": "92f040cb5a475de913318ecb169db0a60dc07f174486ef6741ab30d773584363",
+    "after": "2275236aeedfafcf6e0370cd646c104e9560a43fd6b32f74e3f5ef9f8077c3b5"
+  },
+  "sectionUpdatedAt": {
+    "before": "2026-11-13T02:46:05.001583Z",
+    "after": "2026-11-13T11:21:17.146509Z"
+  },
+  "patches": [
+    {
+      "uid": "gVlmDrawer01",
+      "path": "advanced.editorData.html",
+      "before": "<dialog id=\"VlmCartDrawer\" aria-labelledby=\"VlmDrawerTitle\"><div class=\"vd-shell\"><header><h2 id=\"VlmDrawerTitle\">{{ 'nm_localized.bag' | t }}<span data-vd-count></span></h2><button type=\"button\" data-vd-close aria-label=\"{{ 'nm_localized.a007' | t | escape }}\">×</button></header><p class=\"vd-notice\" data-vd-notice></p><div class=\"vd-items\" data-vd-items aria-live=\"polite\"></div><p class=\"vd-error\" data-vd-error role=\"alert\"></p><footer data-vd-footer><div class=\"vd-savings\" data-vd-savings></div><div class=\"vd-total\"><span>{{ 'nm_localized.c020' | t }}</span><strong data-vd-total></strong></div><p>{{ 'nm_localized.c021' | t }}</p><form action=\"/cart\" method=\"post\"><button type=\"submit\" name=\"checkout\" value=\"Checkout\" class=\"vd-checkout\">{{ 'nm_localized.shared0' | t }} <span aria-hidden=\"true\">↗</span></button></form><a class=\"vd-view\" href=\"{{ routes.root_url | append: '/pages/bag' | replace: '//', '/' }}\">{{ 'nm_localized.c023' | t }}</a><button type=\"button\" class=\"vd-continue\" data-vd-close>{{ 'nm_localized.c024' | t }}</button></footer></div></dialog>",
+      "after": "<dialog id=\"VlmCartDrawer\" aria-labelledby=\"VlmDrawerTitle\"><div class=\"vd-shell\"><header><h2 id=\"VlmDrawerTitle\">{{ 'nm_localized.bag' | t }}<span data-vd-count></span></h2><button type=\"button\" data-vd-close aria-label=\"{{ 'nm_localized.a007' | t | escape }}\">×</button></header><p class=\"vd-notice\" data-vd-notice></p><div class=\"vd-items\" data-vd-items aria-live=\"polite\"></div><p class=\"vd-error\" data-vd-error role=\"alert\"></p><footer data-vd-footer><div class=\"vd-savings\" data-vd-savings></div><div class=\"vd-total\"><span>{{ 'nm_localized.c020' | t }}</span><strong data-vd-total></strong></div><p>{% case request.locale.iso_code %}{% when 'de' %}Kostenloser Standardversand. Steuern werden an der Kasse angezeigt.{% when 'es' %}Envío estándar gratis. Los impuestos se muestran al pagar.{% when 'fr' %}Livraison standard offerte. Les taxes s'affichent au paiement.{% else %}Free standard shipping. Taxes are shown at checkout.{% endcase %}</p>\n<form action=\"/cart\" method=\"post\"><button type=\"submit\" name=\"checkout\" value=\"Checkout\" class=\"vd-checkout\">{{ 'nm_localized.shared0' | t }} <span aria-hidden=\"true\">↗</span></button></form><a class=\"vd-view\" href=\"{{ routes.root_url | append: '/pages/bag' | replace: '//', '/' }}\">{{ 'nm_localized.c023' | t }}</a><button type=\"button\" class=\"vd-continue\" data-vd-close>{{ 'nm_localized.c024' | t }}</button></footer></div></dialog>"
+    }
+  ],
+  "operations": [],
+  "removed": [],
+  "changedValues": [],
+  "changeLedger": {
+    "patches": [
+      {
+        "uid": "gVlmDrawer01",
+        "path": "advanced.editorData.html",
+        "before": "<dialog id=\"VlmCartDrawer\" aria-labelledby=\"VlmDrawerTitle\"><div class=\"vd-shell\"><header><h2 id=\"VlmDrawerTitle\">{{ 'nm_localized.bag' | t }}<span data-vd-count></span></h2><button type=\"button\" data-vd-close aria-label=\"{{ 'nm_localized.a007' | t | escape }}\">×</button></header><p class=\"vd-notice\" data-vd-notice></p><div class=\"vd-items\" data-vd-items aria-live=\"polite\"></div><p class=\"vd-error\" data-vd-error role=\"alert\"></p><footer data-vd-footer><div class=\"vd-savings\" data-vd-savings></div><div class=\"vd-total\"><span>{{ 'nm_localized.c020' | t }}</span><strong data-vd-total></strong></div><p>{{ 'nm_localized.c021' | t }}</p><form action=\"/cart\" method=\"post\"><button type=\"submit\" name=\"checkout\" value=\"Checkout\" class=\"vd-checkout\">{{ 'nm_localized.shared0' | t }} <span aria-hidden=\"true\">↗</span></button></form><a class=\"vd-view\" href=\"{{ routes.root_url | append: '/pages/bag' | replace: '//', '/' }}\">{{ 'nm_localized.c023' | t }}</a><button type=\"button\" class=\"vd-continue\" data-vd-close>{{ 'nm_localized.c024' | t }}</button></footer></div></dialog>",
+        "after": "<dialog id=\"VlmCartDrawer\" aria-labelledby=\"VlmDrawerTitle\"><div class=\"vd-shell\"><header><h2 id=\"VlmDrawerTitle\">{{ 'nm_localized.bag' | t }}<span data-vd-count></span></h2><button type=\"button\" data-vd-close aria-label=\"{{ 'nm_localized.a007' | t | escape }}\">×</button></header><p class=\"vd-notice\" data-vd-notice></p><div class=\"vd-items\" data-vd-items aria-live=\"polite\"></div><p class=\"vd-error\" data-vd-error role=\"alert\"></p><footer data-vd-footer><div class=\"vd-savings\" data-vd-savings></div><div class=\"vd-total\"><span>{{ 'nm_localized.c020' | t }}</span><strong data-vd-total></strong></div><p>{% case request.locale.iso_code %}{% when 'de' %}Kostenloser Standardversand. Steuern werden an der Kasse angezeigt.{% when 'es' %}Envío estándar gratis. Los impuestos se muestran al pagar.{% when 'fr' %}Livraison standard offerte. Les taxes s'affichent au paiement.{% else %}Free standard shipping. Taxes are shown at checkout.{% endcase %}</p>\n<form action=\"/cart\" method=\"post\"><button type=\"submit\" name=\"checkout\" value=\"Checkout\" class=\"vd-checkout\">{{ 'nm_localized.shared0' | t }} <span aria-hidden=\"true\">↗</span></button></form><a class=\"vd-view\" href=\"{{ routes.root_url | append: '/pages/bag' | replace: '//', '/' }}\">{{ 'nm_localized.c023' | t }}</a><button type=\"button\" class=\"vd-continue\" data-vd-close>{{ 'nm_localized.c024' | t }}</button></footer></div></dialog>"
+      }
+    ],
+    "removed": [],
+    "sectionHash": {
+      "before": "92f040cb5a475de913318ecb169db0a60dc07f174486ef6741ab30d773584363",
+      "after": "2275236aeedfafcf6e0370cd646c104e9560a43fd6b32f74e3f5ef9f8077c3b5"
+    }
+  }
+}

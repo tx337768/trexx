@@ -1,27 +1,7 @@
 {% assign vlm_collection = collection | default: collections['final-sale'] %}
 {% assign nm_listing_count = vlm_collection.products_count %}{% assign nm_gift_collections = all_products['cedar-shoe-tree'].collections | map: 'handle' %}{% if nm_gift_collections contains vlm_collection.handle %}{% if vlm_collection.products_count == vlm_collection.all_products_count %}{% assign nm_listing_count = nm_listing_count | minus: 1 %}{% endif %}{% endif %}
 {% if vlm_collection.handle == 'final-sale' %}
-{% capture nh_kicker %}{% case request.locale.iso_code %}{% when 'de' %}BLACK FRIDAY HAT BEGONNEN{% when 'es' %}BLACK FRIDAY YA HA EMPEZADO{% when 'fr' %}LE BLACK FRIDAY A COMMENCÉ{% else %}BLACK FRIDAY HAS STARTED{% endcase %}{% endcapture %}
-{% capture nh_title %}{% case request.locale.iso_code %}{% when 'de' %}Ihr nächstes Paar.<br>Bis zu 60 % Rabatt.{% when 'es' %}Tu próximo par.<br>Hasta un 60 % de descuento.{% when 'fr' %}Votre prochaine paire.<br>Jusqu’à −60 %.{% else %}Your next pair.<br>Up to 60% off.{% endcase %}{% endcapture %}
-{% capture nh_body %}{% case request.locale.iso_code %}{% when 'de' %}Klassische Loafer, Schnürschuhe und Boots. Finden Sie das passende Paar für Ihre Garderobe zu Black-Friday-Preisen.{% when 'es' %}Mocasines, zapatos de cordones y botas clásicos. Encuentra el par que encaja con tu armario a precios de Black Friday.{% when 'fr' %}Mocassins, chaussures à lacets et bottines classiques. Trouvez la paire qui complète votre garde-robe aux prix du Black Friday.{% else %}Classic loafers, lace-ups and boots. Find the pair that works with your wardrobe, at Black Friday prices.{% endcase %}{% endcapture %}
-{% capture nh_urgent %}{% case request.locale.iso_code %}{% when 'de' %}Farbe wählen. Größe finden. Jetzt Ihr Paar sichern.{% when 'es' %}Elige tu color. Encuentra tu talla. Hazlo tuyo.{% when 'fr' %}Choisissez votre couleur. Trouvez votre pointure. Adoptez votre paire.{% else %}Choose your colour. Find your size. Make it yours.{% endcase %}{% endcapture %}
-<section class="nm-home-clean">
-  <img class="nh-hero-photo" src="https://cdn.shopify.com/s/files/1/0811/8239/2552/files/nm-bf-audience-banner.jpg" alt="Noble Meridian" fetchpriority="high" width="1600" height="900">
-  <div class="nh-hero-copy">
-    <span class="nh-kicker">{{ nh_kicker }}</span>
-    <h1>{{ nh_title }}</h1>
-    <p>{{ nh_body }}</p>
-    <strong>{{ nh_urgent }}</strong>
-    <p class="nh-ends">{% case request.locale.iso_code %}{% when 'de' %}Endet{% when 'es' %}Termina{% when 'fr' %}Jusqu’au{% else %}Ends{% endcase %} <span class="nm-geo-deadline">30 Nov</span></p>
-    <div class="nh-timer" aria-label="Time left">
-      <span><b data-nm-t="d">00</b><i>{% case request.locale.iso_code %}{% when 'de' %}Tage{% when 'es' %}días{% when 'fr' %}jours{% else %}days{% endcase %}</i></span>
-      <span><b data-nm-t="h">00</b><i>{% case request.locale.iso_code %}{% when 'de' %}Std{% when 'es' %}hrs{% when 'fr' %}hrs{% else %}hrs{% endcase %}</i></span>
-      <span><b data-nm-t="m">00</b><i>min</i></span>
-      <span><b data-nm-t="s">00</b><i>{% case request.locale.iso_code %}{% when 'de' %}Sek{% when 'es' %}seg{% when 'fr' %}sec{% else %}sec{% endcase %}</i></span>
-    </div>
-  </div>
-</section>
-
+<p class="nm-fs-oneline">Up to 60% off · Free shipping &amp; returns · Ends <span class="nm-geo-deadline">30 Nov</span></p>
 <script>
 (function(){
   var END=new Date('2026-11-30T23:59:00+00:00');

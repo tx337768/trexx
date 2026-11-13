@@ -1,36 +1,24 @@
 .vlm-gp-collection{max-width:1344px;padding:64px 32px 80px;margin:auto;color:#25251f;background:#fff;font-family:Arial,sans-serif}.vlm-gp-kicker{font-size:11px;letter-spacing:2px;color:#76634b;margin:0 0 18px}.vlm-gp-collection-heading h1{font:400 46px/1.1 Georgia,serif;letter-spacing:-1px;margin:0 0 20px}.vlm-gp-description{font-size:14px;color:#67665f;max-width:680px;line-height:1.7}.vlm-gp-categories{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 36px}.vlm-gp-categories a{padding:10px 14px;border:1px solid #e5e2dc;font-size:11px;text-decoration:none;color:#56554d;background:#faf9f6}.vlm-gp-categories a:hover{border-color:#755b3c;color:#755b3c}.vlm-gp-toolbar{display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid #e5e2dc;padding:20px 0;margin-bottom:12px;font-size:12px;color:#6f6c63}.vlm-gp-toolbar form{display:flex;align-items:center;gap:12px}.vlm-gp-toolbar select{padding:10px;border:1px solid #e5e2dc;background:white;max-width:210px;font:12px Arial}.vlm-gp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 28px}.vlm-gp-card{min-width:0}.vlm-gp-card-image{display:block;position:relative;aspect-ratio:1;background:#f7f7f7;overflow:hidden}.vlm-gp-card-image img{width:100%;height:100%;object-fit:contain;display:block;transition:none}.vlm-gp-sale{position:absolute;top:14px;left:14px;background:#755b3c;color:#fff;padding:5px 8px;font:10px Georgia,serif;letter-spacing:.5px}.vlm-gp-card-info{padding:18px 0 0}.vlm-gp-card-info h2{font:400 21px/1.2 Georgia,serif;margin:0 0 12px;letter-spacing:0}.vlm-gp-card-info a{text-decoration:none;color:inherit}.vlm-gp-prices{display:flex;flex-wrap:wrap;align-items:center;gap:10px;color:#755b3c;font:17px Georgia,serif}.vlm-gp-prices s{font-size:13px;color:#97938a}.vlm-gp-explore{display:inline-block;margin-top:18px;font:10px Arial,sans-serif;letter-spacing:1px;color:#858076!important}.vlm-gp-pagination{display:flex;gap:18px;justify-content:center;margin:54px 0 0}.vlm-gp-pagination span a{padding:10px}.vlm-gp-pagination span.current{border-bottom:1px solid #755b3c;padding:0 10px}@media(max-width:1024px){.vlm-gp-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 20px}}@media(max-width:768px){.vlm-gp-collection{padding:36px 18px 48px}.vlm-gp-collection-heading h1{font-size:34px}.vlm-gp-grid{gap:28px 14px}.vlm-gp-card-info h2{font-size:17px}.vlm-gp-prices{font-size:15px}.vlm-gp-card-info{padding-top:14px}.vlm-gp-explore{font-size:8px;letter-spacing:.5px;margin-top:12px}.vlm-gp-categories{flex-wrap:nowrap;overflow:auto;white-space:nowrap;margin:24px 0}.vlm-gp-toolbar{font-size:11px;gap:10px}.vlm-gp-toolbar form{gap:6px}.vlm-gp-toolbar select{max-width:160px}.vlm-gp-sale{top:8px;left:8px;font-size:9px;padding:4px 6px}}
 .vlm-gp-collection--sale .vlm-gp-categories{display:none!important}
-.nm-home-clean{color:#111;background:#fff;font:16px/1.6 Arial,sans-serif;width:100%;margin:0;padding:0}
-.nm-home-clean *{box-sizing:border-box}
-.nm-home-clean img{display:block;max-width:100%}
-.nm-home-clean h1{font-family:Georgia,"Times New Roman",serif!important;font-weight:400!important;letter-spacing:-.02em!important;color:#111!important;font-size:clamp(36px,4vw,58px);line-height:1.15!important;margin:0 0 24px}
-.nm-home-clean .nh-hero-photo{width:100%;height:min(56vw,640px);min-height:280px;object-fit:cover;object-position:center 40%}
-.nm-home-clean .nh-hero-copy{text-align:center;padding:50px 24px 40px;max-width:850px;margin:auto}
-.nm-home-clean .nh-kicker{display:block;font-size:11px;color:#757575;letter-spacing:.18em;line-height:1.5;font-weight:600;margin-bottom:20px}
-.nm-home-clean .nh-hero-copy p{max-width:550px;margin:0 auto 10px;font-size:16px;line-height:1.6;color:#333}
-.nm-home-clean .nh-hero-copy strong{font-weight:700;display:block;margin:0;font-size:16px;color:#111}
-.nm-home-clean .nh-ends{margin:26px 0 0;font:600 13px/1.4 Arial,Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#755b3c}
-.nm-home-clean .nh-timer{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:14px 0 0}
-.nm-home-clean .nh-timer span{min-width:68px;padding:12px 8px;border:1px solid #e4dcc8;background:#faf7f2}
-.nm-home-clean .nh-timer b{display:block;font:400 26px/1 Georgia,"Times New Roman",serif;color:#16140f;font-variant-numeric:tabular-nums}
-.nm-home-clean .nh-timer i{display:block;margin-top:6px;font:600 10px/1 Arial,Helvetica,sans-serif;letter-spacing:.12em;text-transform:uppercase;font-style:normal;color:#76634b}
-.vlm-gp-collection--sale{background:#fff!important;color:#25251f!important}
+.nm-fs-oneline{margin:0;padding:11px 16px;background:#16140f;color:#f7f2ea;text-align:center;font:600 13px/1.35 Arial,Helvetica,sans-serif;letter-spacing:.03em}
+.vlm-gp-collection--sale{background:#fff!important;color:#25251f!important;padding-top:16px!important}
 .nm-fs-grid-intro{display:none}
-.vlm-gp-collection--sale .vlm-gp-toolbar{border-top:0;margin-top:8px}
+.vlm-gp-collection--sale .vlm-gp-toolbar{border-top:0;margin-top:0;padding-top:8px}
 .vlm-gp-collection--sale .nm-fs-card-cta{display:inline-block;margin-top:12px;padding:11px 14px;background:#16140f;color:#fff!important;text-decoration:none;font:600 11px/1 Arial,Helvetica,sans-serif;letter-spacing:.08em;text-transform:uppercase}
 .vlm-gp-collection--sale .vlm-gp-card{border:0;border-bottom:1px solid #ece7df;padding-bottom:8px}
 .vlm-gp-collection--sale .vlm-gp-card-image{background:#f4f1eb}
+.vlm-gp-collection--sale .vlm-gp-prices{font-size:18px}
+.vlm-gp-collection--sale .vlm-gp-prices s{font-size:14px;color:#97938a}
 @media (max-width:900px){
   .vg-announcement{display:block!important;text-align:center!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;min-height:0!important;padding:9px 14px!important;font-size:10px!important;line-height:1.35!important;letter-spacing:.04em!important;max-width:100%!important}
   .vg-announcement .nm-announcement-message,.vg-announcement .nm-geo-deadline{display:inline!important}
   .vg-announcement .nm-geo-city{display:none!important}
 }
+@media (max-width:749px){
+  .nm-fs-oneline{font-size:12px;padding:10px 12px}
+  .vlm-gp-collection--sale{padding-top:8px!important}
+}
 @media (max-width:390px){
   .vg-announcement{font-size:8px!important;padding:8px 10px!important}
-}
-@media (max-width:749px){
-  .nm-home-clean .nh-hero-photo{min-height:220px;height:58vw}
-  .nm-home-clean .nh-hero-copy{padding:28px 18px 24px}
-  .nm-home-clean h1{font-size:34px;line-height:1.15!important}
-  .nm-home-clean .nh-hero-copy p,.nm-home-clean .nh-hero-copy strong{font-size:16px}
+  .nm-fs-oneline{font-size:11px}
 }
