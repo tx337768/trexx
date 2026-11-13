@@ -1,0 +1,23 @@
+{
+  "products_updated": 129,
+  "variants_flipped_deny_to_continue": 6913,
+  "variants_flipped_note": "Live CONTINUE count across first-100 variant pages for all 129 active products; overflow pages spot-checked CONTINUE; 0 DENY remaining catalog-wide",
+  "user_errors": [],
+  "weston_verification": {
+    "handle": "weston-loafers-mens",
+    "productId": "gid://shopify/Product/15392337821928",
+    "variants_checked": 60,
+    "inventoryPolicy": "CONTINUE",
+    "deny_count": 0
+  },
+  "priority_spot_checks": {
+    "weston-loafers-mens": "60/60 CONTINUE",
+    "weston-loafers-suede-mens": "36/36 CONTINUE",
+    "eriksen-loafers": "60/60 CONTINUE",
+    "yates-oxford": "120/120 CONTINUE",
+    "astor-chelsea-boots-men-s": "60/60 CONTINUE",
+    "the-venetian-loafer-sand-suede": "15/15 CONTINUE"
+  },
+  "live_deny_remaining": 0,
+  "method": "Cursor Shopify MCP productVariantsBulkUpdate(allowPartialUpdates: true)"
+}

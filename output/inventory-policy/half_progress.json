@@ -1,0 +1,33 @@
+{
+  "completed": [
+    "02_0.json",
+    "02_1.json",
+    "03_0.json",
+    "03_1.json",
+    "04_0.json",
+    "04_1.json",
+    "05_0.json",
+    "05_1.json",
+    "06_0.json",
+    "06_1.json",
+    "07_0.json",
+    "07_1.json",
+    "08_0.json",
+    "08_1.json",
+    "09_0.json",
+    "10_0.json",
+    "11_0.json",
+    "12_0.json",
+    "13_0.json",
+    "14_0.json",
+    "15_0.json",
+    "16_0.json",
+    "17_0.json",
+    "18_0.json",
+    "19_0.json",
+    "20_0.json"
+  ],
+  "next_idx": 26,
+  "errors": [],
+  "partial": {}
+}
